@@ -1,0 +1,1700 @@
+{
+  "dishes": [
+    {
+      "id": 1,
+      "name": "Preserved Egg and Leanmeat Congee with Turnip Cake",
+      "price": 19.6,
+      "ingredients": ["preserved egg", "lean pork", "rice", "turnip cake"],
+      "tags": ["savory", "Cantonese", "Breakfast"],
+      "serving_time": "Breakfast"
+    },
+    {
+      "id": 2,
+      "name": "Homestyle Fried Rice Vermicelli",
+      "price": 19.6,
+      "ingredients": ["rice vermicelli", "shredded pork", "vegetables"],
+      "tags": ["savory", "Cantonese", "Breakfast"],
+      "serving_time": "Breakfast"
+    },
+    {
+      "id": 3,
+      "name": "Fried Noodle in Soy Sauce",
+      "price": 19.6,
+      "ingredients": ["noodles", "soy sauce", "vegetables"],
+      "tags": ["savory", "Cantonese", "All-Day"],
+      "serving_time": "All-Day"
+    },
+    {
+      "id": 4,
+      "name": "Steamed Barbecued Pork Bun",
+      "price": 19.6,
+      "ingredients": ["flour", "barbecued pork", "sugar"],
+      "tags": ["sweet", "Cantonese", "Breakfast"],
+      "serving_time": "Breakfast"
+    },
+    {
+      "id": 5,
+      "name": "Pan-fried Turnip Cake",
+      "price": 11.9,
+      "ingredients": ["turnip", "rice flour", "dried shrimp"],
+      "tags": ["vegetarian", "Cantonese", "Dim Sum"],
+      "serving_time": "All-Day"
+    },
+    {
+      "id": 6,
+      "name": "Satay Beef with Rice Vermicelli",
+      "price": 24.8,
+      "ingredients": ["beef", "satay sauce", "rice vermicelli"],
+      "tags": ["spicy", "Malaysian", "Lunch"],
+      "serving_time": "Lunch"
+    },
+    {
+      "id": 7,
+      "name": "Oatmeal with Egg White",
+      "price": 13.1,
+      "ingredients": ["oatmeal", "egg white", "milk"],
+      "tags": ["healthy", "Western", "Breakfast"],
+      "serving_time": "Breakfast"
+    },
+    {
+      "id": 8,
+      "name": "Deep-fried Fish Fillet with Ham",
+      "price": 25.8,
+      "ingredients": ["fish fillet", "ham", "batter"],
+      "tags": ["fried", "International", "Lunch"],
+      "serving_time": "Lunch"
+    },
+    {
+      "id": 9,
+      "name": "Leaf Mustard and Pork Bone Congee",
+      "price": 10.8,
+      "ingredients": ["leaf mustard", "pork bone", "rice"],
+      "tags": ["savory", "Cantonese", "Breakfast"],
+      "serving_time": "Breakfast"
+    },
+    {
+      "id": 10,
+      "name": "Dried Oyster and Sliced Pork Congee",
+      "price": 10.8,
+      "ingredients": ["dried oyster", "sliced pork", "rice"],
+      "tags": ["savory", "Cantonese", "Breakfast"],
+      "serving_time": "Breakfast"
+    },
+    
+    {
+      "id": 11,
+      "name": "Fried Rice Vermicelli with Shredded Meat and Vegetables",
+      "price": 11.9,
+      "ingredients": ["rice vermicelli", "pork", "carrot", "bean sprouts"],
+      "tags": ["savory", "Cantonese", "All-Day"],
+      "serving_time": "All-Day"
+    },
+    {
+      "id": 12,
+      "name": "Fried Yellow Noodle with Shredded Meat and Vegetables",
+      "price": 11.9,
+      "ingredients": ["yellow noodles", "pork", "cabbage", "onion"],
+      "tags": ["savory", "Cantonese", "All-Day"],
+      "serving_time": "All-Day"
+    },
+    {
+      "id": 13,
+      "name": "Fried Noodle with Bean Sprout",
+      "price": 11.9,
+      "ingredients": ["noodles", "bean sprouts", "soy sauce"],
+      "tags": ["savory", "Cantonese", "All-Day"],
+      "serving_time": "All-Day"
+    },
+    
+    {
+      "id": 14,
+      "name": "Steamed Custard Bun",
+      "price": 12.9,
+      "ingredients": ["flour", "custard", "milk"],
+      "tags": ["sweet", "Cantonese", "Breakfast"],
+      "serving_time": "Breakfast"
+    },
+    {
+      "id": 15,
+      "name": "Steamed Chicken Bun",
+      "price": 12.9,
+      "ingredients": ["flour", "chicken", "mushroom"],
+      "tags": ["savory", "Cantonese", "Breakfast"],
+      "serving_time": "Breakfast"
+    },
+    {
+      "id": 16,
+      "name": "Steamed Lotus Seed Paste Bun",
+      "price": 12.9,
+      "ingredients": ["flour", "lotus seed paste", "sugar"],
+      "tags": ["sweet", "Cantonese", "Breakfast"],
+      "serving_time": "Breakfast"
+    },
+    {
+      "id": 17,
+      "name": "Steamed Pork and Vegetable Bun",
+      "price": 12.9,
+      "ingredients": ["flour", "pork", "cabbage"],
+      "tags": ["savory", "Cantonese", "Breakfast"],
+      "serving_time": "Breakfast"
+    },
+    {
+      "id": 18,
+      "name": "Deep-fried Fish Fillet Ham",
+      "price": 25.8,
+      "ingredients": ["fish fillet", "ham", "batter"],
+      "tags": ["fried", "International", "Lunch"],
+      "serving_time": "Lunch"
+    },
+    {
+      "id": 19,
+      "name": "Deep-fried Fish Fillet Sausage",
+      "price": 25.8,
+      "ingredients": ["fish fillet", "sausage", "batter"],
+      "tags": ["fried", "International", "Lunch"],
+      "serving_time": "Lunch"
+    },
+    {
+      "id": 20,
+      "name": "Deep-fried Fish Fillet Luncheon Meat",
+      "price": 25.8,
+      "ingredients": ["fish fillet", "luncheon meat", "batter"],
+      "tags": ["fried", "International", "Lunch"],
+      "serving_time": "Lunch"
+    },
+    {
+      "id": 21,
+      "name": "Pan-fried Pork Chop Ham",
+      "price": 25.8,
+      "ingredients": ["pork chop", "ham", "oil"],
+      "tags": ["savory", "Cantonese", "Lunch"],
+      "serving_time": "Lunch"
+    },
+    {
+      "id": 22,
+      "name": "Pan-fried Pork Chop Sausage",
+      "price": 25.8,
+      "ingredients": ["pork chop", "sausage", "oil"],
+      "tags": ["savory", "Cantonese", "Lunch"],
+      "serving_time": "Lunch"
+    },
+    {
+      "id": 23,
+      "name": "Pan-fried Pork Chop Luncheon Meat",
+      "price": 25.8,
+      "ingredients": ["pork chop", "luncheon meat", "oil"],
+      "tags": ["savory", "Cantonese", "Lunch"],
+      "serving_time": "Lunch"
+    },
+    {
+      "id": 24,
+      "name": "Chinese Mushroom and Salted Chicken Congee",
+      "price": 10.8,
+      "ingredients": ["mushroom", "salted chicken", "rice"],
+      "tags": ["savory", "Cantonese", "Breakfast"],
+      "serving_time": "Breakfast"
+    },
+    {
+      "id": 25,
+      "name": "Dried Stockfish and Peanut Congee",
+      "price": 10.8,
+      "ingredients": ["dried fish", "peanut", "rice"],
+      "tags": ["savory", "Cantonese", "Breakfast"],
+      "serving_time": "Breakfast"
+    },
+    {
+      "id": 26,
+      "name": "Sampan Congee",
+      "price": 10.8,
+      "ingredients": ["shrimp", "fish", "rice"],
+      "tags": ["savory", "Cantonese", "Breakfast"],
+      "serving_time": "Breakfast"
+    },
+    {
+      "id": 27,
+      "name": "Pumpkin and Pork Ribs Congee",
+      "price": 10.8,
+      "ingredients": ["pumpkin", "pork ribs", "rice"],
+      "tags": ["savory", "Cantonese", "Breakfast"],
+      "serving_time": "Breakfast"
+    },
+    {
+      "id": 28,
+      "name": "Lobster Bisque Fusilli with Sliced Sausage",
+      "price": 19.6,
+      "ingredients": ["fusilli", "lobster bisque", "sausage"],
+      "tags": ["savory", "International", "Lunch"],
+      "serving_time": "All-Day"
+    },
+    {
+      "id": 29,
+      "name": "Tomato Beef Fusilli with Deep-fried Fish Fillet",
+      "price": 35.1,
+      "ingredients": ["fusilli", "tomato", "beef", "fish fillet"],
+      "tags": ["fried", "International", "Lunch"],
+      "serving_time": "Lunch"
+    },
+    {
+      "id": 30,
+      "name": "Creamy Corn Chicken Penne",
+      "price": 34.0,
+      "ingredients": ["penne", "sweet corn", "chicken", "cream"],
+      "tags": ["creamy", "Western", "Lunch"],
+      "serving_time": "Lunch"
+    },
+    {
+      "id": 31,
+      "name": "Teriyaki Beef with Pork Chop Rice",
+      "price": 42.3,
+      "ingredients": ["beef", "teriyaki sauce", "pork chop", "rice"],
+      "tags": ["Japanese", "savory", "Dinner"],
+      "serving_time": "All-Day"
+    },
+    {
+      "id": 32,
+      "name": "Seafood Yosenabe Hot Pot",
+      "price": 47.4,
+      "ingredients": ["seafood", "tofu", "vegetables", "soy milk"],
+      "tags": ["hot pot", "Japanese", "Dinner"],
+      "serving_time": "Dinner"
+    },
+    {
+      "id": 33,
+      "name": "Grilled Salmon with Pearl Rice",
+      "price": 38.2,
+      "ingredients": ["salmon", "pearl rice", "crispy chicken"],
+      "tags": ["grilled", "Japanese", "Lunch"],
+      "serving_time": "Lunch"
+    },
+    {
+      "id": 34,
+      "name": "Beef Sukiyaki Hot Pot",
+      "price": 44.4,
+      "ingredients": ["beef", "tofu", "noodles", "sukiyaki sauce"],
+      "tags": ["hot pot", "Japanese", "Dinner"],
+      "serving_time": "Dinner"
+    },
+    {
+      "id": 35,
+      "name": "Japanese BBQ Pork Ramen",
+      "price": 34.0,
+      "ingredients": ["ramen", "bbq pork", "egg", "bamboo shoots"],
+      "tags": ["savory", "Japanese", "Lunch"],
+      "serving_time": "All-Day"
+    },
+    {
+      "id": 36,
+      "name": "Kimchi Pork with Fried Shrimp Rice",
+      "price": 42.3,
+      "ingredients": ["kimchi", "pork", "shrimp", "rice"],
+      "tags": ["spicy", "Korean", "Dinner"],
+      "serving_time": "Dinner"
+    },
+    {
+      "id": 37,
+      "name": "Curry Chicken Ball with Onsen Egg Rice",
+      "price": 42.3,
+      "ingredients": ["curry", "chicken", "onsen egg", "rice"],
+      "tags": ["spicy", "Japanese", "Lunch"],
+      "serving_time": "Lunch"
+    },
+    {
+      "id": 38,
+      "name": "Pork Cartilage Rice Bowl",
+      "price": 36.1,
+      "ingredients": ["pork cartilage", "rice", "soy sauce"],
+      "tags": ["savory", "Cantonese", "Lunch"],
+      "serving_time": "Lunch"
+    },
+    {
+      "id": 39,
+      "name": "Wild Mushroom Ramen",
+      "price": 29.9,
+      "ingredients": ["ramen", "mushrooms", "vegetables", "broth"],
+      "tags": ["vegetarian", "Japanese", "All-Day"],
+      "serving_time": "All-Day"
+    },
+    {
+      "id": 40,
+      "name": "Japanese Shrimp Ramen",
+      "price": 32.0,
+      "ingredients": ["ramen", "shrimp", "nori", "egg"],
+      "tags": ["seafood", "Japanese", "Dinner"],
+      "serving_time": "Dinner"
+    },
+    {
+      "id": 41,
+      "name": "Penne with Creamy Corn and Chicken",
+      "price": 32.0,
+      "ingredients": ["penne", "corn", "chicken", "cream"],
+      "tags": ["creamy", "Western", "Lunch"],
+      "serving_time": "Lunch"
+    },
+    {
+      "id": 42,
+      "name": "Kimchi Pork Jjigae Hot Pot",
+      "price": 44.4,
+      "ingredients": ["kimchi", "pork", "tofu", "rice"],
+      "tags": ["spicy", "Korean", "Dinner"],
+      "serving_time": "Dinner"
+    },
+    {
+      "id": 43,
+      "name": "Assorted Vegetable Ramen",
+      "price": 29.9,
+      "ingredients": ["ramen", "vegetables", "mushrooms", "broth"],
+      "tags": ["vegetarian", "Japanese", "All-Day"],
+      "serving_time": "All-Day"
+    },
+    {
+      "id": 44,
+      "name": "Japanese Curry Hamburger Rice",
+      "price": 42.3,
+      "ingredients": ["curry", "hamburger", "rice", "cheese"],
+      "tags": ["savory", "Japanese", "Lunch"],
+      "serving_time": "Lunch"
+    },
+    {
+      "id": 45,
+      "name": "Salmon with Pork Cartilage Pearl Rice",
+      "price": 38.2,
+      "ingredients": ["salmon", "pork cartilage", "pearl rice", "crispy chicken"],
+      "tags": ["grilled", "Japanese", "Dinner"],
+      "serving_time": "Dinner"
+    },
+    {
+      "id": 46,
+      "name": "Kumamoto Chicken Ramen",
+      "price": 34.0,
+      "ingredients": ["ramen", "chicken", "egg", "bamboo shoots"],
+      "tags": ["savory", "Japanese", "Lunch"],
+      "serving_time": "Lunch"
+    },
+    {
+      "id": 47,
+      "name": "Seafood Ramen with Shrimp",
+      "price": 29.9,
+      "ingredients": ["ramen", "shrimp", "squid", "vegetables"],
+      "tags": ["seafood", "Japanese", "All-Day"],
+      "serving_time": "All-Day"
+    },
+    {
+      "id": 48,
+      "name": "Penne with Sweet Corn and Diced Chicken in Cream of Chicken Soup",
+      "price": 34.0,
+      "ingredients": ["penne", "sweet corn", "chicken", "cream"],
+      "tags": ["creamy", "Western", "Lunch"],
+      "serving_time": "Lunch"
+    },
+    {
+      "id": 49,
+      "name": "Seafood Yosenabe in Soya-bean Milk with Rice",
+      "price": 47.4,
+      "ingredients": ["seafood", "tofu", "vegetables", "soy milk"],
+      "tags": ["hot pot", "Japanese", "Dinner"],
+      "serving_time": "Dinner"
+    },
+    {
+      "id": 50,
+      "name": "Beef Sukiyaki with Rice",
+      "price": 44.4,
+      "ingredients": ["beef", "sukiyaki sauce", "noodles", "tofu"],
+      "tags": ["hot pot", "Japanese", "Dinner"],
+      "serving_time": "Dinner"
+    },
+    {
+      "id": 51,
+      "name": "Kimchi Pork Jjigae with Rice",
+      "price": 44.4,
+      "ingredients": ["kimchi", "pork", "tofu", "rice"],
+      "tags": ["spicy", "Korean", "Dinner"],
+      "serving_time": "Dinner"
+    },
+    {
+      "id": 52,
+      "name": "Wild Mushroom and Assorted Vegetable Ramen",
+      "price": 29.9,
+      "ingredients": ["ramen", "mushrooms", "vegetables", "broth"],
+      "tags": ["vegetarian", "Japanese", "All-Day"],
+      "serving_time": "All-Day"
+    },
+    {
+      "id": 53,
+      "name": "Japanese Seafood Ramen",
+      "price": 29.9,
+      "ingredients": ["ramen", "shrimp", "squid", "vegetables"],
+      "tags": ["seafood", "Japanese", "All-Day"],
+      "serving_time": "All-Day"
+    },
+    {
+      "id": 54,
+      "name": "Japanese Dumpling with Chicken Skewer Ramen",
+      "price": 29.9,
+      "ingredients": ["ramen", "dumplings", "chicken skewer", "broth"],
+      "tags": ["savory", "Japanese", "Lunch"],
+      "serving_time": "Lunch"
+    },
+    {
+      "id": 55,
+      "name": "Japanese Dumpling with Sweet Corn Ramen",
+      "price": 32.0,
+      "ingredients": ["ramen", "dumplings", "sweet corn", "broth"],
+      "tags": ["savory", "Japanese", "Lunch"],
+      "serving_time": "Lunch"
+    },
+    {
+      "id": 56,
+      "name": "Grilled Mashed Salmon with Pearl Rice",
+      "price": 38.2,
+      "ingredients": ["salmon", "pearl rice", "crispy chicken"],
+      "tags": ["grilled", "Japanese", "Dinner"],
+      "serving_time": "Dinner"
+    },
+    {
+      "id": 57,
+      "name": "Curry Pumpkin Potato Cake with Rice",
+      "price": 34.0,
+      "ingredients": ["curry", "pumpkin", "potato", "rice"],
+      "tags": ["spicy", "Japanese", "Lunch"],
+      "serving_time": "Lunch"
+    },
+    {
+      "id": 58,
+      "name": "Roast Pork Chop with Onsen Egg Rice Bowl",
+      "price": 41.3,
+      "ingredients": ["pork chop", "onsen egg", "rice", "soy sauce"],
+      "tags": ["savory", "Japanese", "Lunch"],
+      "serving_time": "Lunch"
+    },
+    {
+      "id": 59,
+      "name": "Kimchi Pork with Fried Shrimp Rice Bowl",
+      "price": 42.3,
+      "ingredients": ["kimchi", "pork", "shrimp", "rice"],
+      "tags": ["spicy", "Korean", "Dinner"],
+      "serving_time": "Dinner"
+    },
+    {
+      "id": 60,
+      "name": "Macaroni with Fresh Tomato and Minced Beef in Soup",
+      "price": 35.1,
+      "ingredients": ["macaroni", "tomato", "beef", "vegetables"],
+      "tags": ["savory", "Western", "Lunch"],
+      "serving_time": "Lunch"
+    },
+    {
+      "id": 61,
+      "name": "Dim Sum Platter with Glutinous Rice and Chicken",
+      "price": 32.0,
+      "ingredients": ["glutinous rice", "chicken", "fish dumpling", "turnip cake"],
+      "tags": ["Cantonese", "Breakfast", "Dim Sum"],
+      "serving_time": "Breakfast"
+    },
+    {
+      "id": 62,
+      "name": "Penne with Sweet Corn and Diced Chicken in Cream of Chicken Soup with Deep-fried Fish Fillet",
+      "price": 34.0,
+      "ingredients": ["penne", "sweet corn", "chicken", "fish fillet"],
+      "tags": ["creamy", "Western", "Lunch"],
+      "serving_time": "Lunch"
+    },
+    {
+      "id": 63,
+      "name": "Sliced Beef in Teriyaki Sauce with Rice",
+      "price": 42.3,
+      "ingredients": ["beef", "teriyaki sauce", "rice", "vegetables"],
+      "tags": ["savory", "Japanese", "Dinner"],
+      "serving_time": "Dinner"
+    },
+    {
+      "id": 64,
+      "name": "Beef in Teriyaki Sauce with Pork Chop and Scrambled Egg Rice",
+      "price": 42.3,
+      "ingredients": ["beef", "pork chop", "egg", "rice"],
+      "tags": ["savory", "Japanese", "Lunch"],
+      "serving_time": "Lunch"
+    },
+    {
+      "id": 65,
+      "name": "Black Fungus with Macaroni in Tomato Soup",
+      "price": 19.6,
+      "ingredients": ["macaroni", "black fungus", "tomato", "broth"],
+      "tags": ["vegetarian", "Cantonese", "All-Day"],
+      "serving_time": "All-Day"
+    },
+    {
+      "id": 66,
+      "name": "Sliced Veal Sausage with Macaroni in Tomato Soup",
+      "price": 19.6,
+      "ingredients": ["veal sausage", "macaroni", "tomato soup"],
+      "tags": ["savory", "Western", "Lunch"],
+      "serving_time": "All-Day"
+    },
+    {
+      "id": 67,
+      "name": "Shredded Chicken with Macaroni in Tomato Soup",
+      "price": 19.6,
+      "ingredients": ["chicken", "macaroni", "tomato soup"],
+      "tags": ["savory", "Western", "Lunch"],
+      "serving_time": "All-Day"
+    },
+    {
+      "id": 68,
+      "name": "Shredded Ham with Macaroni in Tomato Soup",
+      "price": 19.6,
+      "ingredients": ["ham", "macaroni", "tomato soup"],
+      "tags": ["savory", "Western", "Lunch"],
+      "serving_time": "All-Day"
+    },
+    {
+      "id": 69,
+      "name": "Fried Noodle with Chicken Steak",
+      "price": 28.9,
+      "ingredients": ["noodles", "chicken steak", "soy sauce"],
+      "tags": ["savory", "Cantonese", "Lunch"],
+      "serving_time": "Lunch"
+    },
+    {
+      "id": 70,
+      "name": "Fried Noodle with Deep-fried Fish",
+      "price": 28.9,
+      "ingredients": ["noodles", "fish fillet", "soy sauce"],
+      "tags": ["fried", "Cantonese", "Lunch"],
+      "serving_time": "Lunch"
+    },
+    {
+      "id": 71,
+      "name": "Rice Macaroni in Soup with Minced Pork",
+      "price": 19.6,
+      "ingredients": ["rice macaroni", "minced pork", "broth"],
+      "tags": ["savory", "Cantonese", "Breakfast"],
+      "serving_time": "Breakfast"
+    },
+    {
+      "id": 72,
+      "name": "Beef in Teriyaki Sauce with Pork Chop and Rice",
+      "price": 42.3,
+      "ingredients": ["beef", "teriyaki sauce", "pork chop", "rice"],
+      "tags": ["savory", "Japanese", "Dinner"],
+      "serving_time": "Dinner"
+    },
+    {
+      "id": 73,
+      "name": "Beef in Teriyaki Sauce with Chicken Steak and Rice",
+      "price": 42.3,
+      "ingredients": ["beef", "teriyaki sauce", "chicken steak", "rice"],
+      "tags": ["savory", "Japanese", "Dinner"],
+      "serving_time": "Dinner"
+    },
+    {
+      "id": 74,
+      "name": "Seafood Yosenabe Hot Pot with Rice",
+      "price": 47.4,
+      "ingredients": ["seafood", "tofu", "vegetables", "soy milk"],
+      "tags": ["hot pot", "Japanese", "Dinner"],
+      "serving_time": "Dinner"
+    },
+    {
+      "id": 75,
+      "name": "Sliced Beef Ramen",
+      "price": 34.0,
+      "ingredients": ["ramen", "beef", "broth"],
+      "tags": ["savory", "Japanese", "Lunch"],
+      "serving_time": "Lunch"
+    },
+    {
+      "id": 76,
+      "name": "Pork Cartilage Ramen",
+      "price": 34.0,
+      "ingredients": ["ramen", "pork cartilage", "broth"],
+      "tags": ["savory", "Japanese", "Lunch"],
+      "serving_time": "Lunch"
+    },
+    {
+      "id": 77,
+      "name": "Kimchi Pork Fried Shrimp Rice Bowl",
+      "price": 42.3,
+      "ingredients": ["kimchi", "pork", "shrimp", "rice"],
+      "tags": ["spicy", "Korean", "Dinner"],
+      "serving_time": "Dinner"
+    },
+    {
+      "id": 78,
+      "name": "Curry Chicken Ball with Onsen Egg Rice Bowl",
+      "price": 42.3,
+      "ingredients": ["curry", "chicken", "onsen egg", "rice"],
+      "tags": ["spicy", "Japanese", "Lunch"],
+      "serving_time": "Lunch"
+    },
+    {
+      "id": 79,
+      "name": "Japanese Curry Chicken Hamburg Rice Bowl",
+      "price": 42.3,
+      "ingredients": ["curry", "chicken", "hamburg", "rice"],
+      "tags": ["savory", "Japanese", "Lunch"],
+      "serving_time": "Lunch"
+    },
+    {
+      "id": 80,
+      "name": "Curry Pumpkin Potato Cake with Wild Vegetable Rice",
+      "price": 34.0,
+      "ingredients": ["curry", "pumpkin", "potato", "vegetables"],
+      "tags": ["vegetarian", "Japanese", "Lunch"],
+      "serving_time": "Lunch"
+    },
+    {
+      "id": 81,
+      "name": "Deep-fried Shrimp with Rice",
+      "price": 42.3,
+      "ingredients": ["shrimp", "rice", "batter"],
+      "tags": ["fried", "Japanese", "Dinner"],
+      "serving_time": "Dinner"
+    },
+    {
+      "id": 82,
+      "name": "Wild Mushroom and Vegetable Ramen",
+      "price": 29.9,
+      "ingredients": ["ramen", "shiitake", "bok choy", "vegetable broth"],
+      "tags": ["vegetarian", "Japanese", "Lunch"],
+      "serving_time": "Lunch"
+    },
+    {
+      "id": 83,
+      "name": "Dumpling and Chicken Skewer Ramen",
+      "price": 29.9,
+      "ingredients": ["ramen", "pork dumplings", "chicken skewer", "soy sauce"],
+      "tags": ["Japanese", "Combo", "Lunch"],
+      "serving_time": "Lunch"
+    },
+    {
+      "id": 84,
+      "name": "Sweet Corn Dumpling Ramen",
+      "price": 32.0,
+      "ingredients": ["ramen", "sweet corn", "pork dumplings", "tonkotsu broth"],
+      "tags": ["Japanese", "Sweet", "Dinner"],
+      "serving_time": "Dinner"
+    },
+    {
+      "id": 85,
+      "name": "Curry Pumpkin Potato Rice Bowl",
+      "price": 34.0,
+      "ingredients": ["curry", "pumpkin", "potato", "rice"],
+      "tags": ["vegetarian", "Japanese", "Lunch"],
+      "serving_time": "Lunch"
+    },
+    {
+      "id": 86,
+      "name": "Grilled Mashed Salmon Pearl Rice",
+      "price": 38.2,
+      "ingredients": ["salmon", "pearl rice", "crispy chicken", "pickles"],
+      "tags": ["grilled", "Japanese", "Lunch"],
+      "serving_time": "Lunch"
+    },
+    {
+      "id": 87,
+      "name": "Teriyaki Beef with Chicken Steak Rice",
+      "price": 42.3,
+      "ingredients": ["beef", "teriyaki sauce", "chicken steak", "rice"],
+      "tags": ["Japanese", "Combo", "Dinner"],
+      "serving_time": "Dinner"
+    },
+    {
+      "id": 88,
+      "name": "Deep-fried Shrimp Rice Bowl",
+      "price": 42.3,
+      "ingredients": ["shrimp", "tempura batter", "rice", "tonkatsu sauce"],
+      "tags": ["fried", "Japanese", "Dinner"],
+      "serving_time": "Dinner"
+    },
+    {
+      "id": 89,
+      "name": "Spicy Fried Chicken Rice Bowl",
+      "price": 42.3,
+      "ingredients": ["chicken", "spicy sauce", "rice", "sesame seeds"],
+      "tags": ["spicy", "Korean", "Dinner"],
+      "serving_time": "Dinner"
+    },
+    {
+      "id": 90,
+      "name": "Hot Pot Udon",
+      "price": 4.3,
+      "ingredients": ["udon", "vegetables", "fish cake", "dashi broth"],
+      "tags": ["hot pot", "Japanese", "All-Day"],
+      "serving_time": "All-Day"
+    },
+    {
+      "id": 91,
+      "name": "Fruity Soda Combo",
+      "price": 8.3,
+      "ingredients": ["soda", "fruit syrup", "lemon slice"],
+      "tags": ["beverage", "International", "All-Day"],
+      "serving_time": "All-Day"
+    },
+    {
+      "id": 92,
+      "name": "Chiu Chow Dumpling Platter",
+      "price": 21.7,
+      "ingredients": ["dumplings", "peanuts", "mushrooms", "turnip cake"],
+      "tags": ["Dim Sum", "Cantonese", "Breakfast"],
+      "serving_time": "Breakfast"
+    },
+    {
+      "id": 93,
+      "name": "Glutinous Rice with Chicken Platter",
+      "price": 22.7,
+      "ingredients": ["glutinous rice", "chicken", "shiitake", "lotus leaf"],
+      "tags": ["Cantonese", "Dim Sum", "Lunch"],
+      "serving_time": "Lunch"
+    },
+    {
+      "id": 94,
+      "name": "Spicy Diced Pork Noodles",
+      "price": 19.6,
+      "ingredients": ["noodles", "spicy pork", "bean sprouts", "chili oil"],
+      "tags": ["spicy", "Sichuan", "Lunch"],
+      "serving_time": "Lunch"
+    },
+    {
+      "id": 95,
+      "name": "Scrambled Egg with Ham Macaroni",
+      "price": 33.0,
+      "ingredients": ["macaroni", "scrambled egg", "ham", "tomato soup"],
+      "tags": ["Western", "Breakfast", "Combo"],
+      "serving_time": "Breakfast"
+    },
+    {
+      "id": 96,
+      "name": "Vegetarian Mushroom Macaroni",
+      "price": 33.0,
+      "ingredients": ["macaroni", "assorted mushrooms", "spinach", "tomato soup"],
+      "tags": ["vegetarian", "Healthy", "All-Day"],
+      "serving_time": "All-Day"
+    },
+    {
+      "id": 97,
+      "name": "Sliced Sausage Fusilli in Lobster Bisque",
+      "price": 23.7,
+      "ingredients": ["fusilli", "sausage", "lobster bisque", "parmesan"],
+      "tags": ["Western", "Luxury", "Dinner"],
+      "serving_time": "Dinner"
+    },
+    {
+      "id": 98,
+      "name": "Beef Teriyaki with Pumpkin Rice",
+      "price": 42.3,
+      "ingredients": ["beef", "teriyaki sauce", "pumpkin", "rice"],
+      "tags": ["Japanese", "Autumn Special", "Dinner"],
+      "serving_time": "Dinner"
+    },
+    {
+      "id": 99,
+      "name": "Pork Cartilage Pearl Rice",
+      "price": 38.2,
+      "ingredients": ["pork cartilage", "pearl rice", "crispy shallots", "pickled radish"],
+      "tags": ["Cantonese", "Comfort Food", "Lunch"],
+      "serving_time": "Lunch"
+    },
+
+    {
+      "id": 100,
+      "name": "kujiwara Chicken Ramen",
+      "price": 34.0,
+      "ingredients": ["ramen", "chicken", "black fungus", "spring onion"],
+      "tags": ["Japanese", "Ramen", "All-Day"],
+      "serving_time": "All-Day"
+    },
+    {
+      "id": 101,
+      "name": "Spicy Beef Ramen",
+      "price": 34.0,
+      "ingredients": ["ramen", "beef", "chili oil", "garlic"],
+      "tags": ["spicy", "Japanese", "Dinner"],
+      "serving_time": "Dinner"
+    },
+    {
+      "id": 102,
+      "name": "Japanese Curry Chicken Hamburg Rice",
+      "price": 42.3,
+      "ingredients": ["curry", "chicken patty", "cheese", "rice"],
+      "tags": ["Japanese", "Comfort Food", "Lunch"],
+      "serving_time": "Lunch"
+    },
+    {
+      "id": 103,
+      "name": "Curry Pumpkin Potato Wild Vegetable Rice",
+      "price": 34.0,
+      "ingredients": ["curry", "pumpkin", "potato", "vegetables"],
+      "tags": ["vegetarian", "Japanese", "Lunch"],
+      "serving_time": "Lunch"
+    },
+    {
+      "id": 104,
+      "name": "Fusilli in Tomato Soup with Deep-fried Fish Fillet",
+      "price": 32.0,
+      "ingredients": ["fusilli", "tomato", "beef", "fish fillet"],
+      "tags": ["Western", "Combo", "Lunch"],
+      "serving_time": "Lunch"
+    },
+    {
+      "id": 105,
+      "name": "Sliced Veal Sausage Macaroni in Tomato Soup",
+      "price": 19.6,
+      "ingredients": ["veal sausage", "macaroni", "tomato soup"],
+      "tags": ["Western", "Breakfast", "All-Day"],
+      "serving_time": "All-Day"
+    },
+    
+    {
+      "id": 106,
+      "name": "Fried Noodle with Chicken Steak and Sausage",
+      "price": 28.9,
+      "ingredients": ["noodles", "chicken steak", "sausage", "soy sauce"],
+      "tags": ["savory", "Cantonese", "Lunch"],
+      "serving_time": "Lunch"
+    },
+    {
+      "id": 107,
+      "name": "Macaroni with Tomato Beef Soup and Chicken Steak",
+      "price": 35.1,
+      "ingredients": ["macaroni", "tomato", "beef", "chicken steak"],
+      "tags": ["Western", "Combo", "Lunch"],
+      "serving_time": "Lunch"
+    },
+    {
+      "id": 108,
+      "name": "Rice Macaroni Soup with Minced Pork and Dim Sum Platter",
+      "price": 29.9,
+      "ingredients": ["rice macaroni", "minced pork", "pork bun", "turnip cake"],
+      "tags": ["Cantonese", "Breakfast", "Dim Sum"],
+      "serving_time": "Breakfast"
+    },
+    {
+      "id": 109,
+      "name": "Penne with Sweet Corn Chicken in Cream Soup",
+      "price": 34.0,
+      "ingredients": ["penne", "sweet corn", "chicken", "cream"],
+      "tags": ["creamy", "Western", "Lunch"],
+      "serving_time": "Lunch"
+    },
+    {
+      "id": 110,
+      "name": "Beef Teriyaki with Pumpkin Potato Cake Rice",
+      "price": 42.3,
+      "ingredients": ["beef", "teriyaki sauce", "pumpkin", "rice"],
+      "tags": ["Japanese", "Combo", "Dinner"],
+      "serving_time": "Dinner"
+    },
+    {
+      "id": 111,
+      "name": "Kimchi Pork with Spicy Fried Chicken Rice Bowl",
+      "price": 42.3,
+      "ingredients": ["kimchi", "pork", "fried chicken", "rice"],
+      "tags": ["spicy", "Korean", "Dinner"],
+      "serving_time": "Dinner"
+    },
+    {
+      "id": 112,
+      "name": "Grilled Salmon with Pearl Rice and Pickled Vegetables",
+      "price": 38.2,
+      "ingredients": ["salmon", "pearl rice", "pickles", "sesame seeds"],
+      "tags": ["grilled", "Japanese", "Lunch"],
+      "serving_time": "Lunch"
+    },
+    {
+      "id": 113,
+      "name": "Beef Sukiyaki Hot Pot with Udon",
+      "price": 44.4,
+      "ingredients": ["beef", "udon", "tofu", "sukiyaki sauce"],
+      "tags": ["hot pot", "Japanese", "Dinner"],
+      "serving_time": "Dinner"
+    },
+    {
+      "id": 114,
+      "name": "Spicy Kimchi Pork Jjigae with Tofu",
+      "price": 44.4,
+      "ingredients": ["kimchi", "pork belly", "tofu", "rice"],
+      "tags": ["spicy", "Korean", "Dinner"],
+      "serving_time": "Dinner"
+    },
+    {
+      "id": 115,
+      "name": "Japanese Wagyu Patty with Cheese Rice Bowl",
+      "price": 42.3,
+      "ingredients": ["wagyu patty", "cheese", "rice", "teriyaki sauce"],
+      "tags": ["Japanese", "Luxury", "Dinner"],
+      "serving_time": "Dinner"
+    },
+    {
+      "id": 116,
+      "name": "Mixed Mushroom Congee",
+      "price": 10.8,
+      "ingredients": ["assorted mushrooms", "rice", "ginger"],
+      "tags": ["vegetarian", "Cantonese", "Breakfast"],
+      "serving_time": "Breakfast"
+    },
+    {
+      "id": 117,
+      "name": "Pan-fried Turnip Cake with Soy Sauce",
+      "price": 11.9,
+      "ingredients": ["turnip cake", "soy sauce", "spring onion"],
+      "tags": ["Dim Sum", "Cantonese", "All-Day"],
+      "serving_time": "All-Day"
+    },
+    {
+      "id": 118,
+      "name": "Steamed Glutinous Rice with Chicken",
+      "price": 23.7,
+      "ingredients": ["glutinous rice", "chicken", "lotus leaf"],
+      "tags": ["Cantonese", "Dim Sum", "Lunch"],
+      "serving_time": "Lunch"
+    },
+    {
+      "id": 119,
+      "name": "Deep-fried Fish Fillet with Scrambled Egg",
+      "price": 25.8,
+      "ingredients": ["fish fillet", "egg", "batter"],
+      "tags": ["fried", "Cantonese", "Lunch"],
+      "serving_time": "Lunch"
+    },
+    {
+      "id": 120,
+      "name": "Satay Beef with Instant Noodle and Egg",
+      "price": 21.7,
+      "ingredients": ["beef", "instant noodles", "satay sauce", "egg"],
+      "tags": ["savory", "Cantonese", "Lunch"],
+      "serving_time": "Lunch"
+    },
+
+    {
+      "id": 121,
+      "name": "Sliced Sausage Fusilli in Lobster Bisque with Bacon",
+      "price": 23.7,
+      "ingredients": ["sausage", "fusilli", "lobster bisque", "bacon"],
+      "tags": ["Western", "Luxury", "Dinner"],
+      "serving_time": "Dinner"
+    },
+    {
+      "id": 122,
+      "name": "Oatmeal with Egg White and Toast",
+      "price": 13.1,
+      "ingredients": ["oatmeal", "egg white", "milk", "toast"],
+      "tags": ["healthy", "Western", "Breakfast"],
+      "serving_time": "Breakfast"
+    },
+    {
+      "id": 123,
+      "name": "Spicy Diced Pork with Rice Vermicelli",
+      "price": 19.6,
+      "ingredients": ["pork", "rice vermicelli", "chili oil", "bean sprouts"],
+      "tags": ["spicy", "Sichuan", "Lunch"],
+      "serving_time": "Lunch"
+    },
+    {
+      "id": 124,
+      "name": "Mock Abalone and Ham Macaroni Soup",
+      "price": 24.8,
+      "ingredients": ["mock abalone", "ham", "macaroni", "broth"],
+      "tags": ["Cantonese", "Breakfast", "Soup"],
+      "serving_time": "Breakfast"
+    },
+    {
+      "id": 125,
+      "name": "Satay Chicken Skewer with Peanut Sauce",
+      "price": 28.9,
+      "ingredients": ["chicken", "satay sauce", "peanut sauce", "rice"],
+      "tags": ["grilled", "Malaysian", "Dinner"],
+      "serving_time": "Dinner"
+    },
+    {
+      "id": 126,
+      "name": "Creamy Corn Chicken Penne Soup",
+      "price": 34.0,
+      "ingredients": ["penne", "sweet corn", "chicken", "cream"],
+      "tags": ["creamy", "Western", "Lunch"],
+      "serving_time": "Lunch"
+    },
+    {
+      "id": 127,
+      "name": "Teriyaki Chicken with Pumpkin Rice",
+      "price": 42.3,
+      "ingredients": ["chicken", "teriyaki sauce", "pumpkin", "rice"],
+      "tags": ["Japanese", "Autumn Special", "Dinner"],
+      "serving_time": "Dinner"
+    },
+    {
+      "id": 128,
+      "name": "Vegetarian Curry with Wild Rice",
+      "price": 34.0,
+      "ingredients": ["curry", "wild rice", "vegetables", "coconut milk"],
+      "tags": ["vegetarian", "Japanese", "Lunch"],
+      "serving_time": "Lunch"
+    },
+    {
+      "id": 129,
+      "name": "Seafood Miso Ramen with Clams",
+      "price": 32.0,
+      "ingredients": ["ramen", "clams", "miso broth", "nori"],
+      "tags": ["seafood", "Japanese", "All-Day"],
+      "serving_time": "All-Day"
+    },
+    {
+      "id": 130,
+      "name": "Pork Cartilage with Pickled Radish Rice",
+      "price": 36.1,
+      "ingredients": ["pork cartilage", "rice", "pickled radish", "soy glaze"],
+      "tags": ["savory", "Cantonese", "Lunch"],
+      "serving_time": "Lunch"
+    },
+    {
+      "id": 131,
+      "name": "Salted Fish and Peanut Congee",
+      "price": 10.8,
+      "ingredients": ["salted fish", "peanut", "rice", "ginger"],
+      "tags": ["Cantonese", "Congee", "Breakfast"],
+      "serving_time": "Breakfast"
+    },
+    {
+      "id": 132,
+      "name": "Steamed Beef Ball with Black Bean Sauce",
+      "price": 16.4,
+      "ingredients": ["beef ball", "black bean sauce", "soy sauce"],
+      "tags": ["Dim Sum", "Cantonese", "All-Day"],
+      "serving_time": "All-Day"
+    },
+    {
+      "id": 133,
+      "name": "Crispy Chicken with Pearl Rice and Seaweed",
+      "price": 38.2,
+      "ingredients": ["chicken", "pearl rice", "seaweed", "sesame"],
+      "tags": ["fried", "Japanese", "Lunch"],
+      "serving_time": "Lunch"
+    },
+    {
+      "id": 134,
+      "name": "Fish Dumpling with Chili Oil",
+      "price": 12.9,
+      "ingredients": ["fish dumpling", "chili oil", "soy sauce"],
+      "tags": ["spicy", "Dim Sum", "All-Day"],
+      "serving_time": "All-Day"
+    },
+    {
+      "id": 135,
+      "name": "Bitter Melon and Pork Ribs Soup",
+      "price": 10.8,
+      "ingredients": ["bitter melon", "pork ribs", "ginger", "broth"],
+      "tags": ["Cantonese", "Soup", "Dinner"],
+      "serving_time": "Dinner"
+    },
+    {
+      "id": 136,
+      "name": "Chicken Feet with Black Bean Sauce",
+      "price": 23.7,
+      "ingredients": ["chicken feet", "black bean sauce", "garlic"],
+      "tags": ["Dim Sum", "Cantonese", "All-Day"],
+      "serving_time": "All-Day"
+    },
+    {
+      "id": 137,
+      "name": "Scrambled Egg with Luncheon Meat Macaroni",
+      "price": 19.6,
+      "ingredients": ["macaroni", "egg", "luncheon meat", "broth"],
+      "tags": ["Western", "Breakfast", "All-Day"],
+      "serving_time": "All-Day"
+    },
+    {
+      "id": 138,
+      "name": "Sweet Potato Congee with Red Bean",
+      "price": 10.8,
+      "ingredients": ["sweet potato", "red bean", "rice", "sugar"],
+      "tags": ["vegetarian", "Cantonese", "Breakfast"],
+      "serving_time": "Breakfast"
+    },
+    {
+      "id": 139,
+      "name": "Japanese Tempura Shrimp Rice Bowl",
+      "price": 42.3,
+      "ingredients": ["shrimp", "tempura batter", "rice", "tonkatsu sauce"],
+      "tags": ["fried", "Japanese", "Dinner"],
+      "serving_time": "Dinner"
+    },
+    {
+      "id": 140,
+      "name": "Glutinous Rice with Chicken in Lotus Leaf",
+      "price": 23.7,
+      "ingredients": ["glutinous rice", "chicken", "lotus leaf"],
+      "tags": ["Cantonese", "Dim Sum", "Lunch"],
+      "serving_time": "Lunch"
+    },
+    {
+      "id": 141,
+      "name": "Satay Beef with Instant Noodles",
+      "price": 21.7,
+      "ingredients": ["beef", "instant noodles", "satay sauce"],
+      "tags": ["savory", "Cantonese", "Lunch"],
+      "serving_time": "Lunch"
+    },
+    {
+      "id": 142,
+      "name": "Spicy Diced Pork Rice Vermicelli",
+      "price": 19.6,
+      "ingredients": ["pork", "rice vermicelli", "chili oil"],
+      "tags": ["spicy", "Sichuan", "Lunch"],
+      "serving_time": "Lunch"
+    },
+
+    {
+      "id": 143,
+      "name": "Crispy Chicken with Pearl Rice",
+      "price": 38.2,
+      "ingredients": ["chicken", "pearl rice", "seaweed"],
+      "tags": ["fried", "Japanese", "Lunch"],
+      "serving_time": "Lunch"
+    },
+    {
+      "id": 144,
+      "name": "Fusilli in Tomato Soup with Pan-fried Chicken Steak",
+      "price": 32.00,
+      "ingredients": ["fusilli", "tomato", "beef", "chicken steak"],
+      "tags": ["Western", "Combo", "Lunch"],
+      "serving_time": "Lunch"
+    },
+  
+    {
+      "id": 145,
+      "name": "Fried Noodle with Deep-fried Fish Fillet",
+      "price": 28.90,
+      "ingredients": ["noodles", "fish fillet", "soy sauce"],
+      "tags": ["savory", "Cantonese", "Lunch"],
+      "serving_time": "Lunch"
+    },
+    {
+      "id": 146,
+      "name": "Macaroni with Minced Beef and Scrambled Egg",
+      "price": 33.00,
+      "ingredients": ["macaroni", "tomato", "beef", "egg"],
+      "tags": ["Western", "Combo", "Lunch"],
+      "serving_time": "Lunch"
+    },
+    {
+      "id": 147,
+      "name": "Rice Macaroni Soup with Dim Sum Platter",
+      "price": 29.90,
+      "ingredients": ["rice macaroni", "minced pork", "turnip cake", "fish dumpling"],
+      "tags": ["Cantonese", "Breakfast", "Dim Sum"],
+      "serving_time": "Breakfast"
+    },
+    {
+      "id": 148,
+      "name": "Teriyaki Beef with Pumpkin Potato Cake Rice",
+      "price": 42.30,
+      "ingredients": ["beef", "teriyaki sauce", "pumpkin", "rice"],
+      "tags": ["Japanese", "Combo", "Dinner"],
+      "serving_time": "Dinner"
+    },
+    {
+      "id": 149,
+      "name": "Sliced Beef Ramen with Bamboo Shoots",
+      "price": 34.00,
+      "ingredients": ["ramen", "beef", "bamboo shoots", "nori"],
+      "tags": ["Japanese", "Ramen", "Dinner"],
+      "serving_time": "Dinner"
+    },
+    {
+      "id": 150,
+      "name": "Japanese Seafood Ramen with Squid",
+      "price": 29.90,
+      "ingredients": ["ramen", "squid", "mussels", "miso broth"],
+      "tags": ["seafood", "Japanese", "All-Day"],
+      "serving_time": "All-Day"
+    },
+    {
+      "id": 151,
+      "name": "Rice Macaroni Soup with Minced Pork",
+      "price": 19.60,
+      "ingredients": ["rice macaroni", "minced pork", "broth"],
+      "tags": ["Cantonese", "Breakfast"],
+      "serving_time": "Breakfast"
+    },
+    {
+      "id": 152,
+      "name": "Chiu Chow Dumpling Platter with Fish Dumpling",
+      "price": 21.70,
+      "ingredients": ["Chiu Chow dumpling", "fish dumpling", "turnip cake"],
+      "tags": ["Dim Sum", "Cantonese", "Breakfast"],
+      "serving_time": "Breakfast"
+    },
+    {
+      "id": 153,
+      "name": "Curry Pumpkin Potato Cake Rice",
+      "price": 34.00,
+      "ingredients": ["curry", "pumpkin", "potato", "vegetables"],
+      "tags": ["vegetarian", "Japanese", "Lunch"],
+      "serving_time": "Lunch"
+    },
+    {
+      "id": 154,
+      "name": "Seafood Yosenabe Hot Pot with Tofu",
+      "price": 47.40,
+      "ingredients": ["seafood", "tofu", "napa cabbage", "soy milk broth"],
+      "tags": ["hot pot", "Japanese", "Dinner"],
+      "serving_time": "Dinner"
+    },
+    {
+      "id": 155,
+      "name": "Hot Pot Udon with Fish Cake",
+      "price": 4.30,
+      "ingredients": ["udon", "fish cake", "vegetables", "dashi broth"],
+      "tags": ["hot pot", "Japanese", "All-Day"],
+      "serving_time": "All-Day"
+    },
+    {
+      "id": 156,
+      "name": "Japanese Shrimp Ramen with Fish Cake",
+      "price": 32.00,
+      "ingredients": ["ramen", "shrimp", "fish cake", "seaweed"],
+      "tags": ["seafood", "Japanese", "Dinner"],
+      "serving_time": "Dinner"
+    },
+    {
+      "id": 157,
+      "name": "Kumamoto Chicken Ramen with Black Fungus",
+      "price": 34.00,
+      "ingredients": ["ramen", "chicken", "black fungus", "spring onion"],
+      "tags": ["Japanese", "Ramen", "All-Day"],
+      "serving_time": "All-Day"
+    },
+    {
+      "id": 158,
+      "name": "Pork Cartilage Ramen with Mushrooms",
+      "price": 34.00,
+      "ingredients": ["ramen", "pork cartilage", "mushrooms", "soy broth"],
+      "tags": ["Japanese", "Ramen", "Dinner"],
+      "serving_time": "Dinner"
+    },
+    {
+      "id": 159,
+      "name": "Japanese BBQ Pork Ramen with Egg",
+      "price": 34.00,
+      "ingredients": ["ramen", "bbq pork", "egg", "bean sprouts"],
+      "tags": ["Japanese", "Ramen", "Lunch"],
+      "serving_time": "Lunch"
+    },
+    
+    {
+      "id": 160,
+      "name": "Wild Mushroom Vegetable Ramen",
+      "price": 29.90,
+      "ingredients": ["ramen", "shiitake", "bok choy", "vegetable broth"],
+      "tags": ["vegetarian", "Japanese", "Lunch"],
+      "serving_time": "Lunch"
+    },
+    {
+      "id": 161,
+      "name": "Japanese Dumpling Chicken Skewer Ramen",
+      "price": 29.90,
+      "ingredients": ["ramen", "pork dumplings", "chicken skewer", "soy sauce"],
+      "tags": ["Japanese", "Combo", "Lunch"],
+      "serving_time": "Lunch"
+    },
+     {
+      "id": 162,
+      "name": "Preserved EggPork Congee TurnipCake",
+      "price": 19.6,
+      "ingredients": ["preserved egg", "lean pork", "rice", "radish"],
+      "tags": ["congee", "Cantonese"],
+      "serving_time": "Breakfast"
+    },
+    {
+      "id": 163,
+      "name": "Preserved EggPork Congee RiceVermicelli",
+      "price": 19.6,
+      "ingredients": ["preserved egg", "pork", "rice noodles"],
+      "tags": ["congee", "fried"],
+      "serving_time": "Breakfast"
+    },
+    {
+      "id": 164,
+      "name": "Leaf Mustard Pork Bone Congee",
+      "price": 10.8,
+      "ingredients": ["leaf mustard", "pork bone", "rice"],
+      "tags": ["congee", "savory"],
+      "serving_time": "All Day"
+    },
+    {
+      "id": 165,
+      "name": "Dried Oyster Sliced PorkCongee",
+      "price": 10.8,
+      "ingredients": ["dried oyster", "sliced pork", "rice"],
+      "tags": ["congee", "seafood"],
+      "serving_time": "All Day"
+    },
+    {
+      "id": 166,
+      "name": "Mushroom Salted Chicken Congee",
+      "price": 10.8,
+      "ingredients": ["shiitake mushroom", "salted chicken", "rice"],
+      "tags": ["congee", "protein"],
+      "serving_time": "All Day"
+    },
+    {
+      "id": 167,
+      "name": "Bonito Peanut Congee",
+      "price": 10.8,
+      "ingredients": ["dried bonito", "peanut", "rice"],
+      "tags": ["congee", "seafood"],
+      "serving_time": "All Day"
+    },
+    {
+      "id": 168,
+      "name": "Pan Fried PorkChop Steak",
+      "price": 25.8,
+      "ingredients": ["pork chop", "soy sauce", "garlic"],
+      "tags": ["grill", "protein"],
+      "serving_time": "Lunch"
+    },
+    {
+      "id": 169,
+      "name": "Deep Fried Fish Fillet_Ham",
+      "price": 25.8,
+      "ingredients": ["white fish", "ham", "tempura batter"],
+      "tags": ["fried", "seafood"],
+      "serving_time": "Dinner"
+    },
+    {
+      "id": 170,
+      "name": "Satay Beef Vermicelli Soup",
+      "price": 24.8,
+      "ingredients": ["beef", "satay sauce", "rice vermicelli"],
+      "tags": ["soup", "spicy"],
+      "serving_time": "Breakfast"
+    },
+    {
+      "id": 171,
+      "name": "Tomato Soup Macaroni LuncheonMeat",
+      "price": 19.6,
+      "ingredients": ["tomato", "luncheon meat", "macaroni"],
+      "tags": ["soup", "comfort"],
+      "serving_time": "Breakfast"
+    },
+    {
+      "id": 172,
+      "name": "Spicy Chicken RiceNoodle Dumpling",
+      "price": 32.0,
+      "ingredients": ["chicken", "chili oil", "rice noodle"],
+      "tags": ["spicy", "Sichuan"],
+      "serving_time": "Lunch"
+    },
+    {
+      "id": 173,
+      "name": "Steamed Glutinous Rice Chicken",
+      "price": 23.7,
+      "ingredients": ["glutinous rice", "chicken", "mushroom"],
+      "tags": ["steamed", "traditional"],
+      "serving_time": "Dinner"
+    },
+    {
+      "id": 174,
+      "name": "Preserved Vegetable Pork Macaroni",
+      "price": 17.5,
+      "ingredients": ["preserved vegetable", "pork", "macaroni"],
+      "tags": ["soup", "savory"],
+      "serving_time": "Breakfast"
+    },
+    {
+      "id": 175,
+      "name": "Wagyu Patty Scrambled Egg",
+      "price": 29.9,
+      "ingredients": ["wagyu beef", "egg", "toast"],
+      "tags": ["premium", "fusion"],
+      "serving_time": "Dinner"
+    },
+    {
+      "id": 176,
+      "name": "Bitter Melon Pork Ribs Congee",
+      "price": 10.8,
+      "ingredients": ["bitter melon", "pork ribs", "rice"],
+      "tags": ["congee", "health"],
+      "serving_time": "All Day"
+    },
+    {
+      "id": 177,
+      "name": "Mock Abalone Chicken Congee",
+      "price": 10.8,
+      "ingredients": ["mock abalone", "chicken", "rice"],
+      "tags": ["congee", "vegetarian"],
+      "serving_time": "All Day"
+    },
+    {
+      "id": 178,
+      "name": "Salted Fish Peanut Ribs Congee",
+      "price": 10.8,
+      "ingredients": ["salted fish", "peanut", "pork ribs"],
+      "tags": ["congee", "strong"],
+      "serving_time": "All Day"
+    },
+    {
+      "id": 179,
+      "name": "ThreeShreds Fried Noodles",
+      "price": 11.9,
+      "ingredients": ["pork", "carrot", "egg noodle"],
+      "tags": ["stir-fry", "quick"],
+      "serving_time": "Lunch"
+    },
+    {
+      "id": 180,
+      "name": "Lotus Seed Paste Bun Set",
+      "price": 21.7,
+      "ingredients": ["lotus seed", "wheat flour", "sugar"],
+      "tags": ["dimsum", "sweet"],
+      "serving_time": "Breakfast"
+    },
+    {
+      "id": 181,
+      "name": "Beef Ball Black Pepper",
+      "price": 16.4,
+      "ingredients": ["beef", "black pepper", "soy sauce"],
+      "tags": ["steamed", "snack"],
+      "serving_time": "All Day"
+    },
+    {
+      "id": 182,
+      "name": "Steamed Mock Abalone Chicken Congee",
+      "price": 10.8,
+      "ingredients": ["mock abalone", "chicken", "rice"],
+      "tags": ["congee", "vegetarian"],
+      "serving_time": "All Day"
+    },
+    {
+      "id": 183,
+      "name": "Salted Fish Peanut Ribs Congee",
+      "price": 10.8,
+      "ingredients": ["salted fish", "peanut", "pork ribs"],
+      "tags": ["congee", "strong"],
+      "serving_time": "All Day"
+    },
+    {
+      "id": 184,
+      "name": "Triple Shred Fried Rice Vermicelli",
+      "price": 11.9,
+      "ingredients": ["pork", "carrot", "rice vermicelli"],
+      "tags": ["stir-fry", "quick"],
+      "serving_time": "Lunch"
+    },
+    {
+      "id": 185,
+      "name": "Lotus Seed Bun Breakfast Set",
+      "price": 21.7, 
+      "ingredients": ["lotus seed", "wheat flour", "sugar"],
+      "tags": ["dimsum", "sweet"],
+      "serving_time": "Breakfast"
+    },
+    {
+      "id": 186,
+      "name": "Black Pepper Beef Ball Steamed",
+      "price": 16.4,
+      "ingredients": ["beef", "black pepper", "soy sauce"],
+      "tags": ["steamed", "snack"],
+      "serving_time": "All Day"
+    },
+    {
+      "id": 187,
+      "name": "Crispy Fish Cake Congee",
+      "price": 10.8,
+      "ingredients": ["white fish", "rice", "ginger"],
+      "tags": ["congee", "seafood"],
+      "serving_time": "All Day"
+    },
+    {
+      "id": 188,
+      "name": "Golden CornMock Chicken Congee",
+      "price": 10.8,
+      "ingredients": ["sweet corn", "mock chicken", "rice"],
+      "tags": ["congee", "vegetarian"],
+      "serving_time": "All Day"
+    },
+    {
+      "id": 189,
+      "name": "Pumpkin Pork Rib Congee",
+      "price": 10.8,
+      "ingredients": ["pumpkin", "pork ribs", "rice"],
+      "tags": ["congee", "comfort"],
+      "serving_time": "All Day"
+    },
+    {
+      "id": 190,
+      "name": "Watercress Pork Cartilage Congee",
+      "price": 10.8,
+      "ingredients": ["watercress", "pork cartilage", "rice"],
+      "tags": ["congee", "herbal"],
+      "serving_time": "All Day"
+    },
+    {
+      "id": 191,
+      "name": "Double Mushroom Chicken Congee",
+      "price": 10.8,
+      "ingredients": ["shiitake", "button mushroom", "chicken"],
+      "tags": ["congee", "umami"],
+      "serving_time": "All Day"
+    },
+    {
+      "id": 192,
+      "name": "Salted EggPork Congee Special",
+      "price": 10.8,
+      "ingredients": ["salted egg", "pork", "rice"],
+      "tags": ["congee", "savory"],
+      "serving_time": "All Day"
+    },
+    {
+      "id": 193,
+      "name": "Spicy Chicken Feet Steamed Rice",
+      "price": 23.7,
+      "ingredients": ["chicken feet", "glutinous rice", "chili"],
+      "tags": ["steamed", "spicy"],
+      "serving_time": "Dinner"
+    },
+    {
+      "id": 194,
+      "name": "Cantonese Wonton Noodle Soup",
+      "price": 24.8,
+      "ingredients": ["shrimp", "pork", "egg noodle"],
+      "tags": ["soup", "classic"],
+      "serving_time": "Lunch"
+    },
+    {
+      "id": 195,
+      "name": "Crispy Pork Belly RiceSet",
+      "price": 29.9,
+      "ingredients": ["pork belly", "jasmine rice", "soy sauce"],
+      "tags": ["fried", "premium"],
+      "serving_time": "Dinner"
+    },
+    {
+      "id": 196,
+      "name": "Lotus Leaf Glutinous RiceWrap",
+      "price": 23.7,
+      "ingredients": ["glutinous rice", "chicken", "lotus leaf"],
+      "tags": ["steamed", "traditional"],
+      "serving_time": "Dinner"
+    },
+    {
+      "id": 197,
+      "name": "Sichuan Peppercorn Beef Noodle",
+      "price": 32.0,
+      "ingredients": ["beef", "Sichuan pepper", "wheat noodle"],
+      "tags": ["soup", "numbing"],
+      "serving_time": "Lunch"
+    },
+    {
+      "id": 198,
+      "name": "Golden Garlic Scallop Congee",
+      "price": 15.8,
+      "ingredients": ["scallop", "garlic", "rice"],
+      "tags": ["congee", "luxury"],
+      "serving_time": "All Day"
+    },
+    {
+      "id": 199,
+      "name": "Truffle Mushroom Vegetable Congee",
+      "price": 12.8,
+      "ingredients": ["truffle", "mixed mushroom", "rice"],
+      "tags": ["congee", "aromatic"],
+      "serving_time": "All Day"
+    },
+    {
+      "id": 200,
+      "name": "Honey Glazed CharSiuBao",
+      "price": 14.9,
+      "ingredients": ["barbecue pork", "honey", "wheat flour"],
+      "tags": ["dimsum", "caramelized"],
+      "serving_time": "Breakfast"
+    },
+    {
+      "id": 201,
+      "name": "Dried Vegetable Pork BoneCongee",
+      "price": 10.8,
+      "ingredients": ["dried vegetables", "pork bone", "rice"],
+      "tags": ["congee", "vegetable"],
+      "serving_time": "All Day"
+    },
+    {
+      "id": 202,
+      "name": "Salted Fish Peanut Pork Ribs Congee",
+      "price": 10.8,
+      "ingredients": ["salted fish", "peanut", "pork ribs", "rice"],
+      "tags": ["congee", "savory"],
+      "serving_time": "All Day"
+    },
+    {
+      "id": 203,
+      "name": "Steamed Glutinous Rice With Chicken",
+      "price": 23.7,
+      "ingredients": ["glutinous rice", "chicken", "mushroom"],
+      "tags": ["dimsum", "traditional"],
+      "serving_time": "Dinner"
+    },
+    {
+      "id": 204,
+      "name": "Pan Fried Pork Chop WithHam",
+      "price": 25.8,
+      "ingredients": ["pork chop", "ham", "soy sauce"],
+      "tags": ["grill", "protein"],
+      "serving_time": "Lunch"
+    },
+    {
+      "id": 205,
+      "name": "Satay Beef Vermicelli Soup",
+      "price": 24.8,
+      "ingredients": ["beef", "satay sauce", "rice vermicelli"],
+      "tags": ["soup", "spicy"],
+      "serving_time": "Breakfast"
+    },
+    {
+      "id": 206,
+      "name": "Sweet Corn Mock Chicken Congee",
+      "price": 10.8,
+      "ingredients": ["sweet corn", "mock chicken", "rice"],
+      "tags": ["congee", "vegetarian"],
+      "serving_time": "All Day"
+    },
+    {
+      "id": 207,
+      "name": "Assorted Mushroom Fish Congee",
+      "price": 10.8,
+      "ingredients": ["assorted mushrooms", "sliced fish", "rice"],
+      "tags": ["congee", "seafood"],
+      "serving_time": "All Day"
+    },
+    {
+      "id": 208,
+      "name": "Steamed Beef BallBlack Pepper",
+      "price": 16.4,
+      "ingredients": ["beef", "black pepper", "soy sauce"],
+      "tags": ["steamed", "snack"],
+      "serving_time": "All Day"
+    },
+    {
+      "id": 209,
+      "name": "Pumpkin Pork Ribs Congee",
+      "price": 10.8,
+      "ingredients": ["pumpkin", "pork ribs", "rice"],
+      "tags": ["congee", "comfort"],
+      "serving_time": "All Day"
+    },
+    {
+      "id": 210,
+      "name": "Spicy Chicken Rice Noodle Soup",
+      "price": 32.0,
+      "ingredients": ["chicken", "chili oil", "rice noodle"],
+      "tags": ["soup", "Sichuan"],
+      "serving_time": "Lunch"
+    },
+    {
+      "id": 211,
+      "name": "Shredded Pork Pickled Mustard Noodle",
+      "price": 17.5,
+      "ingredients": ["shredded pork", "pickled mustard", "noodle"],
+      "tags": ["savory", "quick"],
+      "serving_time": "Breakfast"
+    }
+  ]
+}
