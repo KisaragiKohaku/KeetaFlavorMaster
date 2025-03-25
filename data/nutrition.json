@@ -24,7 +24,7 @@
       "protein": 18,
       "carbs": 65,
       "fat": 15,
-      "allergens": ["wheat"],
+      "allergens": ["wheat", "soy"],
       "description": "Soy sauce fried noodles"
     },
     {
@@ -114,7 +114,7 @@
       "protein": 10,
       "carbs": 55,
       "fat": 8,
-      "allergens": ["wheat"],
+      "allergens": ["wheat", "soy"],
       "description": "Bean sprout stir-fried noodles"
     },
     
@@ -628,7 +628,7 @@
       "protein": 28,
       "carbs": 70,
       "fat": 28,
-      "allergens": ["fish", "wheat"],
+      "allergens": ["fish", "wheat", "soy"],
       "description": "Crispy fried fish fillet served with soy sauce noodles"
     },
     {
@@ -745,7 +745,7 @@
       "protein": 30,
       "carbs": 60,
       "fat": 24,
-      "allergens": ["wheat", "pork"],
+      "allergens": ["wheat", "pork", "soy"],
       "description": "Ramen combo with chicken skewers and pork dumplings in soy-flavored broth"
     },
     {
@@ -1055,7 +1055,7 @@
       "protein": 8,
       "carbs": 40,
       "fat": 12,
-      "allergens": ["wheat"],
+      "allergens": ["wheat", "soy"],
       "description": "Pan-fried turnip cake with crispy edges, served with soy sauce and spring onions"
     },
     {
@@ -1073,7 +1073,7 @@
       "protein": 30,
       "carbs": 60,
       "fat": 25,
-      "allergens": ["fish", "wheat"],
+      "allergens": ["fish", "wheat", "soy"],
       "description": "Crispy fried fish fillet with soft scrambled eggs and soy sauce"
     },
     {
@@ -1163,7 +1163,7 @@
       "protein": 25,
       "carbs": 58,
       "fat": 18,
-      "allergens": ["shellfish", "wheat"],
+      "allergens": ["shellfish", "wheat", "soy"],
       "description": "Seafood miso ramen with clams and nori in fermented soybean broth"
     },
     {
@@ -1208,7 +1208,7 @@
       "protein": 10,
       "carbs": 25,
       "fat": 6,
-      "allergens": ["fish", "wheat"],
+      "allergens": ["fish", "wheat", "soy"],
       "description": "Fish dumplings drizzled with spicy chili oil and soy sauce"
     },
     {
@@ -1424,7 +1424,7 @@
       "protein": 35,
       "carbs": 70,
       "fat": 25,
-      "allergens": ["pork", "wheat"],
+      "allergens": ["pork", "wheat", "soy"],
       "description": "Slow-cooked pork cartilage ramen with mushrooms in soy-based broth"
     },
     {
@@ -1451,7 +1451,7 @@
       "protein": 30,
       "carbs": 60,
       "fat": 24,
-      "allergens": ["wheat", "pork"],
+      "allergens": ["wheat", "pork", "soy"],
       "description": "Ramen with chicken skewers, pork dumplings, and soy-flavored broth"
     },
      {
@@ -1469,7 +1469,7 @@
       "protein": 15,
       "carbs": 60,
       "fat": 8,
-      "allergens": ["wheat"],
+      "allergens": ["wheat", "soy"],
       "description": "Thick rice porridge with preserved egg and shredded pork, served with stir-fried rice vermicelli cooked in soy sauce and sesame oil"
     },
     {

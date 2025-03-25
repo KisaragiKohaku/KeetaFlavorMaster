@@ -10,6 +10,7 @@ import re
 
 logger = logging.getLogger(__name__)
 
+
 def _format_document(dish, item):
     return (
         f"Dish: {dish['name']}\n"
@@ -24,6 +25,7 @@ def _format_document(dish, item):
         f"Allergens: {item['allergens']}\n"
         f"Description: {item['description']}"
     )
+
 
 class NutritionRetriever:
     def __init__(self):
@@ -101,8 +103,6 @@ class NutritionRetriever:
             logger.error(f"Failed to load Nutrition data: {str(e)}")
             raise
 
-
-
     # nutrition related function
     def _build_allergen_lookup(self):
         self.dish_allergen_map = {}
@@ -130,7 +130,6 @@ class NutritionRetriever:
             if re.search(rf"\b(allergic to|no|avoid|don’t eat|cannot eat|can’t eat)\s+{plural}\b", query):
                 found.append(allergen)
         return list(set(found))
-
 
     # price related function
     def parse_price(self, value):
@@ -186,13 +185,17 @@ class NutritionRetriever:
                     break
                 return {"type": "gt", "value": value}
 
-        if re.search(r'cheapest|least expensive|lowest price|lowest priced', query_lower) or "最便宜" in query_lower or "价格最低" in query_lower:
+        if re.search(r'cheapest|least expensive|lowest price|lowest priced',
+                     query_lower) or "最便宜" in query_lower or "价格最低" in query_lower:
             return {"type": "min"}
-        if re.search(r'most expensive|priciest|costliest', query_lower) or "最高价" in query_lower or "最贵" in query_lower or "价格最高" in query_lower or "最昂贵" in query_lower:
+        if re.search(r'most expensive|priciest|costliest',
+                     query_lower) or "最高价" in query_lower or "最贵" in query_lower or "价格最高" in query_lower or "最昂贵" in query_lower:
             return {"type": "max"}
 
-        low_keywords = ["cheap", "affordable", "economical", "budget", "inexpensive", "low price", "most affordable", "实惠", "平价", "便宜"]
-        high_keywords = ["expensive", "premium", "luxurious", "luxury", "pricey", "most luxurious", "昂贵", "奢侈", "奢华", "高档"]
+        low_keywords = ["cheap", "affordable", "economical", "budget", "inexpensive", "low price", "most affordable",
+                        "实惠", "平价", "便宜"]
+        high_keywords = ["expensive", "premium", "luxurious", "luxury", "pricey", "most luxurious", "昂贵", "奢侈",
+                         "奢华", "高档"]
         if any(k in query_lower for k in low_keywords):
             return {"type": "low"}
         if any(k in query_lower for k in high_keywords):
@@ -237,8 +240,6 @@ class NutritionRetriever:
 
         return dishes
 
-
-    
     def search(self, query: str, k: int = 2) -> Dict[str, Union[List[str], List[dict]]]:
         try:
             query_embed = self.encoder.encode(query, normalize_embeddings=True)
@@ -272,7 +273,6 @@ class NutritionRetriever:
                     )
                 ]
                 logger.info(f"{len(matched_dishes)} dishes remain after excluding allergens: {excluded_allergens}")
-
 
             # Step 5: price filtering
             if filter_info and matched_dishes:
