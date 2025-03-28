@@ -186,16 +186,14 @@ class NutritionRetriever:
                 return {"type": "gt", "value": value}
 
         if re.search(r'cheapest|least expensive|lowest price|lowest priced',
-                     query_lower) or "最便宜" in query_lower or "价格最低" in query_lower:
+                     query_lower):
             return {"type": "min"}
         if re.search(r'most expensive|priciest|costliest',
-                     query_lower) or "最高价" in query_lower or "最贵" in query_lower or "价格最高" in query_lower or "最昂贵" in query_lower:
+                     query_lower):
             return {"type": "max"}
 
-        low_keywords = ["cheap", "affordable", "economical", "budget", "inexpensive", "low price", "most affordable",
-                        "实惠", "平价", "便宜"]
-        high_keywords = ["expensive", "premium", "luxurious", "luxury", "pricey", "most luxurious", "昂贵", "奢侈",
-                         "奢华", "高档"]
+        low_keywords = ["cheap", "affordable", "economical", "budget", "inexpensive", "low price", "most affordable"]
+        high_keywords = ["expensive", "premium", "luxurious", "luxury", "pricey", "most luxurious"]
         if any(k in query_lower for k in low_keywords):
             return {"type": "low"}
         if any(k in query_lower for k in high_keywords):
