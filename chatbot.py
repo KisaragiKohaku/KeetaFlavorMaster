@@ -102,16 +102,28 @@ class FoodChatBot:
         return f"[INST] {system_prompt} [/INST]\n\n[INST] {query} [/INST]"
 
     def generate_response(self, query, context):
-        prompt = self._build_prompt(query, context)
-
         try:
-            for token in self.llm(prompt,
-                                  temperature=0.85,
-                                  top_p=0.9,
-                                  stream=True,
-                                  stop=["</s>", "[/INST]", "<|im_end|>"]):
-                yield token
-
+            prompt = self._build_prompt(query, context)
+            headers = {
+                "Authorization": f"Bearer {DEEPSEEK_API_KEY}",
+                "Content-Type": "application/json"
+            }
+        
+            data = {
+                "model": "deepseek-chat",
+                "messages": [{"role": "user", "content": prompt}],
+                "temperature": 0.85,
+                "max_tokens": 500,
+                "stream": True
+            }
+        
+            response = requests.post(DEEPSEEK_URL, headers=headers, json=data, stream=True)
+        
+            for line in response.iter_lines():
+                if line:
+                    content = json.loads(line.decode('utf-8'))['choices'][0]['delta'].get('content', '')
+                    yield content
+        
         except Exception as e:
-            logger.error(f"Generation error: {str(e)}")
-            yield f"⚠️ Error generating response: {str(e)}"
+                logger.error(f"Generation error: {str(e)}")
+                yield f"⚠️ Error generating response: {str(e)}"
