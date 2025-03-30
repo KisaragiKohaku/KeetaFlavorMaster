@@ -6,6 +6,12 @@ import sys
 import asyncio
 import torch
 
+from dotenv import load_dotenv
+
+load_dotenv()  # 这一步会自动加载项目根目录的.env文件
+DEEPSEEK_API_KEY = os.getenv("DEEPSEEK_API_KEY")
+
+
 
 # 在 Streamlit 初始化之前设置 Windows 事件循环策略
 if sys.platform == "win32":
