@@ -1,5 +1,5 @@
 from chromadb.api.types import IncludeEnum
-from typing import List, Dict, Union, Optional
+from typing import List, Dict, Union
 from sentence_transformers import SentenceTransformer
 from intent_parser import parse_intent
 import chromadb
@@ -10,21 +10,6 @@ import os
 import re
 
 logger = logging.getLogger(__name__)
-
-def _format_document(dish, item):
-    return (
-        f"Dish: {dish['name']}\n"
-        f"Price: {dish['price']}HKD\n"
-        f"Ingredients: {dish['ingredients']}\n"
-        f"Tags: {dish['tags']}\n"
-        f"Serving Time: {dish['serving_time']}\n"
-        f"Calories: {item['calories']}kcal\n"
-        f"Protein: {item['protein']}g\n"
-        f"Carbs: {item['carbs']}g\n"
-        f"Fat: {item['fat']}\n"
-        f"Allergens: {item['allergens']}\n"
-        f"Description: {item['description']}"
-    )
 
 
 class NutritionRetriever:
@@ -47,6 +32,7 @@ class NutritionRetriever:
 
         self._init_collection()
         self._build_allergen_lookup()
+        self._load_nutrition_dict()
 
     def _init_collection(self):
         try:
@@ -65,6 +51,31 @@ class NutritionRetriever:
         except Exception as e:
             logger.error(f"Failed to initialize collection: {str(e)}")
             raise
+
+    def _load_nutrition_dict(self):
+        self.nutrition_dict = {}
+        try:
+            with open("data/nutrition.json") as f:
+                nutrition_data = json.load(f)["nutrition_data"]
+                self.nutrition_dict = {item["dish_id"]: item for item in nutrition_data}
+            logger.info(f"Successfully loaded {len(self.nutrition_dict)} nutrition records into dictionary.")
+        except Exception as e:
+            logger.error(f"Failed to load nutrition data dictionary: {str(e)}")
+
+    def format_dish_info(self, dish, nutrition):
+        return (
+            f"Dish: {dish['name']}\n"
+            f"Price: {dish['price']} HKD\n"
+            f"Ingredients: {', '.join(dish['ingredients'])}\n"
+            f"Tags: {', '.join(dish['tags'])}\n"
+            f"Serving Time: {dish['serving_time']}\n"
+            f"Calories: {nutrition['calories']} kcal\n"
+            f"Protein: {nutrition['protein']} g\n"
+            f"Carbs: {nutrition['carbs']} g\n"
+            f"Fat: {nutrition['fat']} g\n"
+            f"Allergens: {', '.join(nutrition['allergens'])}\n"
+            f"Description: {nutrition['description']}"
+        )
 
     def _load_menu_data(self):
         logger.info("Loading Menu data...")
@@ -85,7 +96,7 @@ class NutritionRetriever:
             documents, metadatas, ids = [], [], []
             for item in nutrition_data:
                 if dish := self.menu_dict.get(item["dish_id"]):
-                    documents.append(_format_document(dish, item))
+                    documents.append(self.format_dish_info(dish, item))
                     metadatas.append({"dish_id": item["dish_id"]})
                     ids.append(str(item["dish_id"]))
 
@@ -103,31 +114,54 @@ class NutritionRetriever:
             logger.error(f"Failed to load Nutrition data: {str(e)}")
             raise
 
-    def search(self, query: str, k: int = 2) -> Dict[str, Union[List[str], List[dict]]]:
+    def _build_allergen_lookup(self):
+        self.dish_allergen_map = {}
+        try:
+            with open("data/nutrition.json") as f:
+                nutrition_data = json.load(f)["nutrition_data"]
+                for item in nutrition_data:
+                    self.dish_allergen_map[item["dish_id"]] = [a.lower() for a in item.get("allergens", [])]
+        except Exception as e:
+            logger.error(f"Failed to load allergen info: {str(e)}")
+
+    def parse_price(self, value):
+        try:
+            return float(re.sub(r"[^\d.]", "", str(value)))
+        except:
+            return float("inf")
+
+    def get_nutrition_data(self, dish_id):
+        return self.nutrition_dict.get(dish_id, {
+            "calories": "N/A",
+            "protein": "N/A",
+            "carbs": "N/A",
+            "fat": "N/A",
+            "allergens": [],
+            "description": "No description available"
+        })
+
+    def search(self, query: str, k: int = 10) -> Dict[str, Union[List[str], List[dict]]]:
         try:
             intent_data = json.loads(parse_intent(query))
-        
-            # 提取过敏原
             excluded_allergens = intent_data.get('allergens', [])
-        
-            # 提取价格过滤信息
             price_range = intent_data.get('price_range', None)
-        
-            # 向量检索
+
+            # Step 1: 向量检索
             query_embed = self.encoder.encode(query, normalize_embeddings=True)
             results = self.collection.query(
                 query_embeddings=[query_embed.tolist()],
                 n_results=k,
                 include=[IncludeEnum.documents, IncludeEnum.metadatas]
             )
-        
+
             matched_dishes = [
                 self.menu_dict[meta["dish_id"]]
                 for meta in results["metadatas"][0]
                 if meta["dish_id"] in self.menu_dict
             ]
-        
-            # 根据DeepSeek的过敏原过滤
+            logger.info(f"{len(matched_dishes)} dishes matched vector search")
+
+            # Step 2: 过敏原过滤
             if excluded_allergens:
                 matched_dishes = [
                     dish for dish in matched_dishes
@@ -136,21 +170,27 @@ class NutritionRetriever:
                         for allergen in excluded_allergens
                     )
                 ]
-        
-            # 根据DeepSeek的价格过滤
-            if price_range:
+                logger.info(f"{len(matched_dishes)} dishes remain after allergen filtering: {excluded_allergens}")
+
+            # Step 3: 价格过滤
+            if price_range and matched_dishes:
                 matched_dishes = [
                     dish for dish in matched_dishes
-                    if price_range["min"] <= self.parse_price(dish.get("price")) <= price_range["max"]
+                    if price_range.get("min", 0) <= self.parse_price(dish.get("price")) <= price_range.get("max",
+                                                                                                           float("inf"))
                 ]
-        
-            documents = [self.format_dish_info(d) for d in matched_dishes]
-        
+                logger.info(f"{len(matched_dishes)} dishes remain after price filtering: {price_range}")
+
+            # Step 4: 构建文档（只基于最终保留的 matched_dishes）
+            if matched_dishes:
+                documents = [self.format_dish_info(d, self.get_nutrition_data(d["id"])) for d in matched_dishes]
+            else:
+                documents = ["No matching dishes found based on your preferences."]
+
             return {
-                "documents": documents if documents else ["No matching dishes found based on your query."],
+                "documents": documents,
                 "dishes": matched_dishes
             }
-
 
         except Exception as e:
             logger.error(f"Failed to search: {str(e)}")

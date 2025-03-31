@@ -8,6 +8,9 @@ import json
 logging.basicConfig(format='%(asctime)s - %(levelname)s - %(message)s', level=logging.INFO)
 logger = logging.getLogger(__name__)
 
+DEEPSEEK_API_KEY = os.getenv("DEEPSEEK_API_KEY")
+DEEPSEEK_URL = "https://api.deepseek.com/chat/completions"
+
 
 def _validate_file(path, name):
     if not os.path.exists(path):
@@ -56,18 +59,6 @@ class FoodChatBot:
         self.llm = _init_model(model_path)
         self.menu = _load_menu()
 
-        self._warmup_model()
-
-    def _warmup_model(self):
-        """模型预加载"""
-        logger.info("Warm up the model...")
-        try:
-            fake_prompt = "[INST] Warm-up Test [/INST]\n\n[INST] Query Test [/INST]"
-            for _ in self.llm(fake_prompt, stream=True, max_new_tokens=1):
-                pass
-        except Exception as e:
-            logger.warning(f"Error during warm-up: {str(e)}")
-
     def _build_prompt(self, query, context):
         menu_str = "\n".join(
             f"{d['id']}. {d['name']} ({d['price']}HKD) - {', '.join(d['tags'])}"
@@ -80,50 +71,87 @@ class FoodChatBot:
         ]
         context_str = "\n".join(context_items) if context_items else "No relevant data found."
 
-        system_prompt = f"""You are a professional dining assistant and must strictly follow these rules:
-1. Answer only using the provided menu and nutrition data.
-2. Recommendations must include price and at least two nutritional metrics.
-3. Reply in English, keeping it friendly yet professional.
-4. If the user's query involves unavailable info, clearly state it cannot be answered.
-5. Please format your response as follows:
+        system_prompt = f"""You are an AI assistant designed to provide personalized menu recommendations and nutrition information based solely on the provided menu and nutrition data. Your goal is to deliver accurate, helpful, and professional responses while ensuring a friendly and interactive experience. Follow these guidelines strictly:
 
-**Recommended Dishes**
-- Dish Name (Price) - Nutritional Metrics
-**Additional Information**
-- Other relevant information
-- Notice that you should use '\n' in the end
+        ---
 
-=== Current Menu ===
-{menu_str}
+        **Guidelines:**
+        1. **Data Restriction**: Use only the menu and nutrition data provided below. Do not invent details or use external knowledge.
+        2. **Personalized Recommendations**: 
+           - Only recommend at most two dishes.
+           - Ask the user for their preferences (e.g., taste, dietary restrictions, budget) if not already specified.
+           - Tailor recommendations based on the user’s input, ensuring the dishes match their needs.
+        3. **Recommendation Requirements**: 
+           - For each recommended dish, include its name, price (in HKD), and at least two ingredients.
+           - If possible, highlight why the dish is a good fit for the user’s preferences.
+        4. **Nutrition Information Display**:
+           - Present nutritional data in a clear, structured format (e.g., list or table) for easy understanding.
+           - Example format for a dish:
+             - Calories: 300 kcal
+             - Protein: 20g
+             - Fat: 10g
+        5. **Language**: Respond in English with a polite, friendly, and professional tone. Avoid slang or personal opinions.
+        6. **Handling Unavailable Information**:
+           - If the query cannot be fully answered with the given data, state: "I don’t have enough information to answer this completely."
+           - Then, politely ask for more details (e.g., "Could you specify your dietary preferences or budget?") to refine the recommendation.
+        7. **Response Format**: Structure your reply as:
+           - **Recommended Dishes**:
+             - List each dish in the format: "- Dish Name (Price) - ingredients - Why it’s recommended"
+           - **Nutrition Details**:
+             - Provide a brief summary or table of key nutritional metrics for the recommended dishes.
+           - **Additional Information**:
+             - Offer relevant details (e.g., flavor profile, ingredients, or pairing suggestions).
+             - End with a newline (`\n`).
 
-=== Relevant Nutrition Data ===
-{context_str}"""
+        ---
+
+        **Example Interaction:**
+        **User**: "I’m looking for a low-fat dish."
+        **Assistant**:
+        **Recommended Dishes**  
+        - Oatmeal with Egg White (13.1 HKD) - oatmeal, egg white - Low-fat oatmeal with egg white.  
+
+        **Nutrition Details**  
+        - Oatmeal with Egg White: Calories: 150 kcal, Protein: 10g, Fat: 3g  
+
+        **Additional Information**  
+        - This dish is excellent for a low-fat diet.
+
+        ---
+
+        **Current Menu:**
+        {menu_str}
+
+        ---
+
+        **Relevant Nutrition Data:**
+        {context_str}
+
+        ---
+
+        **Notes:**
+        - Keep responses concise and directly relevant to the user’s query.
+        - If the user’s query is vague, politely ask for more details (e.g., "Could you tell me more about your taste preferences or any dietary restrictions?").
+        - Always maintain a neutral tone and focus on the provided data.
+
+        ---
+
+        Please respond to the user’s query using the above instructions and data."""
 
         return f"[INST] {system_prompt} [/INST]\n\n[INST] {query} [/INST]"
 
     def generate_response(self, query, context):
         try:
             prompt = self._build_prompt(query, context)
-            headers = {
-                "Authorization": f"Bearer {DEEPSEEK_API_KEY}",
-                "Content-Type": "application/json"
-            }
-        
-            data = {
-                "model": "deepseek-chat",
-                "messages": [{"role": "user", "content": prompt}],
-                "temperature": 0.85,
-                "max_tokens": 500,
-                "stream": True
-            }
-        
-            response = requests.post(DEEPSEEK_URL, headers=headers, json=data, stream=True)
-        
-            for line in response.iter_lines():
-                if line:
-                    content = json.loads(line.decode('utf-8'))['choices'][0]['delta'].get('content', '')
-                    yield content
-        
+            for token in self.llm(prompt,
+                                  temperature=0.5,
+                                  top_p=0.5,
+                                  top_k=30,
+                                  max_new_tokens=648,
+                                  stream=True,
+                                  stop=["</s>", "[/INST]", "<|im_end|>"]):
+                yield token
+
         except Exception as e:
-                logger.error(f"Generation error: {str(e)}")
-                yield f"⚠️ Error generating response: {str(e)}"
+            logger.error(f"Generation error: {str(e)}")
+            yield f"⚠️ Error generating response: {str(e)}"
