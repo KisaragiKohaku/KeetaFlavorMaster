@@ -142,7 +142,13 @@ class FoodChatBot:
 
     def generate_response(self, query, context):
         try:
+            # ✅ 没有匹配到菜品，提前拦截 LLM
+            if not context.get("dishes"):
+                yield "❗ Sorry, we couldn't find any dishes that match your preferences.\n\n👉 Try adjusting your filters or budget to see more options."
+                return
+
             prompt = self._build_prompt(query, context)
+
             for token in self.llm(prompt,
                                   temperature=0.5,
                                   top_p=0.5,
