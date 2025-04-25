@@ -1,10 +1,79 @@
-# 🦘 Keeta Flavor Master 
+# 🦘 Keeta Flavor Master (English Version) 
+
+Keeta Food Intelligent Recommendation Assistant based on Streamlit and Mistral-7B, integrated with RAG technology for precise nutritional Q&A.
+
+## Version Control Notes
+1. The gamma version integrates DeepSeek API for auxiliary intent identification.  
+2. The beta version uses only hard-coding for naive intent identification.  
+3. The current beta and gamma versions are for learning purposes only
+
+## Download Model (GGUF format model needs to be downloaded in advance)
+The test model is Mistral-7B-Instruct-v0.3-GGUF, Q4-K-S quantized version (3.85GB). Please download it from the URL below. You can also deploy other models yourself.
+https://huggingface.co/MaziyarPanahi/Mistral-7B-Instruct-v0.3-GGUF
+
+## Project Structure
+```bash
+KeetaFlavorMaster/
+├── data/
+│   ├── menu.json          # Food information
+│   └── nutrition.json     # Nutritional data
+├── models/                # GGUF format model
+├── app.py                 # Streamlit main program
+├── chatbot.py             # LLM response module
+├── intent_parser.py       # Intent identification module (gamma version)
+└── retriever.py           # RAG retrieval module
+```
+
+## 🌟 Core Features
+- **Dish Retrieval**：RAG retrieval system based on ChromaDB + all-MiniLM-L6-v2
+- **Nutrition Analysis**：Parse JSON data to calculate nutritional indicators of dishes
+- **Intelligent Dialogue**：Generate professional responses using Mistral-7B-Q4 precision quantized model
+- **Debugging Panel**：Real-time display of retrieval context and matching results
+- **Intent Identification**：Use DeepSeek API to classify user input for precise answers
+
+## 🚀 Quick Start
+### Environment Requirements
+- Python 3.11
+- RAM ≥ 16GB
+- GPU Used for Testing：RTX 4070 Laptop
+- System Requirements：Windows
+
+### Installation Steps
+```bash
+# 1. Clone the project
+# For beta version:
+git clone -b beta https://github.com/KisaragiKohaku/KeetaFlavorMaster.git
+
+# For gamma version:
+git clone -b gamma https://github.com/KisaragiKohaku/KeetaFlavorMaster.git
+
+# Changing to the working directory
+cd KeetaFlavorMaster
+
+# 2. Create a virtual environment
+python -m venv venv
+
+# 3. Activate the virtual environment (Windows)
+# Open cmd in the KeetaFlavorMaster directory and execute:
+.venv\Scripts\activate
+
+# 4. Install dependencies
+pip install -r requirements.txt
+
+# 5. Start the application
+# Ensure you are in the virtual environment, i.e., the cmd command line has the prefix (.venv)
+# Execute:
+.venv\Scripts\streamlit run app.py
+```
+---
+---
+# 🦘 Keeta Flavor Master （中文说明） 
 
 基于Streamlit与Mistral-7B的Keeta美食智能推荐助手，集成RAG技术实现精准营养问答
 
 ## 版本控制说明
 1. gamma版接入DeepSeek API进行辅助意图识别  
-2. beta版通过硬编码替代外部模型接入  
+2. beta版仅通过硬编码进行朴素意图识别  
 3. 当前beta版、gamma版仅作学习用途
 
 ## 下载模型 (需提前下载GGUF格式模型)
@@ -41,7 +110,13 @@ KeetaFlavorMaster/
 ### 安装步骤
 ```bash
 # 1. 克隆项目
-git clone https://github.com/KisaragiKohaku/KeetaFlavorMaster.git
+# 如克隆beta版，使用以下命令:
+git clone -b beta https://github.com/KisaragiKohaku/KeetaFlavorMaster.git
+
+# 如克隆gamma版，使用以下命令:
+git clone -b gamma https://github.com/KisaragiKohaku/KeetaFlavorMaster.git
+
+# 进入工作目录
 cd KeetaFlavorMaster
 
 # 2. 创建虚拟环境
