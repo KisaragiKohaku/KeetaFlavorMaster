@@ -2,13 +2,16 @@
 
 Keeta Food Intelligent Recommendation Assistant based on Streamlit and Mistral-7B, integrated with RAG technology for precise nutritional Q&A.
 
+Demo Video Link: https://drive.google.com/file/d/1d6x_jPrNlg_V51jZ13AnPqwoVh8xpfwH/view?usp=sharing
+
 ## Version Control Notes
 1. The gamma version integrates DeepSeek API for auxiliary intent identification.  
 2. The beta version uses only hard-coding for naive intent identification.  
-3. The current beta and gamma versions are for learning purposes only
+3. The current beta and gamma versions are for learning purposes only.
 
 ## Download Model (GGUF format model needs to be downloaded in advance)
-The test model is Mistral-7B-Instruct-v0.3-GGUF, Q4-K-S quantized version (3.85GB). Please download it from the URL below. You can also deploy other models yourself.
+The test model is Mistral-7B-Instruct-v0.3-GGUF, Q4-K-S quantized version (3.85GB). Please download it from the URL below.  
+You can also deploy other models yourself.  
 https://huggingface.co/MaziyarPanahi/Mistral-7B-Instruct-v0.3-GGUF
 
 ## Project Structure
@@ -70,6 +73,8 @@ pip install -r requirements.txt
 # 🦘 Keeta Flavor Master （中文说明） 
 
 基于Streamlit与Mistral-7B的Keeta美食智能推荐助手，集成RAG技术实现精准营养问答
+
+在线视频演示：https://drive.google.com/file/d/1d6x_jPrNlg_V51jZ13AnPqwoVh8xpfwH/view?usp=sharing
 
 ## 版本控制说明
 1. gamma版接入DeepSeek API进行辅助意图识别  
