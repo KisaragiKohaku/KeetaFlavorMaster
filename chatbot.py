@@ -32,7 +32,7 @@ def _init_model(model_path):
     try:
         config = {
             "model_type": "mistral",
-            "context_length": 15000,
+            "context_length": 16000,
             "threads": 8,
             "batch_size": 512,
             "gpu_layers": 16 if torch.cuda.is_available() else 0
@@ -71,19 +71,21 @@ class FoodChatBot:
         ]
         context_str = "\n".join(context_items) if context_items else "No relevant data found."
 
-        system_prompt = f"""You are an AI assistant designed to provide personalized menu recommendations and nutrition information based solely on the provided menu and nutrition data. Your goal is to deliver accurate, helpful, and professional responses while ensuring a friendly and interactive experience. Follow these guidelines strictly:
-
+        system_prompt = f"""You are an AI assistant designed to provide personalized recommendations based solely on the provided data.
+        Follow these rules:
         ---
 
         **Guidelines:**
-        1. **Data Restriction**: Use only the menu and nutrition data provided below. Do not invent details or use external knowledge.
+        1. **Data Restriction**:
+           - Use ONLY the nutrition data in **"Nutrition Information"** (from context_str) and the menu structure in **"Current Menu"** (from menu_str).
+           - Prioritize context_str for specific dish details (e.g., price, ingredients, nutrition).
+           - Use menu_str only to validate dish IDs/names and prevent hallucinations.
         2. **Personalized Recommendations**: 
-           - Only recommend at most two dishes.
            - Ask the user for their preferences (e.g., taste, dietary restrictions, budget) if not already specified.
            - Tailor recommendations based on the user’s input, ensuring the dishes match their needs.
         3. **Recommendation Requirements**: 
-           - For each recommended dish, include its name, price (in HKD), and at least two ingredients.
-           - If possible, highlight why the dish is a good fit for the user’s preferences.
+           - Only recommend dishes that appear in **both** the context_str and your knowledge of the menu.
+           - Ensure all recommended dishes match the user's explicit filters (e.g., price range, dietary restrictions).
         4. **Nutrition Information Display**:
            - Present nutritional data in a clear, structured format (e.g., list or table) for easy understanding.
            - Example format for a dish:
@@ -124,7 +126,7 @@ class FoodChatBot:
 
         ---
 
-        **Relevant Nutrition Data:**
+        **Nutrition Information:**
         {context_str}
 
         ---

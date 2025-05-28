@@ -5,6 +5,14 @@
       "name": "Preserved Egg and Leanmeat Congee with Turnip Cake",
       "price": 19.6,
       "ingredients": ["preserved egg", "lean pork", "rice", "turnip cake"],
+      "nutrition": {
+        "calories": 350,
+        "protein": 15,
+        "carbs": 50,
+        "fat": 10
+      },
+      "allergens": ["egg", "gluten"],
+      "description": "Classic congee with preserved egg and pork",
       "tags": ["savory", "Cantonese", "Breakfast"],
       "serving_time": "Breakfast"
     },
@@ -13,6 +21,14 @@
       "name": "Homestyle Fried Rice Vermicelli",
       "price": 19.6,
       "ingredients": ["rice vermicelli", "shredded pork", "vegetables"],
+      "nutrition": {
+        "calories": 400,
+        "protein": 20,
+        "carbs": 60,
+        "fat": 12
+      },
+      "allergens": ["soy"],
+      "description": "Stir-fried rice vermicelli with pork",
       "tags": ["savory", "Cantonese", "Breakfast"],
       "serving_time": "Breakfast"
     },
@@ -21,6 +37,14 @@
       "name": "Fried Noodle in Soy Sauce",
       "price": 19.6,
       "ingredients": ["noodles", "soy sauce", "vegetables"],
+      "nutrition": {
+        "calories": 450,
+        "protein": 18,
+        "carbs": 65,
+        "fat": 15
+      },
+      "allergens": ["wheat", "soy"],
+      "description": "Soy sauce fried noodles",
       "tags": ["savory", "Cantonese", "All-Day"],
       "serving_time": "All-Day"
     },
@@ -29,6 +53,14 @@
       "name": "Steamed Barbecued Pork Bun",
       "price": 19.6,
       "ingredients": ["flour", "barbecued pork", "sugar"],
+      "nutrition": {
+        "calories": 280,
+        "protein": 8,
+        "carbs": 55,
+        "fat": 5
+      },
+      "allergens": ["pork", "wheat"],
+      "description": "Sweet steamed bun with barbecued pork",
       "tags": ["sweet", "Cantonese", "Breakfast"],
       "serving_time": "Breakfast"
     },
@@ -37,6 +69,14 @@
       "name": "Shredded Pork Pickled Mustard Noodle",
       "price": 17.5,
       "ingredients": ["shredded pork", "pickled mustard", "noodle"],
+      "nutrition": {
+        "calories": 270,
+        "protein": 10,
+        "carbs": 42,
+        "fat": 5
+      },
+      "allergens": [],
+      "description": "Noodles with shredded pork and tangy pickled mustard",
       "tags": ["savory", "quick"],
       "serving_time": "Breakfast"
     },
@@ -45,6 +85,14 @@
       "name": "Satay Beef with Rice Vermicelli",
       "price": 24.8,
       "ingredients": ["beef", "satay sauce", "rice vermicelli"],
+      "nutrition": {
+        "calories": 550,
+        "protein": 30,
+        "carbs": 45,
+        "fat": 20
+      },
+      "allergens": ["peanut"],
+      "description": "Satay Fresh Beef with well-cooked Rice Vermicelli",
       "tags": ["spicy", "Malaysian", "Lunch"],
       "serving_time": "Lunch"
     },
@@ -53,6 +101,14 @@
       "name": "Oatmeal with Egg White",
       "price": 13.1,
       "ingredients": ["oatmeal", "egg white", "milk"],
+      "nutrition": {
+        "calories": 150,
+        "protein": 10,
+        "carbs": 20,
+        "fat": 3
+      },
+      "allergens": ["egg"],
+      "description": "Low-fat oatmeal with egg white",
       "tags": ["healthy", "Western", "Breakfast"],
       "serving_time": "Breakfast"
     },
@@ -61,6 +117,14 @@
       "name": "Deep-fried Fish Fillet with Ham",
       "price": 25.8,
       "ingredients": ["fish fillet", "ham", "batter"],
+      "nutrition": {
+        "calories": 600,
+        "protein": 25,
+        "carbs": 40,
+        "fat": 35
+      },
+      "allergens": ["fish", "wheat"],
+      "description": "Crispy fried fish fillet with ham",
       "tags": ["fried", "International", "Lunch"],
       "serving_time": "Lunch"
     },
@@ -69,6 +133,14 @@
       "name": "Leaf Mustard and Pork Bone Congee",
       "price": 10.8,
       "ingredients": ["leaf mustard", "pork bone", "rice"],
+      "nutrition": {
+        "calories": 300,
+        "protein": 12,
+        "carbs": 40,
+        "fat": 8
+      },
+      "allergens": ["pork"],
+      "description": "Leaf mustard and pork bone congee",
       "tags": ["savory", "Cantonese", "Breakfast"],
       "serving_time": "Breakfast"
     },
@@ -77,15 +149,30 @@
       "name": "Dried Oyster and Sliced Pork Congee",
       "price": 10.8,
       "ingredients": ["dried oyster", "sliced pork", "rice"],
+      "nutrition": {
+        "calories": 320,
+        "protein": 18,
+        "carbs": 35,
+        "fat": 10
+      },
+      "allergens": ["shellfish"],
+      "description": "Dried oyster and sliced pork congee",
       "tags": ["savory", "Cantonese", "Breakfast"],
       "serving_time": "Breakfast"
     },
-    
     {
       "id": 11,
       "name": "Fried Rice Vermicelli with Shredded Meat and Vegetables",
       "price": 11.9,
       "ingredients": ["rice vermicelli", "pork", "carrot", "bean sprouts"],
+      "nutrition": {
+        "calories": 400,
+        "protein": 20,
+        "carbs": 50,
+        "fat": 10
+      },
+      "allergens": ["pork", "wheat"],
+      "description": "Rice vermicelli with pork and vegetables",
       "tags": ["savory", "Cantonese", "All-Day"],
       "serving_time": "All-Day"
     },
@@ -94,6 +181,14 @@
       "name": "Fried Yellow Noodle with Shredded Meat and Vegetables",
       "price": 11.9,
       "ingredients": ["yellow noodles", "pork", "cabbage", "onion"],
+      "nutrition": {
+        "calories": 480,
+        "protein": 18,
+        "carbs": 65,
+        "fat": 15
+      },
+      "allergens": ["wheat"],
+      "description": "Yellow noodles with pork and cabbage",
       "tags": ["savory", "Cantonese", "All-Day"],
       "serving_time": "All-Day"
     },
@@ -102,15 +197,30 @@
       "name": "Fried Noodle with Bean Sprout",
       "price": 11.9,
       "ingredients": ["noodles", "bean sprouts", "soy sauce"],
+      "nutrition": {
+        "calories": 380,
+        "protein": 10,
+        "carbs": 55,
+        "fat": 8
+      },
+      "allergens": ["wheat", "soy"],
+      "description": "Bean sprout stir-fried noodles",
       "tags": ["savory", "Cantonese", "All-Day"],
       "serving_time": "All-Day"
     },
-    
     {
       "id": 14,
       "name": "Steamed Custard Bun",
       "price": 12.9,
       "ingredients": ["flour", "custard", "milk"],
+      "nutrition": {
+        "calories": 250,
+        "protein": 6,
+        "carbs": 45,
+        "fat": 4
+      },
+      "allergens": ["milk", "wheat"],
+      "description": "Custard-filled steamed bun",
       "tags": ["sweet", "Cantonese", "Breakfast"],
       "serving_time": "Breakfast"
     },
@@ -119,6 +229,14 @@
       "name": "Steamed Chicken Bun",
       "price": 12.9,
       "ingredients": ["flour", "chicken", "mushroom"],
+      "nutrition": {
+        "calories": 300,
+        "protein": 12,
+        "carbs": 40,
+        "fat": 7
+      },
+      "allergens": ["chicken", "wheat"],
+      "description": "Savory chicken and mushroom bun",
       "tags": ["savory", "Cantonese", "Breakfast"],
       "serving_time": "Breakfast"
     },
@@ -127,6 +245,14 @@
       "name": "Steamed Lotus Seed Paste Bun",
       "price": 12.9,
       "ingredients": ["flour", "lotus seed paste", "sugar"],
+      "nutrition": {
+        "calories": 260,
+        "protein": 5,
+        "carbs": 48,
+        "fat": 3
+      },
+      "allergens": ["wheat"],
+      "description": "Lotus seed paste bun",
       "tags": ["sweet", "Cantonese", "Breakfast"],
       "serving_time": "Breakfast"
     },
@@ -135,6 +261,14 @@
       "name": "Steamed Pork and Vegetable Bun",
       "price": 12.9,
       "ingredients": ["flour", "pork", "cabbage"],
+      "nutrition": {
+        "calories": 320,
+        "protein": 10,
+        "carbs": 42,
+        "fat": 9
+      },
+      "allergens": ["pork", "wheat"],
+      "description": "Steamed bun with pork and cabbage",
       "tags": ["savory", "Cantonese", "Breakfast"],
       "serving_time": "Breakfast"
     },
@@ -143,6 +277,14 @@
       "name": "Deep-fried Fish Fillet Sausage",
       "price": 25.8,
       "ingredients": ["fish fillet", "sausage", "batter"],
+      "nutrition": {
+        "calories": 610,
+        "protein": 26,
+        "carbs": 38,
+        "fat": 36
+      },
+      "allergens": ["fish", "wheat", "pork"],
+      "description": "Crispy fried fish fillet with sausage",
       "tags": ["fried", "International", "Lunch"],
       "serving_time": "Lunch"
     },
@@ -151,6 +293,14 @@
       "name": "Deep-fried Fish Fillet Luncheon Meat",
       "price": 25.8,
       "ingredients": ["fish fillet", "luncheon meat", "batter"],
+      "nutrition": {
+        "calories": 590,
+        "protein": 24,
+        "carbs": 35,
+        "fat": 34
+      },
+      "allergens": ["fish", "wheat"],
+      "description": "Crispy fried fish fillet with luncheon meat",
       "tags": ["fried", "International", "Lunch"],
       "serving_time": "Lunch"
     },
@@ -159,6 +309,14 @@
       "name": "Pan-fried Pork Chop Ham",
       "price": 25.8,
       "ingredients": ["pork chop", "ham", "oil"],
+      "nutrition": {
+        "calories": 550,
+        "protein": 30,
+        "carbs": 20,
+        "fat": 40
+      },
+      "allergens": ["pork", "wheat"],
+      "description": "Pan-fried pork chop with ham",
       "tags": ["savory", "Cantonese", "Lunch"],
       "serving_time": "Lunch"
     },
@@ -167,6 +325,14 @@
       "name": "Pan-fried Pork Chop Sausage",
       "price": 25.8,
       "ingredients": ["pork chop", "sausage", "oil"],
+      "nutrition": {
+        "calories": 560,
+        "protein": 28,
+        "carbs": 18,
+        "fat": 42
+      },
+      "allergens": ["pork", "wheat"],
+      "description": "Pan-fried pork chop with sausage",
       "tags": ["savory", "Cantonese", "Lunch"],
       "serving_time": "Lunch"
     },
@@ -175,6 +341,14 @@
       "name": "Pan-fried Pork Chop Luncheon Meat",
       "price": 25.8,
       "ingredients": ["pork chop", "luncheon meat", "oil"],
+      "nutrition": {
+        "calories": 580,
+        "protein": 32,
+        "carbs": 15,
+        "fat": 45
+      },
+      "allergens": ["pork", "wheat"],
+      "description": "Pan-fried pork chop with luncheon meat",
       "tags": ["savory", "Cantonese", "Lunch"],
       "serving_time": "Lunch"
     },
@@ -183,6 +357,14 @@
       "name": "Chinese Mushroom and Salted Chicken Congee",
       "price": 10.8,
       "ingredients": ["mushroom", "salted chicken", "rice"],
+      "nutrition": {
+        "calories": 320,
+        "protein": 15,
+        "carbs": 50,
+        "fat": 8
+      },
+      "allergens": ["chicken", "mushroom"],
+      "description": "Congee with salted chicken and mushrooms",
       "tags": ["savory", "Cantonese", "Breakfast"],
       "serving_time": "Breakfast"
     },
@@ -191,6 +373,14 @@
       "name": "Dried Stockfish and Peanut Congee",
       "price": 10.8,
       "ingredients": ["dried fish", "peanut", "rice"],
+      "nutrition": {
+        "calories": 350,
+        "protein": 18,
+        "carbs": 45,
+        "fat": 10
+      },
+      "allergens": ["fish", "peanut"],
+      "description": "Congee with dried fish and peanuts",
       "tags": ["savory", "Cantonese", "Breakfast"],
       "serving_time": "Breakfast"
     },
@@ -199,6 +389,14 @@
       "name": "Sampan Congee",
       "price": 10.8,
       "ingredients": ["shrimp", "fish", "rice"],
+      "nutrition": {
+        "calories": 300,
+        "protein": 20,
+        "carbs": 40,
+        "fat": 6
+      },
+      "allergens": ["shellfish"],
+      "description": "Traditional sampan congee with seafood",
       "tags": ["savory", "Cantonese", "Breakfast"],
       "serving_time": "Breakfast"
     },
@@ -207,6 +405,14 @@
       "name": "Pumpkin and Pork Ribs Congee",
       "price": 10.8,
       "ingredients": ["pumpkin", "pork ribs", "rice"],
+      "nutrition": {
+        "calories": 280,
+        "protein": 12,
+        "carbs": 35,
+        "fat": 7
+      },
+      "allergens": ["pork"],
+      "description": "Pumpkin and pork ribs congee",
       "tags": ["savory", "Cantonese", "Breakfast"],
       "serving_time": "Breakfast"
     },
@@ -215,6 +421,14 @@
       "name": "Lobster Bisque Fusilli with Sliced Sausage",
       "price": 19.6,
       "ingredients": ["fusilli", "lobster bisque", "sausage"],
+      "nutrition": {
+        "calories": 480,
+        "protein": 22,
+        "carbs": 55,
+        "fat": 18
+      },
+      "allergens": ["wheat", "shellfish"],
+      "description": "Fusilli in lobster bisque with sliced sausage",
       "tags": ["savory", "International", "Lunch"],
       "serving_time": "All-Day"
     },
@@ -223,6 +437,14 @@
       "name": "Tomato Beef Fusilli with Deep-fried Fish Fillet",
       "price": 35.1,
       "ingredients": ["fusilli", "tomato", "beef", "fish fillet"],
+      "nutrition": {
+        "calories": 620,
+        "protein": 35,
+        "carbs": 65,
+        "fat": 25
+      },
+      "allergens": ["wheat", "fish"],
+      "description": "Tomato beef fusilli with fried fish",
       "tags": ["fried", "International", "Lunch"],
       "serving_time": "Lunch"
     },
@@ -231,6 +453,14 @@
       "name": "Creamy Corn Chicken Penne",
       "price": 34.0,
       "ingredients": ["penne", "sweet corn", "chicken", "cream"],
+      "nutrition": {
+        "calories": 580,
+        "protein": 28,
+        "carbs": 60,
+        "fat": 22
+      },
+      "allergens": ["dairy"],
+      "description": "Creamy corn chicken penne",
       "tags": ["creamy", "Western", "Lunch"],
       "serving_time": "Lunch"
     },
@@ -239,6 +469,14 @@
       "name": "Teriyaki Beef with Pork Chop Rice",
       "price": 42.3,
       "ingredients": ["beef", "teriyaki sauce", "pork chop", "rice"],
+      "nutrition": {
+        "calories": 720,
+        "protein": 40,
+        "carbs": 85,
+        "fat": 30
+      },
+      "allergens": ["soy", "wheat"],
+      "description": "Teriyaki beef with pork chop rice",
       "tags": ["Japanese", "savory", "Dinner"],
       "serving_time": "All-Day"
     },
@@ -247,6 +485,14 @@
       "name": "Seafood Yosenabe Hot Pot",
       "price": 47.4,
       "ingredients": ["seafood", "tofu", "vegetables", "soy milk"],
+      "nutrition": {
+        "calories": 550,
+        "protein": 32,
+        "carbs": 45,
+        "fat": 20
+      },
+      "allergens": ["shellfish", "soy"],
+      "description": "Seafood hot pot in soy milk broth",
       "tags": ["hot pot", "Japanese", "Dinner"],
       "serving_time": "Dinner"
     },
@@ -255,6 +501,14 @@
       "name": "Grilled Salmon with Pearl Rice",
       "price": 38.2,
       "ingredients": ["salmon", "pearl rice", "crispy chicken"],
+      "nutrition": {
+        "calories": 670,
+        "protein": 38,
+        "carbs": 70,
+        "fat": 28
+      },
+      "allergens": ["fish"],
+      "description": "Grilled salmon with crispy chicken and soft pearl rice",
       "tags": ["grilled", "Japanese", "Lunch"],
       "serving_time": "Lunch"
     },
@@ -263,6 +517,14 @@
       "name": "Beef Sukiyaki Hot Pot",
       "price": 44.4,
       "ingredients": ["beef", "tofu", "noodles", "sukiyaki sauce"],
+      "nutrition": {
+        "calories": 600,
+        "protein": 34,
+        "carbs": 60,
+        "fat": 25
+      },
+      "allergens": ["soy"],
+      "description": "Beef sukiyaki hot pot",
       "tags": ["hot pot", "Japanese", "Dinner"],
       "serving_time": "Dinner"
     },
@@ -271,6 +533,14 @@
       "name": "Japanese BBQ Pork Ramen",
       "price": 34.0,
       "ingredients": ["ramen", "bbq pork", "egg", "bamboo shoots"],
+      "nutrition": {
+        "calories": 650,
+        "protein": 30,
+        "carbs": 75,
+        "fat": 22
+      },
+      "allergens": ["wheat", "egg"],
+      "description": "Japanese BBQ pork ramen",
       "tags": ["savory", "Japanese", "Lunch"],
       "serving_time": "All-Day"
     },
@@ -279,6 +549,14 @@
       "name": "Kimchi Pork with Fried Shrimp Rice",
       "price": 42.3,
       "ingredients": ["kimchi", "pork", "shrimp", "rice"],
+      "nutrition": {
+        "calories": 700,
+        "protein": 36,
+        "carbs": 80,
+        "fat": 32
+      },
+      "allergens": ["shellfish", "wheat"],
+      "description": "Kimchi pork with fried shrimp rice",
       "tags": ["spicy", "Korean", "Dinner"],
       "serving_time": "Dinner"
     },
@@ -287,6 +565,14 @@
       "name": "Curry Chicken Ball with Onsen Egg Rice",
       "price": 42.3,
       "ingredients": ["curry", "chicken", "onsen egg", "rice"],
+      "nutrition": {
+        "calories": 680,
+        "protein": 33,
+        "carbs": 78,
+        "fat": 28
+      },
+      "allergens": ["wheat", "egg"],
+      "description": "Curry chicken ball with onsen egg",
       "tags": ["spicy", "Japanese", "Lunch"],
       "serving_time": "Lunch"
     },
@@ -295,6 +581,14 @@
       "name": "Pork Cartilage Rice Bowl",
       "price": 36.1,
       "ingredients": ["pork cartilage", "rice", "soy sauce"],
+      "nutrition": {
+        "calories": 590,
+        "protein": 28,
+        "carbs": 65,
+        "fat": 24
+      },
+      "allergens": ["soy"],
+      "description": "Braised pork cartilage rice bowl",
       "tags": ["savory", "Cantonese", "Lunch"],
       "serving_time": "Lunch"
     },
@@ -303,6 +597,14 @@
       "name": "Wild Mushroom Ramen",
       "price": 29.9,
       "ingredients": ["ramen", "mushrooms", "vegetables", "broth"],
+      "nutrition": {
+        "calories": 420,
+        "protein": 15,
+        "carbs": 50,
+        "fat": 12
+      },
+      "allergens": ["wheat"],
+      "description": "Wild mushroom ramen",
       "tags": ["vegetarian", "Japanese", "All-Day"],
       "serving_time": "All-Day"
     },
@@ -311,6 +613,14 @@
       "name": "Japanese Shrimp Ramen",
       "price": 32.0,
       "ingredients": ["ramen", "shrimp", "nori", "egg"],
+      "nutrition": {
+        "calories": 540,
+        "protein": 25,
+        "carbs": 58,
+        "fat": 18
+      },
+      "allergens": ["shellfish", "wheat"],
+      "description": "Japanese shrimp ramen",
       "tags": ["seafood", "Japanese", "Dinner"],
       "serving_time": "Dinner"
     },
@@ -319,6 +629,14 @@
       "name": "Penne with Creamy Corn and Chicken",
       "price": 32.0,
       "ingredients": ["penne", "corn", "chicken", "cream"],
+      "nutrition": {
+        "calories": 520,
+        "protein": 26,
+        "carbs": 55,
+        "fat": 20
+      },
+      "allergens": ["dairy"],
+      "description": "Creamy corn chicken penne",
       "tags": ["creamy", "Western", "Lunch"],
       "serving_time": "Lunch"
     },
@@ -327,6 +645,14 @@
       "name": "Kimchi Pork Jjigae Hot Pot",
       "price": 44.4,
       "ingredients": ["kimchi", "pork", "tofu", "rice"],
+      "nutrition": {
+        "calories": 630,
+        "protein": 34,
+        "carbs": 62,
+        "fat": 26
+      },
+      "allergens": ["soy"],
+      "description": "Kimchi pork hot pot",
       "tags": ["spicy", "Korean", "Dinner"],
       "serving_time": "Dinner"
     },
@@ -335,6 +661,14 @@
       "name": "Assorted Vegetable Ramen",
       "price": 29.9,
       "ingredients": ["ramen", "vegetables", "mushrooms", "broth"],
+      "nutrition": {
+        "calories": 380,
+        "protein": 12,
+        "carbs": 45,
+        "fat": 10
+      },
+      "allergens": ["wheat"],
+      "description": "Vegetable ramen",
       "tags": ["vegetarian", "Japanese", "All-Day"],
       "serving_time": "All-Day"
     },
@@ -343,6 +677,14 @@
       "name": "Japanese Curry Hamburger Rice",
       "price": 42.3,
       "ingredients": ["curry", "hamburger", "rice", "cheese"],
+      "nutrition": {
+        "calories": 710,
+        "protein": 37,
+        "carbs": 82,
+        "fat": 30
+      },
+      "allergens": ["wheat", "dairy"],
+      "description": "Japanese curry hamburger rice",
       "tags": ["savory", "Japanese", "Lunch"],
       "serving_time": "Lunch"
     },
@@ -351,6 +693,14 @@
       "name": "Salmon with Pork Cartilage Pearl Rice",
       "price": 38.2,
       "ingredients": ["salmon", "pork cartilage", "pearl rice", "crispy chicken"],
+      "nutrition": {
+        "calories": 650,
+        "protein": 35,
+        "carbs": 68,
+        "fat": 28
+      },
+      "allergens": ["fish", "soy"],
+      "description": "Salmon with pork cartilage rice",
       "tags": ["grilled", "Japanese", "Dinner"],
       "serving_time": "Dinner"
     },
@@ -359,6 +709,14 @@
       "name": "Kumamoto Chicken Ramen",
       "price": 34.0,
       "ingredients": ["ramen", "chicken", "egg", "bamboo shoots"],
+      "nutrition": {
+        "calories": 580,
+        "protein": 30,
+        "carbs": 60,
+        "fat": 20
+      },
+      "allergens": ["wheat", "egg"],
+      "description": "Kumamoto chicken ramen",
       "tags": ["savory", "Japanese", "Lunch"],
       "serving_time": "Lunch"
     },
@@ -367,6 +725,14 @@
       "name": "Seafood Ramen with Shrimp",
       "price": 29.9,
       "ingredients": ["ramen", "shrimp", "squid", "vegetables"],
+      "nutrition": {
+        "calories": 500,
+        "protein": 24,
+        "carbs": 52,
+        "fat": 18
+      },
+      "allergens": ["shellfish", "wheat"],
+      "description": "Seafood ramen with shrimp",
       "tags": ["seafood", "Japanese", "All-Day"],
       "serving_time": "All-Day"
     },
@@ -375,6 +741,14 @@
       "name": "Penne with Sweet Corn and Diced Chicken in Cream of Chicken Soup",
       "price": 34.0,
       "ingredients": ["penne", "sweet corn", "chicken", "cream"],
+      "nutrition": {
+        "calories": 580,
+        "protein": 28,
+        "carbs": 60,
+        "fat": 22
+      },
+      "allergens": ["dairy", "wheat"],
+      "description": "Creamy penne pasta with sweet corn and diced chicken in a rich chicken soup, served with a side of toast",
       "tags": ["creamy", "Western", "Lunch"],
       "serving_time": "Lunch"
     },
@@ -383,6 +757,14 @@
       "name": "Seafood Yosenabe in Soya-bean Milk with Rice",
       "price": 47.4,
       "ingredients": ["seafood", "tofu", "vegetables", "soy milk"],
+      "nutrition": {
+        "calories": 550,
+        "protein": 32,
+        "carbs": 45,
+        "fat": 20
+      },
+      "allergens": ["shellfish", "soy"],
+      "description": "Japanese-style seafood hot pot with fresh shrimp, tofu, and vegetables simmered in soy milk broth",
       "tags": ["hot pot", "Japanese", "Dinner"],
       "serving_time": "Dinner"
     },
@@ -391,6 +773,14 @@
       "name": "Beef Sukiyaki with Rice",
       "price": 44.4,
       "ingredients": ["beef", "sukiyaki sauce", "noodles", "tofu"],
+      "nutrition": {
+        "calories": 600,
+        "protein": 34,
+        "carbs": 60,
+        "fat": 25
+      },
+      "allergens": ["soy", "wheat"],
+      "description": "Authentic Japanese sukiyaki with thinly sliced beef, tofu, and noodles in sweet soy-based broth",
       "tags": ["hot pot", "Japanese", "Dinner"],
       "serving_time": "Dinner"
     },
@@ -399,6 +789,14 @@
       "name": "Kimchi Pork Jjigae with Rice",
       "price": 44.4,
       "ingredients": ["kimchi", "pork", "tofu", "rice"],
+      "nutrition": {
+        "calories": 630,
+        "protein": 34,
+        "carbs": 62,
+        "fat": 26
+      },
+      "allergens": ["soy"],
+      "description": "Spicy Korean kimchi pork stew with soft tofu and steamed rice, garnished with spring onions",
       "tags": ["spicy", "Korean", "Dinner"],
       "serving_time": "Dinner"
     },
@@ -407,6 +805,14 @@
       "name": "Wild Mushroom and Assorted Vegetable Ramen",
       "price": 29.9,
       "ingredients": ["ramen", "mushrooms", "vegetables", "broth"],
+      "nutrition": {
+        "calories": 420,
+        "protein": 15,
+        "carbs": 50,
+        "fat": 12
+      },
+      "allergens": ["wheat"],
+      "description": "Vegetarian ramen loaded with wild mushrooms, bok choy, and bamboo shoots in a light vegetable broth",
       "tags": ["vegetarian", "Japanese", "All-Day"],
       "serving_time": "All-Day"
     },
@@ -415,6 +821,14 @@
       "name": "Japanese Seafood Ramen",
       "price": 29.9,
       "ingredients": ["ramen", "shrimp", "squid", "vegetables"],
+      "nutrition": {
+        "calories": 500,
+        "protein": 24,
+        "carbs": 52,
+        "fat": 18
+      },
+      "allergens": ["shellfish", "wheat"],
+      "description": "Seafood ramen featuring shrimp, squid, and fish cakes in a rich seafood-infused broth",
       "tags": ["seafood", "Japanese", "All-Day"],
       "serving_time": "All-Day"
     },
@@ -423,6 +837,14 @@
       "name": "Japanese Dumpling with Chicken Skewer Ramen",
       "price": 29.9,
       "ingredients": ["ramen", "dumplings", "chicken skewer", "broth"],
+      "nutrition": {
+        "calories": 480,
+        "protein": 22,
+        "carbs": 55,
+        "fat": 18
+      },
+      "allergens": ["wheat", "soy"],
+      "description": "Ramen with Japanese chicken skewers and pork dumplings, topped with a soy-marinated egg",
       "tags": ["savory", "Japanese", "Lunch"],
       "serving_time": "Lunch"
     },
@@ -431,6 +853,14 @@
       "name": "Japanese Dumpling with Sweet Corn Ramen",
       "price": 32.0,
       "ingredients": ["ramen", "dumplings", "sweet corn", "broth"],
+      "nutrition": {
+        "calories": 520,
+        "protein": 20,
+        "carbs": 60,
+        "fat": 16
+      },
+      "allergens": ["wheat"],
+      "description": "Sweet corn and pork dumplings served in a savory ramen broth with spring onion garnish",
       "tags": ["savory", "Japanese", "Lunch"],
       "serving_time": "Lunch"
     },
@@ -439,6 +869,14 @@
       "name": "Grilled Mashed Salmon with Pearl Rice",
       "price": 38.2,
       "ingredients": ["salmon", "pearl rice", "crispy chicken"],
+      "nutrition": {
+        "calories": 670,
+        "protein": 38,
+        "carbs": 70,
+        "fat": 28
+      },
+      "allergens": ["fish"],
+      "description": "Grilled mashed salmon served with pearl rice and crispy fried chicken, accompanied by pickled vegetables",
       "tags": ["grilled", "Japanese", "Dinner"],
       "serving_time": "Dinner"
     },
@@ -447,6 +885,14 @@
       "name": "Curry Pumpkin Potato Cake with Rice",
       "price": 34.0,
       "ingredients": ["curry", "pumpkin", "potato", "rice"],
+      "nutrition": {
+        "calories": 450,
+        "protein": 12,
+        "carbs": 65,
+        "fat": 15
+      },
+      "allergens": ["wheat"],
+      "description": "Japanese curry with pumpkin and potato cakes over steamed rice, served with pickled radish",
       "tags": ["spicy", "Japanese", "Lunch"],
       "serving_time": "Lunch"
     },
@@ -455,6 +901,14 @@
       "name": "Roast Pork Chop with Onsen Egg Rice Bowl",
       "price": 41.3,
       "ingredients": ["pork chop", "onsen egg", "rice", "soy sauce"],
+      "nutrition": {
+        "calories": 680,
+        "protein": 40,
+        "carbs": 75,
+        "fat": 30
+      },
+      "allergens": ["egg", "soy"],
+      "description": "Roasted pork chop with a slow-cooked onsen egg and rice, glazed with teriyaki sauce",
       "tags": ["savory", "Japanese", "Lunch"],
       "serving_time": "Lunch"
     },
@@ -463,6 +917,14 @@
       "name": "Kimchi Pork with Fried Shrimp Rice Bowl",
       "price": 42.3,
       "ingredients": ["kimchi", "pork", "shrimp", "rice"],
+      "nutrition": {
+        "calories": 700,
+        "protein": 36,
+        "carbs": 80,
+        "fat": 32
+      },
+      "allergens": ["shellfish", "wheat"],
+      "description": "Korean-style kimchi pork with fried shrimp over steamed rice, topped with sesame seeds",
       "tags": ["spicy", "Korean", "Dinner"],
       "serving_time": "Dinner"
     },
@@ -471,6 +933,14 @@
       "name": "Macaroni with Fresh Tomato and Minced Beef in Soup",
       "price": 35.1,
       "ingredients": ["macaroni", "tomato", "beef", "vegetables"],
+      "nutrition": {
+        "calories": 480,
+        "protein": 25,
+        "carbs": 55,
+        "fat": 20
+      },
+      "allergens": ["wheat"],
+      "description": "Tomato-based macaroni soup with minced beef and seasonal vegetables, served with garlic bread",
       "tags": ["savory", "Western", "Lunch"],
       "serving_time": "Lunch"
     },
@@ -479,6 +949,14 @@
       "name": "Dim Sum Platter with Glutinous Rice and Chicken",
       "price": 32.0,
       "ingredients": ["glutinous rice", "chicken", "fish dumpling", "turnip cake"],
+      "nutrition": {
+        "calories": 450,
+        "protein": 18,
+        "carbs": 60,
+        "fat": 15
+      },
+      "allergens": ["wheat", "soy"],
+      "description": "Cantonese dim sum platter featuring glutinous rice with chicken, fish dumplings, and pan-fried turnip cake",
       "tags": ["Cantonese", "Breakfast", "Dim Sum"],
       "serving_time": "Breakfast"
     },
@@ -487,6 +965,14 @@
       "name": "Penne with Sweet Corn and Diced Chicken in Cream of Chicken Soup with Deep-fried Fish Fillet",
       "price": 34.0,
       "ingredients": ["penne", "sweet corn", "chicken", "fish fillet"],
+      "nutrition": {
+        "calories": 620,
+        "protein": 30,
+        "carbs": 65,
+        "fat": 25
+      },
+      "allergens": ["fish", "dairy"],
+      "description": "Creamy penne with sweet corn and chicken, accompanied by crispy deep-fried fish fillet",
       "tags": ["creamy", "Western", "Lunch"],
       "serving_time": "Lunch"
     },
@@ -495,6 +981,14 @@
       "name": "Sliced Beef in Teriyaki Sauce with Rice",
       "price": 42.3,
       "ingredients": ["beef", "teriyaki sauce", "rice", "vegetables"],
+      "nutrition": {
+        "calories": 650,
+        "protein": 35,
+        "carbs": 70,
+        "fat": 28
+      },
+      "allergens": ["soy"],
+      "description": "Thinly sliced beef marinated in teriyaki sauce, served over steamed rice with sautéed vegetables",
       "tags": ["savory", "Japanese", "Dinner"],
       "serving_time": "Dinner"
     },
@@ -503,6 +997,14 @@
       "name": "Beef in Teriyaki Sauce with Pork Chop and Scrambled Egg Rice",
       "price": 42.3,
       "ingredients": ["beef", "pork chop", "egg", "rice"],
+      "nutrition": {
+        "calories": 720,
+        "protein": 40,
+        "carbs": 85,
+        "fat": 30
+      },
+      "allergens": ["egg", "soy"],
+      "description": "Japanese-style rice bowl with teriyaki beef, pork chop, scrambled egg, and pickled ginger",
       "tags": ["savory", "Japanese", "Lunch"],
       "serving_time": "Lunch"
     },
@@ -511,6 +1013,14 @@
       "name": "Black Fungus with Macaroni in Tomato Soup",
       "price": 19.6,
       "ingredients": ["macaroni", "black fungus", "tomato", "broth"],
+      "nutrition": {
+        "calories": 320,
+        "protein": 10,
+        "carbs": 45,
+        "fat": 8
+      },
+      "allergens": ["wheat"],
+      "description": "Vegetarian macaroni in tomato soup with black fungus and fresh herbs, served with garlic toast",
       "tags": ["vegetarian", "Cantonese", "All-Day"],
       "serving_time": "All-Day"
     },
@@ -519,6 +1029,14 @@
       "name": "Sliced Veal Sausage with Macaroni in Tomato Soup",
       "price": 19.6,
       "ingredients": ["veal sausage", "macaroni", "tomato soup"],
+      "nutrition": {
+        "calories": 450,
+        "protein": 20,
+        "carbs": 55,
+        "fat": 18
+      },
+      "allergens": ["dairy", "wheat"],
+      "description": "Tomato-based macaroni soup with veal sausage and fresh herbs",
       "tags": ["savory", "Western", "Lunch"],
       "serving_time": "All-Day"
     },
@@ -527,6 +1045,14 @@
       "name": "Shredded Chicken with Macaroni in Tomato Soup",
       "price": 19.6,
       "ingredients": ["chicken", "macaroni", "tomato soup"],
+      "nutrition": {
+        "calories": 480,
+        "protein": 25,
+        "carbs": 60,
+        "fat": 15
+      },
+      "allergens": ["wheat"],
+      "description": "Shredded chicken in tomato soup with macaroni",
       "tags": ["savory", "Western", "Lunch"],
       "serving_time": "All-Day"
     },
@@ -535,6 +1061,14 @@
       "name": "Shredded Ham with Macaroni in Tomato Soup",
       "price": 19.6,
       "ingredients": ["ham", "macaroni", "tomato soup"],
+      "nutrition": {
+        "calories": 460,
+        "protein": 18,
+        "carbs": 58,
+        "fat": 16
+      },
+      "allergens": ["wheat", "pork"],
+      "description": "Ham and macaroni in rich tomato broth",
       "tags": ["savory", "Western", "Lunch"],
       "serving_time": "All-Day"
     },
@@ -543,6 +1077,14 @@
       "name": "Fried Noodle with Chicken Steak",
       "price": 28.9,
       "ingredients": ["noodles", "chicken steak", "soy sauce"],
+      "nutrition": {
+        "calories": 600,
+        "protein": 30,
+        "carbs": 65,
+        "fat": 25
+      },
+      "allergens": ["soy"],
+      "description": "Stir-fried noodles with chicken steak and vegetables",
       "tags": ["savory", "Cantonese", "Lunch"],
       "serving_time": "Lunch"
     },
@@ -551,6 +1093,14 @@
       "name": "Fried Noodle with Deep-fried Fish",
       "price": 28.9,
       "ingredients": ["noodles", "fish fillet", "soy sauce"],
+      "nutrition": {
+        "calories": 620,
+        "protein": 28,
+        "carbs": 70,
+        "fat": 28
+      },
+      "allergens": ["fish", "wheat", "soy"],
+      "description": "Crispy fried fish fillet served with soy sauce noodles",
       "tags": ["fried", "Cantonese", "Lunch"],
       "serving_time": "Lunch"
     },
@@ -559,6 +1109,14 @@
       "name": "Rice Macaroni in Soup with Minced Pork",
       "price": 19.6,
       "ingredients": ["rice macaroni", "minced pork", "broth"],
+      "nutrition": {
+        "calories": 400,
+        "protein": 18,
+        "carbs": 50,
+        "fat": 12
+      },
+      "allergens": ["pork"],
+      "description": "Minced pork rice macaroni in clear broth",
       "tags": ["savory", "Cantonese", "Breakfast"],
       "serving_time": "Breakfast"
     },
@@ -567,6 +1125,14 @@
       "name": "Beef in Teriyaki Sauce with Pork Chop and Rice",
       "price": 42.3,
       "ingredients": ["beef", "teriyaki sauce", "pork chop", "rice"],
+      "nutrition": {
+        "calories": 680,
+        "protein": 40,
+        "carbs": 75,
+        "fat": 30
+      },
+      "allergens": ["soy"],
+      "description": "Teriyaki beef with pork chop over steamed rice",
       "tags": ["savory", "Japanese", "Dinner"],
       "serving_time": "Dinner"
     },
@@ -575,6 +1141,14 @@
       "name": "Beef in Teriyaki Sauce with Chicken Steak and Rice",
       "price": 42.3,
       "ingredients": ["beef", "teriyaki sauce", "chicken steak", "rice"],
+      "nutrition": {
+        "calories": 670,
+        "protein": 38,
+        "carbs": 70,
+        "fat": 28
+      },
+      "allergens": ["soy"],
+      "description": "Teriyaki beef and chicken steak with rice",
       "tags": ["savory", "Japanese", "Dinner"],
       "serving_time": "Dinner"
     },
@@ -583,6 +1157,14 @@
       "name": "Seafood Yosenabe Hot Pot with Rice",
       "price": 47.4,
       "ingredients": ["seafood", "tofu", "vegetables", "soy milk"],
+      "nutrition": {
+        "calories": 550,
+        "protein": 32,
+        "carbs": 45,
+        "fat": 20
+      },
+      "allergens": ["shellfish", "soy"],
+      "description": "Seafood hot pot with tofu and vegetables in soy milk broth",
       "tags": ["hot pot", "Japanese", "Dinner"],
       "serving_time": "Dinner"
     },
@@ -591,6 +1173,14 @@
       "name": "Sliced Beef Ramen",
       "price": 34.0,
       "ingredients": ["ramen", "beef", "broth"],
+      "nutrition": {
+        "calories": 540,
+        "protein": 25,
+        "carbs": 58,
+        "fat": 18
+      },
+      "allergens": ["wheat"],
+      "description": "Sliced beef ramen in savory Japanese broth",
       "tags": ["savory", "Japanese", "Lunch"],
       "serving_time": "Lunch"
     },
@@ -599,6 +1189,14 @@
       "name": "Pork Cartilage Ramen",
       "price": 34.0,
       "ingredients": ["ramen", "pork cartilage", "broth"],
+      "nutrition": {
+        "calories": 580,
+        "protein": 30,
+        "carbs": 60,
+        "fat": 22
+      },
+      "allergens": ["pork", "wheat"],
+      "description": "Pork cartilage ramen with rich bone broth",
       "tags": ["savory", "Japanese", "Lunch"],
       "serving_time": "Lunch"
     },
@@ -607,6 +1205,14 @@
       "name": "Kimchi Pork Fried Shrimp Rice Bowl",
       "price": 42.3,
       "ingredients": ["kimchi", "pork", "shrimp", "rice"],
+      "nutrition": {
+        "calories": 700,
+        "protein": 36,
+        "carbs": 80,
+        "fat": 32
+      },
+      "allergens": ["shellfish", "wheat"],
+      "description": "Korean kimchi pork with fried shrimp over rice",
       "tags": ["spicy", "Korean", "Dinner"],
       "serving_time": "Dinner"
     },
@@ -615,6 +1221,14 @@
       "name": "Curry Chicken Ball with Onsen Egg Rice Bowl",
       "price": 42.3,
       "ingredients": ["curry", "chicken", "onsen egg", "rice"],
+      "nutrition": {
+        "calories": 680,
+        "protein": 33,
+        "carbs": 78,
+        "fat": 28
+      },
+      "allergens": ["wheat", "egg"],
+      "description": "Curry chicken ball with onsen egg and steamed rice",
       "tags": ["spicy", "Japanese", "Lunch"],
       "serving_time": "Lunch"
     },
@@ -623,6 +1237,14 @@
       "name": "Japanese Curry Chicken Hamburg Rice Bowl",
       "price": 42.3,
       "ingredients": ["curry", "chicken", "hamburg", "rice"],
+      "nutrition": {
+        "calories": 710,
+        "protein": 37,
+        "carbs": 82,
+        "fat": 30
+      },
+      "allergens": ["wheat", "dairy"],
+      "description": "Japanese curry chicken hamburg with rice",
       "tags": ["savory", "Japanese", "Lunch"],
       "serving_time": "Lunch"
     },
@@ -631,6 +1253,14 @@
       "name": "Curry Pumpkin Potato Cake with Wild Vegetable Rice",
       "price": 34.0,
       "ingredients": ["curry", "pumpkin", "potato", "vegetables"],
+      "nutrition": {
+        "calories": 380,
+        "protein": 15,
+        "carbs": 60,
+        "fat": 10
+      },
+      "allergens": ["wheat"],
+      "description": "Vegetarian curry with pumpkin and wild vegetables",
       "tags": ["vegetarian", "Japanese", "Lunch"],
       "serving_time": "Lunch"
     },
@@ -639,6 +1269,14 @@
       "name": "Deep-fried Shrimp with Rice",
       "price": 42.3,
       "ingredients": ["shrimp", "rice", "batter"],
+      "nutrition": {
+        "calories": 650,
+        "protein": 30,
+        "carbs": 70,
+        "fat": 28
+      },
+      "allergens": ["shellfish", "wheat"],
+      "description": "Deep-fried shrimp with rice and tempura dipping sauce",
       "tags": ["fried", "Japanese", "Dinner"],
       "serving_time": "Dinner"
     },
@@ -647,6 +1285,14 @@
       "name": "Wild Mushroom and Vegetable Ramen",
       "price": 29.9,
       "ingredients": ["ramen", "shiitake", "bok choy", "vegetable broth"],
+      "nutrition": {
+        "calories": 420,
+        "protein": 15,
+        "carbs": 50,
+        "fat": 12
+      },
+      "allergens": ["wheat"],
+      "description": "Vegetarian ramen with assorted mushrooms and bok choy in light vegetable broth",
       "tags": ["vegetarian", "Japanese", "Lunch"],
       "serving_time": "Lunch"
     },
@@ -655,6 +1301,14 @@
       "name": "Dumpling and Chicken Skewer Ramen",
       "price": 29.9,
       "ingredients": ["ramen", "pork dumplings", "chicken skewer", "soy sauce"],
+      "nutrition": {
+        "calories": 590,
+        "protein": 30,
+        "carbs": 60,
+        "fat": 24
+      },
+      "allergens": ["wheat", "pork", "soy"],
+      "description": "Ramen combo with chicken skewers and pork dumplings in soy-flavored broth",
       "tags": ["Japanese", "Combo", "Lunch"],
       "serving_time": "Lunch"
     },
@@ -663,6 +1317,14 @@
       "name": "Sweet Corn Dumpling Ramen",
       "price": 32.0,
       "ingredients": ["ramen", "sweet corn", "pork dumplings", "tonkotsu broth"],
+      "nutrition": {
+        "calories": 610,
+        "protein": 24,
+        "carbs": 70,
+        "fat": 20
+      },
+      "allergens": ["wheat", "pork"],
+      "description": "Sweet corn and pork dumplings in creamy tonkotsu ramen broth",
       "tags": ["Japanese", "Sweet", "Dinner"],
       "serving_time": "Dinner"
     },
@@ -671,6 +1333,14 @@
       "name": "Curry Pumpkin Potato Rice Bowl",
       "price": 34.0,
       "ingredients": ["curry", "pumpkin", "potato", "rice"],
+      "nutrition": {
+        "calories": 450,
+        "protein": 12,
+        "carbs": 65,
+        "fat": 15
+      },
+      "allergens": ["wheat"],
+      "description": "Japanese curry with pumpkin and potato cakes served over steamed rice",
       "tags": ["vegetarian", "Japanese", "Lunch"],
       "serving_time": "Lunch"
     },
@@ -679,6 +1349,14 @@
       "name": "Teriyaki Beef with Chicken Steak Rice",
       "price": 42.3,
       "ingredients": ["beef", "teriyaki sauce", "chicken steak", "rice"],
+      "nutrition": {
+        "calories": 730,
+        "protein": 40,
+        "carbs": 75,
+        "fat": 30
+      },
+      "allergens": ["soy"],
+      "description": "Teriyaki beef and chicken steak combo served with Japanese short-grain rice",
       "tags": ["Japanese", "Combo", "Dinner"],
       "serving_time": "Dinner"
     },
@@ -687,6 +1365,14 @@
       "name": "Deep-fried Shrimp Rice Bowl",
       "price": 42.3,
       "ingredients": ["shrimp", "tempura batter", "rice", "tonkatsu sauce"],
+      "nutrition": {
+        "calories": 680,
+        "protein": 30,
+        "carbs": 70,
+        "fat": 32
+      },
+      "allergens": ["shellfish", "wheat"],
+      "description": "Crispy tempura shrimp over rice with tonkatsu sauce and shredded cabbage",
       "tags": ["fried", "Japanese", "Dinner"],
       "serving_time": "Dinner"
     },
@@ -695,6 +1381,14 @@
       "name": "Spicy Fried Chicken Rice Bowl",
       "price": 42.3,
       "ingredients": ["chicken", "spicy sauce", "rice", "sesame seeds"],
+      "nutrition": {
+        "calories": 690,
+        "protein": 38,
+        "carbs": 65,
+        "fat": 34
+      },
+      "allergens": ["wheat"],
+      "description": "Korean spicy fried chicken with sticky sauce served over steamed rice",
       "tags": ["spicy", "Korean", "Dinner"],
       "serving_time": "Dinner"
     },
@@ -703,6 +1397,14 @@
       "name": "Hot Pot Udon",
       "price": 4.3,
       "ingredients": ["udon", "vegetables", "fish cake", "dashi broth"],
+      "nutrition": {
+        "calories": 480,
+        "protein": 20,
+        "carbs": 55,
+        "fat": 18
+      },
+      "allergens": ["wheat"],
+      "description": "Japanese udon hot pot with fish cakes and vegetables in dashi broth",
       "tags": ["hot pot", "Japanese", "All-Day"],
       "serving_time": "All-Day"
     },
@@ -711,6 +1413,14 @@
       "name": "Fruity Soda Combo",
       "price": 8.3,
       "ingredients": ["soda", "fruit syrup", "lemon slice"],
+      "nutrition": {
+        "calories": 180,
+        "protein": 0,
+        "carbs": 45,
+        "fat": 0
+      },
+      "allergens": [],
+      "description": "Refreshing fruity soda with lemon slices and natural fruit syrup",
       "tags": ["beverage", "International", "All-Day"],
       "serving_time": "All-Day"
     },
@@ -719,6 +1429,14 @@
       "name": "Chiu Chow Dumpling Platter",
       "price": 21.7,
       "ingredients": ["dumplings", "peanuts", "mushrooms", "turnip cake"],
+      "nutrition": {
+        "calories": 380,
+        "protein": 15,
+        "carbs": 50,
+        "fat": 14
+      },
+      "allergens": ["peanut", "wheat"],
+      "description": "Chiu Chow-style dumpling platter with peanuts, mushrooms, and turnip cake",
       "tags": ["Dim Sum", "Cantonese", "Breakfast"],
       "serving_time": "Breakfast"
     },
@@ -727,6 +1445,14 @@
       "name": "Glutinous Rice with Chicken Platter",
       "price": 22.7,
       "ingredients": ["glutinous rice", "chicken", "shiitake", "lotus leaf"],
+      "nutrition": {
+        "calories": 520,
+        "protein": 25,
+        "carbs": 70,
+        "fat": 18
+      },
+      "allergens": ["wheat"],
+      "description": "Traditional glutinous rice with chicken wrapped in lotus leaf",
       "tags": ["Cantonese", "Dim Sum", "Lunch"],
       "serving_time": "Lunch"
     },
@@ -735,6 +1461,14 @@
       "name": "Spicy Diced Pork Noodles",
       "price": 19.6,
       "ingredients": ["noodles", "spicy pork", "bean sprouts", "chili oil"],
+      "nutrition": {
+        "calories": 580,
+        "protein": 30,
+        "carbs": 60,
+        "fat": 25
+      },
+      "allergens": ["wheat"],
+      "description": "Sichuan-style spicy diced pork noodles with chili oil and bean sprouts",
       "tags": ["spicy", "Sichuan", "Lunch"],
       "serving_time": "Lunch"
     },
@@ -743,6 +1477,14 @@
       "name": "Scrambled Egg with Ham Macaroni",
       "price": 33.0,
       "ingredients": ["macaroni", "scrambled egg", "ham", "tomato soup"],
+      "nutrition": {
+        "calories": 550,
+        "protein": 25,
+        "carbs": 55,
+        "fat": 20
+      },
+      "allergens": ["egg", "wheat"],
+      "description": "Tomato-based macaroni with scrambled eggs and ham slices",
       "tags": ["Western", "Breakfast", "Combo"],
       "serving_time": "Breakfast"
     },
@@ -751,6 +1493,14 @@
       "name": "Vegetarian Mushroom Macaroni",
       "price": 33.0,
       "ingredients": ["macaroni", "assorted mushrooms", "spinach", "tomato soup"],
+      "nutrition": {
+        "calories": 400,
+        "protein": 18,
+        "carbs": 50,
+        "fat": 12
+      },
+      "allergens": ["wheat"],
+      "description": "Vegetarian macaroni with assorted mushrooms in tomato herb broth",
       "tags": ["vegetarian", "Healthy", "All-Day"],
       "serving_time": "All-Day"
     },
@@ -759,6 +1509,14 @@
       "name": "Sliced Sausage Fusilli in Lobster Bisque",
       "price": 23.7,
       "ingredients": ["fusilli", "sausage", "lobster bisque", "parmesan"],
+      "nutrition": {
+        "calories": 620,
+        "protein": 28,
+        "carbs": 65,
+        "fat": 30
+      },
+      "allergens": ["dairy", "wheat"],
+      "description": "Fusilli pasta in rich lobster bisque with sliced sausage and parmesan cheese",
       "tags": ["Western", "Luxury", "Dinner"],
       "serving_time": "Dinner"
     },
@@ -767,6 +1525,14 @@
       "name": "Beef Teriyaki with Pumpkin Rice",
       "price": 42.3,
       "ingredients": ["beef", "teriyaki sauce", "pumpkin", "rice"],
+      "nutrition": {
+        "calories": 670,
+        "protein": 35,
+        "carbs": 75,
+        "fat": 28
+      },
+      "allergens": ["soy"],
+      "description": "Teriyaki-glazed beef with roasted pumpkin over Japanese short-grain rice",
       "tags": ["Japanese", "Autumn Special", "Dinner"],
       "serving_time": "Dinner"
     },
@@ -775,6 +1541,14 @@
       "name": "Pork Cartilage Pearl Rice",
       "price": 38.2,
       "ingredients": ["pork cartilage", "pearl rice", "crispy shallots", "pickled radish"],
+      "nutrition": {
+        "calories": 650,
+        "protein": 32,
+        "carbs": 70,
+        "fat": 26
+      },
+      "allergens": ["soy"],
+      "description": "Braised pork cartilage with pearl rice, crispy shallots, and pickled radish",
       "tags": ["Cantonese", "Comfort Food", "Lunch"],
       "serving_time": "Lunch"
     },
@@ -784,6 +1558,14 @@
       "name": "kujiwara Chicken Ramen",
       "price": 34.0,
       "ingredients": ["ramen", "chicken", "black fungus", "spring onion"],
+      "nutrition": {
+        "calories": 600,
+        "protein": 30,
+        "carbs": 68,
+        "fat": 22
+      },
+      "allergens": ["wheat"],
+      "description": "kujiwara-style chicken ramen with white fungus and spring onions in chicken bone broth",
       "tags": ["Japanese", "Ramen", "All-Day"],
       "serving_time": "All-Day"
     },
@@ -792,6 +1574,14 @@
       "name": "Spicy Beef Ramen",
       "price": 34.0,
       "ingredients": ["ramen", "beef", "chili oil", "garlic"],
+      "nutrition": {
+        "calories": 680,
+        "protein": 38,
+        "carbs": 70,
+        "fat": 30
+      },
+      "allergens": ["wheat"],
+      "description": "Spicy beef ramen with chili oil and garlic-infused broth",
       "tags": ["spicy", "Japanese", "Dinner"],
       "serving_time": "Dinner"
     },
@@ -800,6 +1590,14 @@
       "name": "Japanese Curry Chicken Hamburg Rice",
       "price": 42.3,
       "ingredients": ["curry", "chicken patty", "cheese", "rice"],
+      "nutrition": {
+        "calories": 710,
+        "protein": 37,
+        "carbs": 82,
+        "fat": 30
+      },
+      "allergens": ["dairy", "wheat"],
+      "description": "Japanese-style chicken hamburger with melted cheese and curry sauce",
       "tags": ["Japanese", "Comfort Food", "Lunch"],
       "serving_time": "Lunch"
     },
@@ -808,6 +1606,14 @@
       "name": "Curry Pumpkin Potato Wild Vegetable Rice",
       "price": 34.0,
       "ingredients": ["curry", "pumpkin", "potato", "vegetables"],
+      "nutrition": {
+        "calories": 380,
+        "protein": 15,
+        "carbs": 60,
+        "fat": 10
+      },
+      "allergens": ["wheat"],
+      "description": "Vegetarian curry with pumpkin, potato cakes, and mixed vegetables",
       "tags": ["vegetarian", "Japanese", "Lunch"],
       "serving_time": "Lunch"
     },
@@ -816,6 +1622,14 @@
       "name": "Fusilli in Tomato Soup with Deep-fried Fish Fillet",
       "price": 32.0,
       "ingredients": ["fusilli", "tomato", "beef", "fish fillet"],
+      "nutrition": {
+        "calories": 620,
+        "protein": 30,
+        "carbs": 65,
+        "fat": 25
+      },
+      "allergens": ["fish", "wheat"],
+      "description": "Tomato-based fusilli with minced beef and deep-fried fish fillet",
       "tags": ["Western", "Combo", "Lunch"],
       "serving_time": "Lunch"
     },
@@ -824,6 +1638,14 @@
       "name": "Fried Noodle with Chicken Steak and Sausage",
       "price": 28.9,
       "ingredients": ["noodles", "chicken steak", "sausage", "soy sauce"],
+      "nutrition": {
+        "calories": 600,
+        "protein": 30,
+        "carbs": 65,
+        "fat": 25
+      },
+      "allergens": ["soy"],
+      "description": "Stir-fried noodles with chicken steak and sausage in soy sauce",
       "tags": ["savory", "Cantonese", "Lunch"],
       "serving_time": "Lunch"
     },
@@ -832,6 +1654,14 @@
       "name": "Macaroni with Tomato Beef Soup and Chicken Steak",
       "price": 35.1,
       "ingredients": ["macaroni", "tomato", "beef", "chicken steak"],
+      "nutrition": {
+        "calories": 550,
+        "protein": 32,
+        "carbs": 60,
+        "fat": 20
+      },
+      "allergens": ["wheat"],
+      "description": "Tomato beef macaroni soup with pan-fried chicken steak",
       "tags": ["Western", "Combo", "Lunch"],
       "serving_time": "Lunch"
     },
@@ -840,6 +1670,14 @@
       "name": "Rice Macaroni Soup with Minced Pork and Dim Sum Platter",
       "price": 29.9,
       "ingredients": ["rice macaroni", "minced pork", "pork bun", "turnip cake"],
+      "nutrition": {
+        "calories": 480,
+        "protein": 20,
+        "carbs": 65,
+        "fat": 15
+      },
+      "allergens": ["wheat", "soy"],
+      "description": "Minced pork rice macaroni with dim sum platter",
       "tags": ["Cantonese", "Breakfast", "Dim Sum"],
       "serving_time": "Breakfast"
     },
@@ -848,6 +1686,14 @@
       "name": "Penne with Sweet Corn Chicken in Cream Soup",
       "price": 34.0,
       "ingredients": ["penne", "sweet corn", "chicken", "cream"],
+      "nutrition": {
+        "calories": 580,
+        "protein": 28,
+        "carbs": 60,
+        "fat": 22
+      },
+      "allergens": ["dairy", "wheat"],
+      "description": "Creamy penne with sweet corn and diced chicken in chicken soup",
       "tags": ["creamy", "Western", "Lunch"],
       "serving_time": "Lunch"
     },
@@ -856,6 +1702,14 @@
       "name": "Beef Teriyaki with Pumpkin Potato Cake Rice",
       "price": 42.3,
       "ingredients": ["beef", "teriyaki sauce", "pumpkin", "rice"],
+      "nutrition": {
+        "calories": 670,
+        "protein": 35,
+        "carbs": 75,
+        "fat": 28
+      },
+      "allergens": ["soy"],
+      "description": "Teriyaki beef with pumpkin potato cakes over steamed rice",
       "tags": ["Japanese", "Combo", "Dinner"],
       "serving_time": "Dinner"
     },
@@ -864,6 +1718,14 @@
       "name": "Kimchi Pork with Spicy Fried Chicken Rice Bowl",
       "price": 42.3,
       "ingredients": ["kimchi", "pork", "fried chicken", "rice"],
+      "nutrition": {
+        "calories": 690,
+        "protein": 38,
+        "carbs": 65,
+        "fat": 34
+      },
+      "allergens": ["wheat"],
+      "description": "Korean spicy fried chicken with kimchi pork on rice",
       "tags": ["spicy", "Korean", "Dinner"],
       "serving_time": "Dinner"
     },
@@ -872,6 +1734,14 @@
       "name": "Grilled Salmon with Pearl Rice and Pickled Vegetables",
       "price": 38.2,
       "ingredients": ["salmon", "pearl rice", "pickles", "sesame seeds"],
+      "nutrition": {
+        "calories": 600,
+        "protein": 35,
+        "carbs": 65,
+        "fat": 25
+      },
+      "allergens": ["fish"],
+      "description": "Grilled salmon served with pearl rice and pickled vegetables, garnished with sesame seeds",
       "tags": ["grilled", "Japanese", "Lunch"],
       "serving_time": "Lunch"
     },
@@ -880,6 +1750,14 @@
       "name": "Beef Sukiyaki Hot Pot with Udon",
       "price": 44.4,
       "ingredients": ["beef", "udon", "tofu", "sukiyaki sauce"],
+      "nutrition": {
+        "calories": 700,
+        "protein": 40,
+        "carbs": 60,
+        "fat": 35
+      },
+      "allergens": ["soy", "wheat"],
+      "description": "Beef sukiyaki hot pot with udon noodles simmered in sweet soy-based broth",
       "tags": ["hot pot", "Japanese", "Dinner"],
       "serving_time": "Dinner"
     },
@@ -888,6 +1766,14 @@
       "name": "Spicy Kimchi Pork Jjigae with Tofu",
       "price": 44.4,
       "ingredients": ["kimchi", "pork belly", "tofu", "rice"],
+      "nutrition": {
+        "calories": 650,
+        "protein": 34,
+        "carbs": 50,
+        "fat": 28
+      },
+      "allergens": ["soy"],
+      "description": "Spicy Korean kimchi pork stew with soft tofu and steamed rice",
       "tags": ["spicy", "Korean", "Dinner"],
       "serving_time": "Dinner"
     },
@@ -896,6 +1782,14 @@
       "name": "Japanese Wagyu Patty with Cheese Rice Bowl",
       "price": 42.3,
       "ingredients": ["wagyu patty", "cheese", "rice", "teriyaki sauce"],
+      "nutrition": {
+        "calories": 720,
+        "protein": 45,
+        "carbs": 70,
+        "fat": 38
+      },
+      "allergens": ["dairy", "wheat"],
+      "description": "Wagyu patty with melted cheese and teriyaki glaze over steamed rice",
       "tags": ["Japanese", "Luxury", "Dinner"],
       "serving_time": "Dinner"
     },
@@ -904,6 +1798,14 @@
       "name": "Mixed Mushroom Congee",
       "price": 10.8,
       "ingredients": ["assorted mushrooms", "rice", "ginger"],
+      "nutrition": {
+        "calories": 320,
+        "protein": 10,
+        "carbs": 45,
+        "fat": 8
+      },
+      "allergens": [],
+      "description": "Vegetarian congee with assorted mushrooms and ginger in light broth",
       "tags": ["vegetarian", "Cantonese", "Breakfast"],
       "serving_time": "Breakfast"
     },
@@ -912,6 +1814,14 @@
       "name": "Pan-fried Turnip Cake with Soy Sauce",
       "price": 11.9,
       "ingredients": ["turnip cake", "soy sauce", "spring onion"],
+      "nutrition": {
+        "calories": 280,
+        "protein": 8,
+        "carbs": 40,
+        "fat": 12
+      },
+      "allergens": ["wheat", "soy"],
+      "description": "Pan-fried turnip cake with crispy edges, served with soy sauce and spring onions",
       "tags": ["Dim Sum", "Cantonese", "All-Day"],
       "serving_time": "All-Day"
     },
@@ -920,6 +1830,14 @@
       "name": "Steamed Glutinous Rice with Chicken",
       "price": 23.7,
       "ingredients": ["glutinous rice", "chicken", "lotus leaf"],
+      "nutrition": {
+        "calories": 480,
+        "protein": 25,
+        "carbs": 70,
+        "fat": 18
+      },
+      "allergens": ["wheat"],
+      "description": "Steamed glutinous rice with chicken wrapped in lotus leaf for aroma",
       "tags": ["Cantonese", "Dim Sum", "Lunch"],
       "serving_time": "Lunch"
     },
@@ -928,6 +1846,14 @@
       "name": "Deep-fried Fish Fillet with Scrambled Egg",
       "price": 25.8,
       "ingredients": ["fish fillet", "egg", "batter"],
+      "nutrition": {
+        "calories": 580,
+        "protein": 30,
+        "carbs": 60,
+        "fat": 25
+      },
+      "allergens": ["fish", "wheat", "soy"],
+      "description": "Crispy fried fish fillet with soft scrambled eggs and soy sauce",
       "tags": ["fried", "Cantonese", "Lunch"],
       "serving_time": "Lunch"
     },
@@ -936,6 +1862,14 @@
       "name": "Satay Beef with Instant Noodle and Egg",
       "price": 21.7,
       "ingredients": ["beef", "instant noodles", "satay sauce", "egg"],
+      "nutrition": {
+        "calories": 540,
+        "protein": 28,
+        "carbs": 55,
+        "fat": 20
+      },
+      "allergens": ["wheat", "peanut"],
+      "description": "Satay beef with instant noodles and soft-boiled egg in peanut sauce broth",
       "tags": ["savory", "Cantonese", "Lunch"],
       "serving_time": "Lunch"
     },
@@ -945,6 +1879,14 @@
       "name": "Sliced Sausage Fusilli in Lobster Bisque with Bacon",
       "price": 25.7,
       "ingredients": ["sausage", "fusilli", "lobster bisque", "bacon"],
+      "nutrition": {
+        "calories": 680,
+        "protein": 32,
+        "carbs": 65,
+        "fat": 30
+      },
+      "allergens": ["shellfish", "wheat"],
+      "description": "Fusilli pasta in rich lobster bisque with sliced sausage and crispy bacon",
       "tags": ["Western", "Luxury", "Dinner"],
       "serving_time": "Dinner"
     },
@@ -953,6 +1895,14 @@
       "name": "Oatmeal with Egg White and Toast",
       "price": 13.1,
       "ingredients": ["oatmeal", "egg white", "milk", "toast"],
+      "nutrition": {
+        "calories": 200,
+        "protein": 12,
+        "carbs": 25,
+        "fat": 5
+      },
+      "allergens": ["egg"],
+      "description": "Low-fat oatmeal with egg white and milk, served with toasted bread",
       "tags": ["healthy", "Western", "Breakfast"],
       "serving_time": "Breakfast"
     },
@@ -961,6 +1911,14 @@
       "name": "Spicy Diced Pork with Rice Vermicelli",
       "price": 19.6,
       "ingredients": ["pork", "rice vermicelli", "chili oil", "bean sprouts"],
+      "nutrition": {
+        "calories": 600,
+        "protein": 30,
+        "carbs": 55,
+        "fat": 25
+      },
+      "allergens": ["wheat"],
+      "description": "Sichuan-style spicy diced pork over rice vermicelli with chili oil",
       "tags": ["spicy", "Sichuan", "Lunch"],
       "serving_time": "Lunch"
     },
@@ -969,6 +1927,14 @@
       "name": "Mock Abalone and Ham Macaroni Soup",
       "price": 24.8,
       "ingredients": ["mock abalone", "ham", "macaroni", "broth"],
+      "nutrition": {
+        "calories": 450,
+        "protein": 20,
+        "carbs": 50,
+        "fat": 15
+      },
+      "allergens": ["wheat"],
+      "description": "Mock abalone and ham macaroni in clear broth with vegetables",
       "tags": ["Cantonese", "Breakfast", "Soup"],
       "serving_time": "Breakfast"
     },
@@ -977,6 +1943,14 @@
       "name": "Satay Chicken Skewer with Peanut Sauce",
       "price": 28.9,
       "ingredients": ["chicken", "satay sauce", "peanut sauce", "rice"],
+      "nutrition": {
+        "calories": 620,
+        "protein": 35,
+        "carbs": 60,
+        "fat": 28
+      },
+      "allergens": ["peanut"],
+      "description": "Grilled chicken skewers with peanut satay sauce and coconut rice",
       "tags": ["grilled", "Malaysian", "Dinner"],
       "serving_time": "Dinner"
     },
@@ -985,6 +1959,14 @@
       "name": "Creamy Corn Chicken Penne Soup",
       "price": 34.0,
       "ingredients": ["penne", "sweet corn", "chicken", "cream"],
+      "nutrition": {
+        "calories": 550,
+        "protein": 28,
+        "carbs": 58,
+        "fat": 22
+      },
+      "allergens": ["dairy", "wheat"],
+      "description": "Creamy penne with sweet corn and diced chicken in chicken soup base",
       "tags": ["creamy", "Western", "Lunch"],
       "serving_time": "Lunch"
     },
@@ -993,6 +1975,14 @@
       "name": "Teriyaki Chicken with Pumpkin Rice",
       "price": 42.3,
       "ingredients": ["chicken", "teriyaki sauce", "pumpkin", "rice"],
+      "nutrition": {
+        "calories": 670,
+        "protein": 40,
+        "carbs": 70,
+        "fat": 30
+      },
+      "allergens": ["soy"],
+      "description": "Teriyaki-glazed chicken with roasted pumpkin over Japanese short-grain rice",
       "tags": ["Japanese", "Autumn Special", "Dinner"],
       "serving_time": "Dinner"
     },
@@ -1001,6 +1991,14 @@
       "name": "Vegetarian Curry with Wild Rice",
       "price": 34.0,
       "ingredients": ["curry", "wild rice", "vegetables", "coconut milk"],
+      "nutrition": {
+        "calories": 420,
+        "protein": 15,
+        "carbs": 60,
+        "fat": 12
+      },
+      "allergens": [],
+      "description": "Vegetarian curry with pumpkin and wild vegetables on coconut-infused rice",
       "tags": ["vegetarian", "Japanese", "Lunch"],
       "serving_time": "Lunch"
     },
@@ -1009,6 +2007,14 @@
       "name": "Seafood Miso Ramen with Clams",
       "price": 32.0,
       "ingredients": ["ramen", "clams", "miso broth", "nori"],
+      "nutrition": {
+        "calories": 540,
+        "protein": 25,
+        "carbs": 58,
+        "fat": 18
+      },
+      "allergens": ["shellfish", "wheat", "soy"],
+      "description": "Seafood miso ramen with clams and nori in fermented soybean broth",
       "tags": ["seafood", "Japanese", "All-Day"],
       "serving_time": "All-Day"
     },
@@ -1017,6 +2023,14 @@
       "name": "Pork Cartilage with Pickled Radish Rice",
       "price": 36.1,
       "ingredients": ["pork cartilage", "rice", "pickled radish", "soy glaze"],
+      "nutrition": {
+        "calories": 590,
+        "protein": 28,
+        "carbs": 65,
+        "fat": 24
+      },
+      "allergens": ["soy"],
+      "description": "Braised pork cartilage with pickled radish over jasmine rice",
       "tags": ["savory", "Cantonese", "Lunch"],
       "serving_time": "Lunch"
     },
@@ -1025,6 +2039,14 @@
       "name": "Salted Fish and Peanut Congee",
       "price": 10.8,
       "ingredients": ["salted fish", "peanut", "rice", "ginger"],
+      "nutrition": {
+        "calories": 350,
+        "protein": 14,
+        "carbs": 40,
+        "fat": 12
+      },
+      "allergens": ["fish"],
+      "description": "Salted fish and peanut congee with ginger and spring onions",
       "tags": ["Cantonese", "Congee", "Breakfast"],
       "serving_time": "Breakfast"
     },
@@ -1033,6 +2055,14 @@
       "name": "Steamed Beef Ball with Black Bean Sauce",
       "price": 16.4,
       "ingredients": ["beef ball", "black bean sauce", "soy sauce"],
+      "nutrition": {
+        "calories": 220,
+        "protein": 16,
+        "carbs": 20,
+        "fat": 10
+      },
+      "allergens": ["soy"],
+      "description": "Steamed beef balls in savory black bean sauce with garlic",
       "tags": ["Dim Sum", "Cantonese", "All-Day"],
       "serving_time": "All-Day"
     },
@@ -1041,6 +2071,14 @@
       "name": "Crispy Chicken with Pearl Rice and Seaweed",
       "price": 38.2,
       "ingredients": ["chicken", "pearl rice", "seaweed", "sesame"],
+      "nutrition": {
+        "calories": 650,
+        "protein": 32,
+        "carbs": 70,
+        "fat": 26
+      },
+      "allergens": ["wheat"],
+      "description": "Crispy fried chicken served with pearl rice and seasoned seaweed",
       "tags": ["fried", "Japanese", "Lunch"],
       "serving_time": "Lunch"
     },
@@ -1049,6 +2087,14 @@
       "name": "Fish Dumpling with Chili Oil",
       "price": 12.9,
       "ingredients": ["fish dumpling", "chili oil", "soy sauce"],
+      "nutrition": {
+        "calories": 180,
+        "protein": 10,
+        "carbs": 25,
+        "fat": 6
+      },
+      "allergens": ["fish", "wheat", "soy"],
+      "description": "Fish dumplings drizzled with spicy chili oil and soy sauce",
       "tags": ["spicy", "Dim Sum", "All-Day"],
       "serving_time": "All-Day"
     },
@@ -1057,6 +2103,14 @@
       "name": "Bitter Melon and Pork Ribs Soup",
       "price": 10.8,
       "ingredients": ["bitter melon", "pork ribs", "ginger", "broth"],
+      "nutrition": {
+        "calories": 320,
+        "protein": 18,
+        "carbs": 30,
+        "fat": 12
+      },
+      "allergens": [],
+      "description": "Bitter melon and pork ribs soup with ginger in clear broth",
       "tags": ["Cantonese", "Soup", "Dinner"],
       "serving_time": "Dinner"
     },
@@ -1065,6 +2119,14 @@
       "name": "Chicken Feet with Black Bean Sauce",
       "price": 23.7,
       "ingredients": ["chicken feet", "black bean sauce", "garlic"],
+      "nutrition": {
+        "calories": 480,
+        "protein": 24,
+        "carbs": 40,
+        "fat": 20
+      },
+      "allergens": ["soy"],
+      "description": "Braised chicken feet in fermented black bean sauce with garlic",
       "tags": ["Dim Sum", "Cantonese", "All-Day"],
       "serving_time": "All-Day"
     },
@@ -1073,6 +2135,14 @@
       "name": "Scrambled Egg with Luncheon Meat Macaroni",
       "price": 19.6,
       "ingredients": ["macaroni", "egg", "luncheon meat", "broth"],
+      "nutrition": {
+        "calories": 450,
+        "protein": 20,
+        "carbs": 55,
+        "fat": 18
+      },
+      "allergens": ["egg", "wheat"],
+      "description": "Macaroni with scrambled eggs and luncheon meat in light broth",
       "tags": ["Western", "Breakfast", "All-Day"],
       "serving_time": "All-Day"
     },
@@ -1081,6 +2151,14 @@
       "name": "Sweet Potato Congee with Red Bean",
       "price": 10.8,
       "ingredients": ["sweet potato", "red bean", "rice", "sugar"],
+      "nutrition": {
+        "calories": 300,
+        "protein": 10,
+        "carbs": 50,
+        "fat": 5
+      },
+      "allergens": [],
+      "description": "Sweet potato and red bean congee with a touch of sugar",
       "tags": ["vegetarian", "Cantonese", "Breakfast"],
       "serving_time": "Breakfast"
     },
@@ -1089,6 +2167,14 @@
       "name": "Japanese Tempura Shrimp Rice Bowl",
       "price": 42.3,
       "ingredients": ["shrimp", "tempura batter", "rice", "tonkatsu sauce"],
+      "nutrition": {
+        "calories": 680,
+        "protein": 30,
+        "carbs": 70,
+        "fat": 28
+      },
+      "allergens": ["shellfish", "wheat"],
+      "description": "Crispy tempura shrimp over rice with tonkatsu sauce and shredded cabbage",
       "tags": ["fried", "Japanese", "Dinner"],
       "serving_time": "Dinner"
     },
@@ -1097,6 +2183,14 @@
       "name": "Glutinous Rice with Chicken in Lotus Leaf",
       "price": 23.7,
       "ingredients": ["glutinous rice", "chicken", "lotus leaf"],
+      "nutrition": {
+        "calories": 480,
+        "protein": 25,
+        "carbs": 70,
+        "fat": 18
+      },
+      "allergens": ["wheat"],
+      "description": "Steamed glutinous rice with chicken wrapped in fragrant lotus leaf",
       "tags": ["Cantonese", "Dim Sum", "Lunch"],
       "serving_time": "Lunch"
     },
@@ -1105,6 +2199,14 @@
       "name": "Satay Beef with Instant Noodles",
       "price": 21.7,
       "ingredients": ["beef", "instant noodles", "satay sauce"],
+      "nutrition": {
+        "calories": 540,
+        "protein": 28,
+        "carbs": 55,
+        "fat": 20
+      },
+      "allergens": ["wheat"],
+      "description": "Satay beef with instant noodles in peanut-flavored broth",
       "tags": ["savory", "Cantonese", "Lunch"],
       "serving_time": "Lunch"
     },
@@ -1113,6 +2215,14 @@
       "name": "Crispy Chicken with Pearl Rice",
       "price": 38.2,
       "ingredients": ["chicken", "pearl rice", "seaweed"],
+      "nutrition": {
+        "calories": 650,
+        "protein": 32,
+        "carbs": 70,
+        "fat": 26
+      },
+      "allergens": ["wheat"],
+      "description": "Crispy fried chicken served with pearl rice and seasoned seaweed",
       "tags": ["fried", "Japanese", "Lunch"],
       "serving_time": "Lunch"
     },
@@ -1121,15 +2231,30 @@
       "name": "Fusilli in Tomato Soup with Pan-fried Chicken Steak",
       "price": 32.00,
       "ingredients": ["fusilli", "tomato", "beef", "chicken steak"],
+      "nutrition": {
+        "calories": 620,
+        "protein": 30,
+        "carbs": 65,
+        "fat": 25
+      },
+      "allergens": ["wheat"],
+      "description": "Tomato-based fusilli with pan-fried chicken steak and minced beef",
       "tags": ["Western", "Combo", "Lunch"],
       "serving_time": "Lunch"
     },
-  
     {
       "id": 141,
       "name": "Fried Noodle with Deep-fried Fish Fillet",
       "price": 28.90,
       "ingredients": ["noodles", "fish fillet", "soy sauce"],
+      "nutrition": {
+        "calories": 600,
+        "protein": 30,
+        "carbs": 65,
+        "fat": 25
+      },
+      "allergens": ["soy"],
+      "description": "Stir-fried noodles with crispy deep-fried fish fillet in soy sauce",
       "tags": ["savory", "Cantonese", "Lunch"],
       "serving_time": "Lunch"
     },
@@ -1138,6 +2263,14 @@
       "name": "Macaroni with Minced Beef and Scrambled Egg",
       "price": 33.00,
       "ingredients": ["macaroni", "tomato", "beef", "egg"],
+      "nutrition": {
+        "calories": 550,
+        "protein": 32,
+        "carbs": 60,
+        "fat": 20
+      },
+      "allergens": ["wheat"],
+      "description": "Tomato beef macaroni soup with scrambled eggs",
       "tags": ["Western", "Combo", "Lunch"],
       "serving_time": "Lunch"
     },
@@ -1146,6 +2279,14 @@
       "name": "Rice Macaroni Soup with Dim Sum Platter",
       "price": 29.90,
       "ingredients": ["rice macaroni", "minced pork", "turnip cake", "fish dumpling"],
+      "nutrition": {
+        "calories": 480,
+        "protein": 20,
+        "carbs": 65,
+        "fat": 15
+      },
+      "allergens": ["wheat", "soy"],
+      "description": "Minced pork rice macaroni with dim sum platter",
       "tags": ["Cantonese", "Breakfast", "Dim Sum"],
       "serving_time": "Breakfast"
     },
@@ -1154,6 +2295,14 @@
       "name": "Teriyaki Beef with Pumpkin Potato Cake Rice",
       "price": 42.30,
       "ingredients": ["beef", "teriyaki sauce", "pumpkin", "rice"],
+      "nutrition": {
+        "calories": 670,
+        "protein": 35,
+        "carbs": 75,
+        "fat": 28
+      },
+      "allergens": ["soy"],
+      "description": "Teriyaki beef with pumpkin potato cakes over steamed rice",
       "tags": ["Japanese", "Combo", "Dinner"],
       "serving_time": "Dinner"
     },
@@ -1162,6 +2311,14 @@
       "name": "Sliced Beef Ramen with Bamboo Shoots",
       "price": 34.00,
       "ingredients": ["ramen", "beef", "bamboo shoots", "nori"],
+      "nutrition": {
+        "calories": 580,
+        "protein": 32,
+        "carbs": 65,
+        "fat": 20
+      },
+      "allergens": ["wheat", "soy"],
+      "description": "Sliced beef ramen with bamboo shoots and nori in rich tonkotsu broth",
       "tags": ["Japanese", "Ramen", "Dinner"],
       "serving_time": "Dinner"
     },
@@ -1170,6 +2327,14 @@
       "name": "Japanese Seafood Ramen with Squid",
       "price": 29.90,
       "ingredients": ["ramen", "squid", "mussels", "miso broth"],
+      "nutrition": {
+        "calories": 500,
+        "protein": 25,
+        "carbs": 55,
+        "fat": 16
+      },
+      "allergens": ["shellfish", "wheat"],
+      "description": "Seafood ramen with squid, mussels, and miso broth",
       "tags": ["seafood", "Japanese", "All-Day"],
       "serving_time": "All-Day"
     },
@@ -1178,6 +2343,14 @@
       "name": "Spicy Chicken Rice Noodle Soup",
       "price": 32.0,
       "ingredients": ["chicken", "chili oil", "rice noodle"],
+      "nutrition": {
+        "calories": 520,
+        "protein": 26,
+        "carbs": 65,
+        "fat": 18
+      },
+      "allergens": ["wheat"],
+      "description": "Spicy Sichuan-style rice noodle soup with minced chicken.",
       "tags": ["soup", "Sichuan"],
       "serving_time": "Lunch"
     },
@@ -1186,6 +2359,14 @@
       "name": "Chiu Chow Dumpling Platter with Fish Dumpling",
       "price": 21.70,
       "ingredients": ["Chiu Chow dumpling", "fish dumpling", "turnip cake"],
+      "nutrition": {
+        "calories": 380,
+        "protein": 18,
+        "carbs": 45,
+        "fat": 14
+      },
+      "allergens": ["wheat"],
+      "description": "Chiu Chow-style dumplings with fish dumplings and pan-fried turnip cake",
       "tags": ["Dim Sum", "Cantonese", "Breakfast"],
       "serving_time": "Breakfast"
     },
@@ -1194,6 +2375,14 @@
       "name": "Seafood Yosenabe Hot Pot with Tofu",
       "price": 47.40,
       "ingredients": ["seafood", "tofu", "napa cabbage", "soy milk broth"],
+      "nutrition": {
+        "calories": 680,
+        "protein": 38,
+        "carbs": 55,
+        "fat": 30
+      },
+      "allergens": ["shellfish", "soy"],
+      "description": "Seafood hot pot with tofu and vegetables simmered in soy milk broth",
       "tags": ["hot pot", "Japanese", "Dinner"],
       "serving_time": "Dinner"
     },
@@ -1202,6 +2391,14 @@
       "name": "Hot Pot Udon with Fish Cake",
       "price": 4.30,
       "ingredients": ["udon", "fish cake", "vegetables", "dashi broth"],
+      "nutrition": {
+        "calories": 480,
+        "protein": 20,
+        "carbs": 55,
+        "fat": 18
+      },
+      "allergens": ["wheat"],
+      "description": "Udon hot pot with fish cakes and vegetables in dashi broth",
       "tags": ["hot pot", "Japanese", "All-Day"],
       "serving_time": "All-Day"
     },
@@ -1210,6 +2407,14 @@
       "name": "Japanese Shrimp Ramen with Fish Cake",
       "price": 32.00,
       "ingredients": ["ramen", "shrimp", "fish cake", "seaweed"],
+      "nutrition": {
+        "calories": 540,
+        "protein": 28,
+        "carbs": 58,
+        "fat": 18
+      },
+      "allergens": ["shellfish", "wheat"],
+      "description": "Shrimp and fish cake ramen in seafood-infused",
       "tags": ["seafood", "Japanese", "Dinner"],
       "serving_time": "Dinner"
     },
@@ -1218,6 +2423,14 @@
       "name": "Kumamoto Chicken Ramen with Black Fungus",
       "price": 34.00,
       "ingredients": ["ramen", "chicken", "black fungus", "spring onion"],
+      "nutrition": {
+        "calories": 600,
+        "protein": 30,
+        "carbs": 68,
+        "fat": 22
+      },
+      "allergens": ["wheat"],
+      "description": "Kumamoto-style chicken ramen with black fungus and spring onions in chicken bone broth",
       "tags": ["Japanese", "Ramen", "All-Day"],
       "serving_time": "All-Day"
     },
@@ -1226,6 +2439,14 @@
       "name": "Pork Cartilage Ramen with Mushrooms",
       "price": 34.00,
       "ingredients": ["ramen", "pork cartilage", "mushrooms", "soy broth"],
+      "nutrition": {
+        "calories": 620,
+        "protein": 35,
+        "carbs": 70,
+        "fat": 25
+      },
+      "allergens": ["pork", "wheat", "soy"],
+      "description": "Slow-cooked pork cartilage ramen with mushrooms in soy-based broth",
       "tags": ["Japanese", "Ramen", "Dinner"],
       "serving_time": "Dinner"
     },
@@ -1234,6 +2455,14 @@
       "name": "Japanese BBQ Pork Ramen with Egg",
       "price": 34.00,
       "ingredients": ["ramen", "bbq pork", "egg", "bean sprouts"],
+      "nutrition": {
+        "calories": 650,
+        "protein": 40,
+        "carbs": 75,
+        "fat": 28
+      },
+      "allergens": ["egg", "wheat"],
+      "description": "Japanese BBQ pork slices with soft-boiled egg and bean sprouts in miso broth",
       "tags": ["Japanese", "Ramen", "Lunch"],
       "serving_time": "Lunch"
     },
@@ -1242,6 +2471,14 @@
       "name": "Japanese Dumpling Chicken Skewer Ramen",
       "price": 29.90,
       "ingredients": ["ramen", "pork dumplings", "chicken skewer", "soy sauce"],
+      "nutrition": {
+        "calories": 590,
+        "protein": 30,
+        "carbs": 60,
+        "fat": 24
+      },
+      "allergens": ["wheat", "pork", "soy"],
+      "description": "Ramen with chicken skewers, pork dumplings, and soy-flavored broth",
       "tags": ["Japanese", "Combo", "Lunch"],
       "serving_time": "Lunch"
     },
@@ -1250,6 +2487,14 @@
       "name": "Preserved EggPork Congee TurnipCake",
       "price": 19.6,
       "ingredients": ["preserved egg", "lean pork", "rice", "radish"],
+       "nutrition": {
+        "calories": 420,
+        "protein": 18,
+        "carbs": 55,
+        "fat": 12
+      },
+      "allergens": ["egg", "gluten"],
+      "description": "Slow-cooked rice porridge with sliced lean pork and century egg, accompanied by pan-fried radish cake made with rice flour and dried shrimp",
       "tags": ["congee", "Cantonese"],
       "serving_time": "Breakfast"
     },
@@ -1258,6 +2503,14 @@
       "name": "Preserved EggPork Congee RiceVermicelli",
       "price": 19.6,
       "ingredients": ["preserved egg", "pork", "rice noodles"],
+      "nutrition": {
+        "calories": 380,
+        "protein": 15,
+        "carbs": 60,
+        "fat": 8
+      },
+      "allergens": ["wheat", "soy"],
+      "description": "Thick rice porridge with preserved egg and shredded pork, served with stir-fried rice vermicelli cooked in soy sauce and sesame oil",
       "tags": ["congee", "fried"],
       "serving_time": "Breakfast"
     },
@@ -1266,6 +2519,14 @@
       "name": "Leaf Mustard Pork Bone Congee",
       "price": 10.8,
       "ingredients": ["leaf mustard", "pork bone", "rice"],
+      "nutrition": {
+        "calories": 320,
+        "protein": 14,
+        "carbs": 48,
+        "fat": 6
+      },
+      "allergens": ["soy"],
+      "description": "Traditional Guangdong-style congee with pork bones simmered for 4 hours with preserved leaf mustard greens",
       "tags": ["congee", "savory"],
       "serving_time": "All Day"
     },
@@ -1274,6 +2535,14 @@
       "name": "Dried Oyster Sliced PorkCongee",
       "price": 10.8,
       "ingredients": ["dried oyster", "sliced pork", "rice"],
+      "nutrition": {
+        "calories": 350,
+        "protein": 16,
+        "carbs": 50,
+        "fat": 9
+      },
+      "allergens": ["shellfish"],
+      "description": "Umami-rich congee featuring dried oysters and tender pork slices, garnished with crispy fried garlic",
       "tags": ["congee", "seafood"],
       "serving_time": "All Day"
     },
@@ -1282,6 +2551,14 @@
       "name": "Mushroom Salted Chicken Congee",
       "price": 10.8,
       "ingredients": ["shiitake mushroom", "salted chicken", "rice"],
+      "nutrition": {
+        "calories": 290,
+        "protein": 22,
+        "carbs": 35,
+        "fat": 7
+      },
+      "allergens": [],
+      "description": "Fragrant congee made with free-range salted chicken and dried shiitake mushrooms, slow-cooked with jasmine rice",
       "tags": ["congee", "protein"],
       "serving_time": "All Day"
     },
@@ -1290,6 +2567,14 @@
       "name": "Bonito Peanut Congee",
       "price": 10.8,
       "ingredients": ["dried bonito", "peanut", "rice"],
+      "nutrition": {
+        "calories": 310,
+        "protein": 12,
+        "carbs": 45,
+        "fat": 8
+      },
+      "allergens": ["fish"],
+      "description": "Nutty congee combining smoked bonito flakes and roasted peanuts, topped with spring onions",
       "tags": ["congee", "seafood"],
       "serving_time": "All Day"
     },
@@ -1298,6 +2583,14 @@
       "name": "Pan Fried PorkChop Steak",
       "price": 25.8,
       "ingredients": ["pork chop", "soy sauce", "garlic"],
+      "nutrition": {
+        "calories": 450,
+        "protein": 28,
+        "carbs": 30,
+        "fat": 22
+      },
+      "allergens": ["soy"],
+      "description": "Juicy pork chop marinated in secret sauce, char-grilled and served with garlic",
       "tags": ["grill", "protein"],
       "serving_time": "Lunch"
     },
@@ -1306,6 +2599,14 @@
       "name": "Deep Fried Fish Fillet Ham",
       "price": 25.8,
       "ingredients": ["white fish", "ham", "tempura batter"],
+      "nutrition": {
+        "calories": 480,
+        "protein": 20,
+        "carbs": 40,
+        "fat": 25
+      },
+      "allergens": ["wheat", "fish"],
+      "description": "Crispy beer-battered cod fillet paired with honey-glazed ham, served with tartar sauce",
       "tags": ["fried", "seafood"],
       "serving_time": "Dinner"
     },
@@ -1314,6 +2615,14 @@
       "name": "Satay Beef Vermicelli Soup",
       "price": 24.8,
       "ingredients": ["beef", "satay sauce", "rice vermicelli"],
+      "nutrition": {
+        "calories": 390,
+        "protein": 24,
+        "carbs": 55,
+        "fat": 10
+      },
+      "allergens": ["peanut"],
+      "description": "Rich satay broth with tender beef slices and rice vermicelli, sprinkled with crushed peanuts",
       "tags": ["soup", "spicy"],
       "serving_time": "Breakfast"
     },
@@ -1322,6 +2631,14 @@
       "name": "Tomato Soup Macaroni LuncheonMeat",
       "price": 19.6,
       "ingredients": ["tomato", "luncheon meat", "macaroni"],
+      "nutrition": {
+        "calories": 280,
+        "protein": 12,
+        "carbs": 40,
+        "fat": 7
+      },
+      "allergens": ["wheat"],
+      "description": "Homestyle tomato soup with spiral macaroni and pan-fried luncheon meat cubes",
       "tags": ["soup", "comfort"],
       "serving_time": "Breakfast"
     },
@@ -1330,6 +2647,14 @@
       "name": "Spicy Chicken RiceNoodle Dumpling",
       "price": 32.0,
       "ingredients": ["chicken", "chili oil", "rice noodle"],
+      "nutrition": {
+        "calories": 520,
+        "protein": 26,
+        "carbs": 65,
+        "fat": 18
+      },
+      "allergens": ["wheat"],
+      "description": "Numbing spicy broth with minced chicken, served with golden pan-fried dumplings filled with sweet corn pork",
       "tags": ["spicy", "Sichuan"],
       "serving_time": "Lunch"
     },
@@ -1338,6 +2663,14 @@
       "name": "Steamed Glutinous Rice Chicken",
       "price": 23.7,
       "ingredients": ["glutinous rice", "chicken", "mushroom"],
+      "nutrition": {
+        "calories": 410,
+        "protein": 18,
+        "carbs": 70,
+        "fat": 9
+      },
+      "allergens": ["mushroom"],
+      "description": "Traditional lotus leaf-wrapped sticky rice with marinated chicken and Chinese sausage",
       "tags": ["steamed", "traditional"],
       "serving_time": "Dinner"
     },
@@ -1346,6 +2679,14 @@
       "name": "Preserved Vegetable Pork Macaroni",
       "price": 17.5,
       "ingredients": ["preserved vegetable", "pork", "macaroni"],
+      "nutrition": {
+        "calories": 270,
+        "protein": 10,
+        "carbs": 42,
+        "fat": 5
+      },
+      "allergens": [],
+      "description": "Clear broth with al dente macaroni and preserved Sichuan vegetable strips",
       "tags": ["soup", "savory"],
       "serving_time": "Breakfast"
     },
@@ -1354,6 +2695,14 @@
       "name": "Wagyu Patty Scrambled Egg",
       "price": 29.9,
       "ingredients": ["wagyu beef", "egg", "toast"],
+      "nutrition": {
+        "calories": 670,
+        "protein": 35,
+        "carbs": 45,
+        "fat": 40
+      },
+      "allergens": ["egg"],
+      "description": "Premium Japanese Wagyu patty served with silky scrambled eggs on artisan sourdough toast",
       "tags": ["premium", "fusion"],
       "serving_time": "Dinner"
     },
@@ -1362,6 +2711,14 @@
       "name": "Bitter Melon Pork Ribs Congee",
       "price": 10.8,
       "ingredients": ["bitter melon", "pork ribs", "rice"],
+      "nutrition": {
+        "calories": 180,
+        "protein": 8,
+        "carbs": 30,
+        "fat": 3
+      },
+      "allergens": [],
+      "description": "Detoxifying congee with bitter melon and fall-off-the-bone pork ribs",
       "tags": ["congee", "health"],
       "serving_time": "All Day"
     },
@@ -1370,6 +2727,14 @@
       "name": "Mock Abalone Chicken Congee",
       "price": 10.8,
       "ingredients": ["mock abalone", "chicken", "rice"],
+      "nutrition": {
+        "calories": 210,
+        "protein": 9,
+        "carbs": 38,
+        "fat": 4
+      },
+      "allergens": ["wheat"],
+      "description": "Vegetarian-friendly congee featuring mushroom-based mock abalone slices",
       "tags": ["congee", "vegetarian"],
       "serving_time": "All Day"
     },
@@ -1378,6 +2743,14 @@
       "name": "Salted Fish Peanut Ribs Congee",
       "price": 10.8,
       "ingredients": ["salted fish", "peanut", "pork ribs"],
+      "nutrition": {
+        "calories": 330,
+        "protein": 15,
+        "carbs": 50,
+        "fat": 9
+      },
+      "allergens": ["fish"],
+      "description": "Strong-flavored congee with salted mackerel and slow-cooked pork ribs",
       "tags": ["congee", "strong"],
       "serving_time": "All Day"
     },
@@ -1386,6 +2759,14 @@
       "name": "ThreeShreds Fried Noodles",
       "price": 11.9,
       "ingredients": ["pork", "carrot", "egg noodle"],
+      "nutrition": {
+        "calories": 290,
+        "protein": 14,
+        "carbs": 35,
+        "fat": 10
+      },
+      "allergens": ["soy"],
+      "description": "Wok-fried noodles with julienned pork, carrots",
       "tags": ["stir-fry", "quick"],
       "serving_time": "Lunch"
     },
@@ -1394,6 +2775,14 @@
       "name": "Lotus Seed Paste Bun Set",
       "price": 21.7,
       "ingredients": ["lotus seed", "wheat flour", "sugar"],
+      "nutrition": {
+        "calories": 250,
+        "protein": 5,
+        "carbs": 55,
+        "fat": 2
+      },
+      "allergens": ["wheat"],
+      "description": "Fluffy steamed buns filled with sweet lotus seed paste, served in bamboo baskets",
       "tags": ["dimsum", "sweet"],
       "serving_time": "Breakfast"
     },
@@ -1402,6 +2791,14 @@
       "name": "Beef Ball Black Pepper",
       "price": 16.4,
       "ingredients": ["beef", "black pepper", "soy sauce"],
+      "nutrition": {
+        "calories": 180,
+        "protein": 12,
+        "carbs": 10,
+        "fat": 9
+      },
+      "allergens": ["soy"],
+      "description": "Tender beef balls seasoned with freshly ground black pepper and oyster sauce",
       "tags": ["steamed", "snack"],
       "serving_time": "All Day"
     },
@@ -1410,6 +2807,14 @@
       "name": "Steamed Mock Abalone Chicken Congee",
       "price": 10.8,
       "ingredients": ["mock abalone", "chicken", "rice"],
+      "nutrition": {
+        "calories": 210,
+        "protein": 9,
+        "carbs": 38,
+        "fat": 4
+      },
+      "allergens": ["wheat"],
+      "description": "Vegetarian congee featuring mushroom-based mock abalone slices and free-range chicken",
       "tags": ["congee", "vegetarian"],
       "serving_time": "All Day"
     },
@@ -1418,6 +2823,14 @@
       "name": "Salted Fish Peanut Ribs Congee",
       "price": 10.8,
       "ingredients": ["salted fish", "peanut", "pork ribs"],
+      "nutrition": {
+        "calories": 330,
+        "protein": 15,
+        "carbs": 50,
+        "fat": 9
+      },
+      "allergens": ["fish"],
+      "description": "Intense flavor combination of salted mackerel and pork ribs slow-cooked with peanuts",
       "tags": ["congee", "strong"],
       "serving_time": "All Day"
     },
@@ -1426,6 +2839,14 @@
       "name": "Triple Shred Fried Rice Vermicelli",
       "price": 11.9,
       "ingredients": ["pork", "carrot", "rice vermicelli"],
+      "nutrition": {
+        "calories": 290,
+        "protein": 14,
+        "carbs": 35,
+        "fat": 10
+      },
+      "allergens": ["soy"],
+      "description": "Wok-fried vermicelli with julienned pork, carrots",
       "tags": ["stir-fry", "quick"],
       "serving_time": "Lunch"
     },
@@ -1434,6 +2855,14 @@
       "name": "Lotus Seed Bun Breakfast Set",
       "price": 21.7, 
       "ingredients": ["lotus seed", "wheat flour", "sugar"],
+      "nutrition": {
+        "calories": 250,
+        "protein": 5,
+        "carbs": 55,
+        "fat": 2
+      },
+      "allergens": ["wheat"],
+      "description": "Fluffy steamed buns filled with lotus seed paste, served with Chinese tea",
       "tags": ["dimsum", "sweet"],
       "serving_time": "Breakfast"
     },
@@ -1442,6 +2871,14 @@
       "name": "Black Pepper Beef Ball Steamed",
       "price": 16.4,
       "ingredients": ["beef", "black pepper", "soy sauce"],
+      "nutrition": {
+        "calories": 180,
+        "protein": 12,
+        "carbs": 10,
+        "fat": 9
+      },
+      "allergens": ["soy"],
+      "description": "Beef balls seasoned with crushed black peppercorns and oyster sauce glaze",
       "tags": ["steamed", "snack"],
       "serving_time": "All Day"
     },
@@ -1450,6 +2887,14 @@
       "name": "Crispy Fish Cake Congee",
       "price": 10.8,
       "ingredients": ["white fish", "rice", "ginger"],
+      "nutrition": {
+        "calories": 310,
+        "protein": 13,
+        "carbs": 50,
+        "fat": 7
+      },
+      "allergens": ["fish"],
+      "description": "Silky congee with pan-fried fish cake and fresh ginger garnish",
       "tags": ["congee", "seafood"],
       "serving_time": "All Day"
     },
@@ -1458,6 +2903,14 @@
       "name": "Golden CornMock Chicken Congee",
       "price": 10.8,
       "ingredients": ["sweet corn", "mock chicken", "rice"],
+      "nutrition": {
+        "calories": 240,
+        "protein": 8,
+        "carbs": 42,
+        "fat": 5
+      },
+      "allergens": [],
+      "description": "Sweet corn congee with textured vegetable protein mock chicken",
       "tags": ["congee", "vegetarian"],
       "serving_time": "All Day"
     },
@@ -1466,6 +2919,14 @@
       "name": "Pumpkin Pork Rib Congee",
       "price": 10.8,
       "ingredients": ["pumpkin", "pork ribs", "rice"],
+      "nutrition": {
+        "calories": 320,
+        "protein": 11,
+        "carbs": 55,
+        "fat": 6
+      },
+      "allergens": [],
+      "description": "Creamy pumpkin congee with fall-off-the-bone pork ribs",
       "tags": ["congee", "comfort"],
       "serving_time": "All Day"
     },
@@ -1474,6 +2935,14 @@
       "name": "Watercress Pork Cartilage Congee",
       "price": 10.8,
       "ingredients": ["watercress", "pork cartilage", "rice"],
+      "nutrition": {
+        "calories": 290,
+        "protein": 10,
+        "carbs": 48,
+        "fat": 5
+      },
+      "allergens": [],
+      "description": "Herbal congee with nutrient-rich watercress and tender pork cartilage",
       "tags": ["congee", "herbal"],
       "serving_time": "All Day"
     },
@@ -1482,6 +2951,14 @@
       "name": "Double Mushroom Chicken Congee",
       "price": 10.8,
       "ingredients": ["shiitake", "button mushroom", "chicken"],
+      "nutrition": {
+        "calories": 260,
+        "protein": 12,
+        "carbs": 40,
+        "fat": 7
+      },
+      "allergens": [],
+      "description": "Umami-packed congee with dual mushroom varieties and free-range chicken",
       "tags": ["congee", "umami"],
       "serving_time": "All Day"
     },
@@ -1490,6 +2967,14 @@
       "name": "Salted EggPork Congee Special",
       "price": 10.8,
       "ingredients": ["salted egg", "pork", "rice"],
+      "nutrition": {
+        "calories": 350,
+        "protein": 14,
+        "carbs": 52,
+        "fat": 8
+      },
+      "allergens": ["egg"],
+      "description": "Rich congee with salted duck egg yolk and hand-shredded pork",
       "tags": ["congee", "savory"],
       "serving_time": "All Day"
     },
@@ -1498,6 +2983,14 @@
       "name": "Spicy Chicken Feet Steamed Rice",
       "price": 23.7,
       "ingredients": ["chicken feet", "glutinous rice", "chili"],
+      "nutrition": {
+        "calories": 420,
+        "protein": 18,
+        "carbs": 65,
+        "fat": 12
+      },
+      "allergens": ["soy"],
+      "description": "Steamed glutinous rice with spicy chicken feet and fermented black bean sauce",
       "tags": ["steamed", "spicy"],
       "serving_time": "Dinner"
     },
@@ -1506,6 +2999,14 @@
       "name": "Cantonese Wonton Noodle Soup",
       "price": 24.8,
       "ingredients": ["shrimp", "pork", "egg noodle"],
+      "nutrition": {
+        "calories": 380,
+        "protein": 22,
+        "carbs": 55,
+        "fat": 9
+      },
+      "allergens": ["shrimp", "wheat"],
+      "description": "Thin egg noodles in clear broth with shrimp-pork wontons and bok choy",
       "tags": ["soup", "classic"],
       "serving_time": "Lunch"
     },
@@ -1514,6 +3015,14 @@
       "name": "Crispy Pork Belly RiceSet",
       "price": 29.9,
       "ingredients": ["pork belly", "jasmine rice", "soy sauce"],
+      "nutrition": {
+        "calories": 680,
+        "protein": 25,
+        "carbs": 75,
+        "fat": 35
+      },
+      "allergens": ["soy"],
+      "description": "Crispy-skinned pork belly served over jasmine rice with soy-based glaze",
       "tags": ["fried", "premium"],
       "serving_time": "Dinner"
     },
@@ -1522,6 +3031,14 @@
       "name": "Lotus Leaf Glutinous RiceWrap",
       "price": 23.7,
       "ingredients": ["glutinous rice", "chicken", "lotus leaf"],
+      "nutrition": {
+        "calories": 410,
+        "protein": 16,
+        "carbs": 70,
+        "fat": 8
+      },
+      "allergens": ["wheat"],
+      "description": "Lotus leaf-wrapped sticky rice with marinated chicken and Chinese sausage",
       "tags": ["steamed", "traditional"],
       "serving_time": "Dinner"
     },
@@ -1530,6 +3047,14 @@
       "name": "Sichuan Peppercorn Beef Noodle",
       "price": 32.0,
       "ingredients": ["beef", "Sichuan pepper", "wheat noodle"],
+      "nutrition": {
+        "calories": 520,
+        "protein": 24,
+        "carbs": 65,
+        "fat": 18
+      },
+      "allergens": ["wheat"],
+      "description": "Numbing spicy beef broth with hand-pulled noodles and Szechuan peppercorns",
       "tags": ["soup", "numbing"],
       "serving_time": "Lunch"
     },
@@ -1538,6 +3063,14 @@
       "name": "Golden Garlic Scallop Congee",
       "price": 15.8,
       "ingredients": ["scallop", "garlic", "rice"],
+      "nutrition": {
+        "calories": 290,
+        "protein": 15,
+        "carbs": 45,
+        "fat": 7
+      },
+      "allergens": ["shellfish"],
+      "description": "Premium congee with fresh scallops and golden fried garlic chips",
       "tags": ["congee", "luxury"],
       "serving_time": "All Day"
     },
@@ -1546,6 +3079,14 @@
       "name": "Truffle Mushroom Vegetable Congee",
       "price": 12.8,
       "ingredients": ["truffle", "mixed mushroom", "rice"],
+      "nutrition": {
+        "calories": 210,
+        "protein": 6,
+        "carbs": 38,
+        "fat": 5
+      },
+      "allergens": [],
+      "description": "Truffle-infused congee with three types of mushrooms and edamame",
       "tags": ["congee", "aromatic"],
       "serving_time": "All Day"
     },
@@ -1554,6 +3095,14 @@
       "name": "Honey Glazed CharSiuBao",
       "price": 14.9,
       "ingredients": ["barbecue pork", "honey", "wheat flour"],
+      "nutrition": {
+        "calories": 320,
+        "protein": 11,
+        "carbs": 55,
+        "fat": 8
+      },
+      "allergens": ["wheat"],
+      "description": "Sticky honey-glazed barbecue pork wrapped in fluffy steamed buns",
       "tags": ["dimsum", "caramelized"],
       "serving_time": "Breakfast"
     },
@@ -1562,6 +3111,14 @@
       "name": "Dried Vegetable Pork BoneCongee",
       "price": 10.8,
       "ingredients": ["dried vegetables", "pork bone", "rice"],
+      "nutrition": {
+        "calories": 290,
+        "protein": 12,
+        "carbs": 45,
+        "fat": 5
+      },
+      "allergens": ["soy"],
+      "description": "Hearty congee with dried vegetables and pork bones simmered for 4 hours",
       "tags": ["congee", "vegetable"],
       "serving_time": "All Day"
     },
@@ -1570,6 +3127,14 @@
       "name": "Salted Fish Peanut Pork Ribs Congee",
       "price": 10.8,
       "ingredients": ["salted fish", "peanut", "pork ribs", "rice"],
+      "nutrition": {
+        "calories": 330,
+        "protein": 15,
+        "carbs": 48,
+        "fat": 9
+      },
+      "allergens": ["fish"],
+      "description": "Rich congee with salted fish, peanuts, and tender pork ribs",
       "tags": ["congee", "savory"],
       "serving_time": "All Day"
     },
@@ -1578,6 +3143,14 @@
       "name": "Steamed Glutinous Rice With Chicken",
       "price": 23.7,
       "ingredients": ["glutinous rice", "chicken", "mushroom"],
+      "nutrition": {
+        "calories": 410,
+        "protein": 18,
+        "carbs": 70,
+        "fat": 8
+      },
+      "allergens": ["wheat"],
+      "description": "Steamed glutinous rice wrapped in lotus leaves with marinated chicken",
       "tags": ["dimsum", "traditional"],
       "serving_time": "Dinner"
     },
@@ -1586,6 +3159,14 @@
       "name": "Pan Fried Pork Chop With Ham",
       "price": 25.8,
       "ingredients": ["pork chop", "ham", "soy sauce"],
+      "nutrition": {
+        "calories": 450,
+        "protein": 28,
+        "carbs": 30,
+        "fat": 22
+      },
+      "allergens": ["soy"],
+      "description": "Juicy pork chop marinated in soy sauce, served with ham",
       "tags": ["grill", "protein"],
       "serving_time": "Lunch"
     },
@@ -1594,6 +3175,14 @@
       "name": "Sweet Corn Mock Chicken Congee",
       "price": 10.8,
       "ingredients": ["sweet corn", "mock chicken", "rice"],
+      "nutrition": {
+        "calories": 240,
+        "protein": 8,
+        "carbs": 42,
+        "fat": 5
+      },
+      "allergens": [],
+      "description": "Vegetarian congee with sweet corn and mock chicken",
       "tags": ["congee", "vegetarian"],
       "serving_time": "All Day"
     },
@@ -1602,6 +3191,14 @@
       "name": "Assorted Mushroom Fish Congee",
       "price": 10.8,
       "ingredients": ["assorted mushrooms", "sliced fish", "rice"],
+      "nutrition": {
+        "calories": 260,
+        "protein": 12,
+        "carbs": 40,
+        "fat": 7
+      },
+      "allergens": ["fish"],
+      "description": "Umami-rich congee with assorted mushrooms and fresh fish slices",
       "tags": ["congee", "seafood"],
       "serving_time": "All Day"
     },
@@ -1610,6 +3207,14 @@
       "name": "Steamed Beef BallBlack Pepper",
       "price": 16.4,
       "ingredients": ["beef", "black pepper", "soy sauce"],
+      "nutrition": {
+        "calories": 180,
+        "protein": 12,
+        "carbs": 10,
+        "fat": 9
+      },
+      "allergens": ["soy"],
+      "description": "Steamed beef balls seasoned with black pepper and oyster sauce",
       "tags": ["steamed", "snack"],
       "serving_time": "All Day"
     }

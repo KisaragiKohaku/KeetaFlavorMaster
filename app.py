@@ -34,7 +34,9 @@ def init_session():
 
                 gpu_status = st.sidebar.empty()
                 if torch.cuda.is_available():
-                    gpu_status.success("✅ GPU acceleration enabled")
+                    mem = torch.cuda.mem_get_info()[1] / 1024 ** 3
+
+                    gpu_status.success(f"✅ GPU ({torch.cuda.get_device_name()}) | Free Mem: {mem:.2f}GB")
                 else:
                     gpu_status.warning("⚠️ GPU is not available")
 
@@ -101,7 +103,6 @@ if prompt := st.chat_input("Please enter..."):
                 response_placeholder.markdown(f"{formatted_response}▌")
 
             response_placeholder.markdown(formatted_response)
-
             st.session_state.messages.append({"role": "assistant", "content": full_response})
 
         except Exception as e:

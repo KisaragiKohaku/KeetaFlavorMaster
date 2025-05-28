@@ -24,37 +24,41 @@ def parse_intent(query: str) -> str:
 
     prompt = f"""
 You are a backend intent extractor. Analyze the user query and extract structured JSON.
-
 Return only a JSON object. No markdown, no explanations.
 
 Expected format:
 {{
-  "allergens": [list of allergens, lowercase, or empty list],
-  "price_range": {{"min": float, "max": float}} or null,
-  "intent": brief summary of user's need
+  "taste": [explicitly mentioned flavor preferences, or null],
+  "avoid": [list of allergens or ingredients to exclude, or null],
+  "price": [specified price range, or null],
+  "additional": [e.g. low-sugar, high-protein, or null]
+  ""
 }}
 
 Examples:
 
-User: "I want something vegetarian and cheap"
+User: "I want something vegetarian"
 → {{
-  "allergens": [],
-  "price_range": {{"max": 20}},
-  "intent": "cheap vegetarian food"
+  "taste": [null],
+  "avoid": ["meat"],
+  "price": [null, null],
+  "additional": "vegetarian food"
 }}
 
-User: "Give me something not too pricey, no dairy"
+User: "Give me something sweet between 20 and 40, no dairy"
 → {{
-  "allergens": ["dairy"],
-  "price_range": {{"max": 20}},
-  "intent": "avoid dairy, budget food"
+  "taste": ["sweet"]
+  "avoid": ["dairy"],
+  "price": [20, 40],
+  "additional": null
 }}
 
-User: "I want a luxurious dinner"
+User: "I want a luxurious dinner. Soup is the best."
 → {{
-  "allergens": [],
-  "price_range": {{"min": 40}},
-  "intent": "luxury food"
+  "taste": [null],
+  "avoid": [null],
+  "price": [40, null],
+  "additional": "dinner, soup"
 }}
 
 User: "{query}"
@@ -64,15 +68,16 @@ User: "{query}"
     data = {
         "model": "deepseek-chat",
         "messages": [{"role": "user", "content": prompt}],
-        "temperature": 0,
-        "max_tokens": 300,
+        "temperature": 0.1,
+        "max_tokens": 500,
         "stream": False
     }
 
     fallback = {
-        "allergens": [],
-        "price_range": None,
-        "intent": "unknown"
+        "taste": [],
+        "avoid": [],
+        "price": [],
+        "additional": []
     }
 
     try:
