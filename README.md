@@ -1,4 +1,4 @@
-# 🦘 Keeta Flavor Master (English Version) 
+# 🦘 Keeta Flavor Master (English Introduction) 
 
 Keeta Food Intelligent Recommendation Assistant based on Streamlit and Mistral-7B, integrated with RAG technology for precise nutritional Q&A.
 
@@ -7,7 +7,8 @@ Demo Video Link: https://drive.google.com/file/d/1d6x_jPrNlg_V51jZ13AnPqwoVh8xpf
 ## Version Control Notes
 1. The gamma version integrates DeepSeek API for auxiliary intent identification.  
 2. The beta version uses only hard-coding for naive intent identification.  
-3. The current beta and gamma versions are for learning purposes only.
+3. The beta version is no longer maintained and is not recommended for use. The developer has kept this branch purely for archival purposes.  
+4. The current beta and gamma versions are for learning purposes only.
 
 ## Download Model (GGUF format model needs to be downloaded in advance)
 The test model is Mistral-7B-Instruct-v0.3-GGUF, Q4-K-S quantized version (3.85GB). Please download it from the URL below.  
@@ -18,8 +19,7 @@ https://huggingface.co/MaziyarPanahi/Mistral-7B-Instruct-v0.3-GGUF
 ```bash
 KeetaFlavorMaster/
 ├── data/
-│   ├── menu.json          # Food information
-│   └── nutrition.json     # Nutritional data
+│   └── menu.json          # Food information
 ├── models/                # GGUF format model
 ├── app.py                 # Streamlit main program
 ├── chatbot.py             # LLM response module
@@ -78,8 +78,9 @@ pip install -r requirements.txt
 
 ## 版本控制说明
 1. gamma版接入DeepSeek API进行辅助意图识别  
-2. beta版仅通过硬编码进行朴素意图识别  
-3. 当前beta版、gamma版仅作学习用途
+2. beta版仅通过硬编码进行朴素意图识别
+3. 请注意，beta版目前已停止更新，不建议使用，开发者仅基于纪念意义保留了该分支  
+4. 当前beta版、gamma版仅作学习用途
 
 ## 下载模型 (需提前下载GGUF格式模型)
 测试模型为Mistral-7B-Instruct-v0.3-GGUF，Q4-K-S量化版（3.85GB），请于下方网址自行下载，您也可以自行部署其他模型
@@ -89,8 +90,7 @@ https://huggingface.co/MaziyarPanahi/Mistral-7B-Instruct-v0.3-GGUF
 ```bash
 KeetaFlavorMaster/
 ├── data/
-│   ├── menu.json          # 美食信息
-│   └── nutrition.json     # 营养数据
+│   └── menu.json          # 美食信息
 ├── models/                # GGUF格式模型
 ├── app.py                 # Streamlit主程序
 ├── chatbot.py             # LLM回复模块
