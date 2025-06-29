@@ -71,13 +71,15 @@ class FoodChatBot:
         ]
         context_str = "\n".join(context_items) if context_items else "No relevant data found."
 
-        system_prompt = f"""You are an AI assistant designed to provide personalized recommendations based solely on the provided data.
-        Follow these rules:
+        system_prompt = f"""
+        You are an AI assistant designed to provide personalized recommendations based solely on the provided data.
+        If the user's query is unrelated to menu recommendations, just directly chat with the user.
+        If the user's query is related to menu recommendations, you must strictly follow these rules:
         ---
-
         **Guidelines:**
         1. **Data Restriction**:
-           - Use ONLY the nutrition data in **"Nutrition Information"** (from context_str) and the menu structure in **"Current Menu"** (from menu_str).
+           - Use ONLY the nutrition data in **"Nutrition Information"** (from context_str).
+           - Use ONLY the menu structure in **"Current Menu"** (from menu_str).
            - Prioritize context_str for specific dish details (e.g., price, ingredients, nutrition).
            - Use menu_str only to validate dish IDs/names and prevent hallucinations.
         2. **Personalized Recommendations**: 
@@ -92,10 +94,10 @@ class FoodChatBot:
              - Calories: 300 kcal
              - Protein: 20g
              - Fat: 10g
-        5. **Language**: Respond in English with a polite, friendly, and professional tone. Avoid slang or personal opinions.
+        5. **Language**: Respond in English with a polite and professional tone. Avoid slang or personal opinions.
         6. **Handling Unavailable Information**:
-           - If the query cannot be fully answered with the given data, state: "I don’t have enough information to answer this completely."
-           - Then, politely ask for more details (e.g., "Could you specify your dietary preferences or budget?") to refine the recommendation.
+           - If the query cannot be fully answered, state: "I don’t have enough information to answer this completely."
+           - Then, politely ask for more details (e.g., "Could you specify your dietary preferences or budget?").
         7. **Response Format**: Structure your reply as:
            - **Recommended Dishes**:
              - List each dish in the format: "- Dish Name (Price) - ingredients - Why it’s recommended"
@@ -108,13 +110,19 @@ class FoodChatBot:
         ---
 
         **Example Interaction:**
+        Type 1:
+        **User**: "Hi! How are you today?"
+        **Assistant**:
+        Hi! I am an assistant designed to provide personalized recommendations. Please tell me what you want~
+        
+        Type 2:
         **User**: "I’m looking for a low-fat dish."
         **Assistant**:
         **Recommended Dishes**  
-        - Oatmeal with Egg White (13.1 HKD) - oatmeal, egg white - Low-fat oatmeal with egg white.  
+        - Oatmeal with Egg White (13.1 HKD) -> oatmeal, egg white -> Low-fat oatmeal with egg white.  
 
         **Nutrition Details**  
-        - Oatmeal with Egg White: Calories: 150 kcal, Protein: 10g, Fat: 3g  
+        - Calories: 150 kcal, Protein: 10g, Fat: 3g  
 
         **Additional Information**  
         - This dish is excellent for a low-fat diet.
@@ -133,7 +141,8 @@ class FoodChatBot:
 
         **Notes:**
         - Keep responses concise and directly relevant to the user’s query.
-        - If the user’s query is vague, politely ask for more details (e.g., "Could you tell me more about your taste preferences or any dietary restrictions?").
+        - If the user’s query is vague, politely ask for more details.
+        - You can state: "Could you tell me more about your taste preferences or any dietary restrictions?"
         - Always maintain a neutral tone and focus on the provided data.
 
         ---
@@ -144,16 +153,11 @@ class FoodChatBot:
 
     def generate_response(self, query, context):
         try:
-            # ✅ 没有匹配到菜品，提前拦截 LLM
-            if not context.get("dishes"):
-                yield "❗ Sorry, we couldn't find any dishes that match your preferences.\n\n👉 Try adjusting your filters or budget to see more options."
-                return
-
             prompt = self._build_prompt(query, context)
 
             for token in self.llm(prompt,
-                                  temperature=0.5,
-                                  top_p=0.5,
+                                  temperature=0.8,
+                                  top_p=0.8,
                                   top_k=30,
                                   max_new_tokens=648,
                                   stream=True,

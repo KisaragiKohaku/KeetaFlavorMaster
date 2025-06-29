@@ -10,6 +10,44 @@ import os
 logger = logging.getLogger(__name__)
 
 
+def dynamic_chunking(text, max_chars=500):
+    if len(text) <= max_chars:
+        return [text]
+
+    def smart_split(content, delimiter, max_size):
+        segments = content.split(delimiter)
+        chunks_list = []
+        current = ""
+
+        for seg in segments:
+            seg = seg.strip()
+            if not seg:
+                continue
+
+            if len(current) + len(seg) <= max_size:
+                current += seg + delimiter
+            else:
+                if current:
+                    chunks_list.append(current.strip())
+                current = seg + delimiter
+
+        if current:
+            chunks_list.append(current.strip())
+        return chunks_list
+
+    chunks = smart_split(text, '\n', max_chars)
+
+    final_chunks = []
+    for chunk in chunks:
+        if len(chunk) <= max_chars:
+            final_chunks.append(chunk)
+        else:
+            sentences = smart_split(chunk, '.', max_chars)
+            final_chunks.extend(sentences)
+
+    return final_chunks
+
+
 class NutritionRetriever:
     def __init__(self):
         for file in ["data/menu.json"]:
@@ -50,14 +88,29 @@ class NutritionRetriever:
             raise
 
     def _embed_menu_data(self):
-        logger.info("Embedding Menu data...")
+        logger.info("Embedding Menu data with dynamic chunking...")
         try:
             documents, metadatas, ids = [], [], []
+            chunk_count = 0
+            long_text_dishes = 0
+
             for dish in self.menu_dict.values():
-                doc = self.format_dish_info(dish)
-                documents.append(doc)
-                metadatas.append({"dish_id": dish["id"]})
-                ids.append(str(dish["id"]))
+                dish_text = self.format_dish_info(dish)
+                chunks = dynamic_chunking(dish_text)
+
+                if len(chunks) > 1:
+                    long_text_dishes += 1
+                    chunk_count += len(chunks)
+
+                for idx, chunk in enumerate(chunks):
+                    documents.append(chunk)
+                    metadatas.append({
+                        "dish_id": dish["id"],
+                        "is_chunked": len(chunks) > 1,
+                        "chunk_index": idx,
+                        "total_chunks": len(chunks)
+                    })
+                    ids.append(f"{dish['id']}_{idx}")
 
             if documents:
                 embeddings = self.encoder.encode(documents).tolist()
@@ -67,7 +120,10 @@ class NutritionRetriever:
                     metadatas=metadatas,
                     ids=ids
                 )
-                logger.info(f"Successfully embedded {len(documents)} dishes")
+                logger.info(
+                    f"Embedded {len(documents)} chunks"
+                    f"({chunk_count} from {long_text_dishes} long dishes)"
+                )
         except Exception as e:
             logger.error(f"Failed to embed data: {str(e)}")
             raise
@@ -106,25 +162,8 @@ class NutritionRetriever:
             for dish_id, dish in self.menu_dict.items()
         }
 
-    def parse_price(self, value):
-        try:
-            if value is None:
-                return float('inf')
-            return float(str(value).replace('HKD', '').strip())
-        except:
-            return float('inf')
-
-    def get_nutrition_data(self, dish_id):
-        return self.nutrition_dict.get(dish_id, {
-            "calories": "N/A",
-            "protein": "N/A",
-            "carbs": "N/A",
-            "fat": "N/A",
-            "allergens": [],
-            "description": "No description available"
-        })
-
     def search(self, query: str, k: int = 10) -> dict:
+        # noinspection PyBroadException
         try:
             intent_data = json.loads(parse_intent(query))
             excluded_info = [item for item in intent_data.get("avoid", []) if item is not None]
@@ -132,17 +171,36 @@ class NutritionRetriever:
 
             # Step 1: 向量检索
             query_embed = self.encoder.encode(query, normalize_embeddings=True)
+
+            n_results = min(100, max(k * 2, len(query) // 10 + k))
             results = self.collection.query(
                 query_embeddings=[query_embed.tolist()],
-                n_results=k,
-                include=[IncludeEnum.documents, IncludeEnum.metadatas]
+                n_results=n_results,
+                include=[IncludeEnum.documents, IncludeEnum.metadatas, IncludeEnum.distances]
             )
 
-            matched_dishes = [
-                self.menu_dict[meta["dish_id"]]
-                for meta in results["metadatas"][0]
-                if meta["dish_id"] in self.menu_dict
-            ]
+            dish_scores = {}
+            for i, meta in enumerate(results["metadatas"][0]):
+                dish_id = meta["dish_id"]
+                distance = results["distances"][0][i]
+
+                # 计算相关性分数（距离转相似度）
+                score = 1 / (1 + distance) if distance > 0 else 1.0
+
+                # 更新菜品分数（取最高分）
+                if dish_id not in dish_scores or score > dish_scores[dish_id]:
+                    dish_scores[dish_id] = score
+
+            # 按相关性排序
+            sorted_dish_ids = sorted(
+                dish_scores.keys(),
+                key=lambda x: dish_scores[x],
+                reverse=True
+            )[:k]
+
+            valid_dish_ids = [int(did) for did in sorted_dish_ids if int(did) in self.menu_dict]
+            matched_dishes = [self.menu_dict[did] for did in valid_dish_ids]
+
             logger.info(f"{len(matched_dishes)} dishes matched vector search")
 
             # Step 2: 过敏原过滤
@@ -162,7 +220,7 @@ class NutritionRetriever:
                 max_price = price_info[1] if price_info[1] is not None else float("inf")
                 matched_dishes = [
                     dish for dish in matched_dishes
-                    if min_price <= self.parse_price(dish.get("price", 0)) <= max_price
+                    if min_price <= dish.get("price", 0) <= max_price
                 ]
                 logger.info(f"{len(matched_dishes)} dishes remain after price filtering: {price_info}")
 
@@ -177,6 +235,14 @@ class NutritionRetriever:
                 "dishes": matched_dishes
             }
 
-        except Exception as e:
-            logger.error(f"Failed to search: {str(e)}")
-            return {"documents": ["Search Function is not available"], "dishes": []}
+        except json.JSONDecodeError:
+            logger.error("Intent parsing returned invalid JSON")
+            return {"documents": ["Failed to understand the request"], "dishes": []}
+
+        except (ValueError, KeyError, TypeError) as e:
+            logger.error(f"Search processing error: {str(e)}")
+            return {"documents": ["Error processing the request"], "dishes": []}
+
+        except Exception:
+            logger.exception("Unexpected error during search")
+            return {"documents": ["Search function is currently unavailable"], "dishes": []}
