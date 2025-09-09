@@ -166,8 +166,9 @@ class NutritionRetriever:
         # noinspection PyBroadException
         try:
             intent_data = json.loads(parse_intent(query))
-            excluded_info = [item for item in intent_data.get("avoid", []) if item is not None]
-            price_info = [item if item is not None else None for item in intent_data.get("price", [None, None])]
+            excluded_info = [item for item in (intent_data.get("avoid") or []) if item is not None]
+            price_data = intent_data.get("price") or [None, None]
+            price_info = [item if item is not None else None for item in price_data]
 
             # Step 1: 向量检索
             query_embed = self.encoder.encode(query, normalize_embeddings=True)
@@ -208,7 +209,7 @@ class NutritionRetriever:
                 matched_dishes = [
                     dish for dish in matched_dishes
                     if all(
-                        allergen not in self.dish_allergen_map.get(dish["id"], [])
+                        allergen not in (self.dish_allergen_map.get(dish["id"]) or [])
                         for allergen in excluded_info
                     ) and dish["id"] in self.dish_allergen_map
                 ]
